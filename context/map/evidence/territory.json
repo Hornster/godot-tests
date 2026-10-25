@@ -1,0 +1,2867 @@
+{
+ "since": "2026-04-22",
+ "total": 1942,
+ "summary": {
+  "meaningful": 1851,
+  "thirdparty-update": 41,
+  "housekeeping": 22,
+  "style/format": 20,
+  "mass-mechanical": 5,
+  "translation-sync": 3
+ },
+ "monthly": [
+  [
+   "2026-04",
+   88
+  ],
+  [
+   "2026-05",
+   239
+  ],
+  [
+   "2026-06",
+   281
+  ],
+  [
+   "2026-07",
+   378
+  ],
+  [
+   "2026-08",
+   338
+  ],
+  [
+   "2026-09",
+   317
+  ],
+  [
+   "2026-10",
+   210
+  ]
+ ],
+ "agent_commits": [],
+ "noise_groups": {
+  "thirdparty-update": {
+   "count": 41,
+   "sample": [
+    {
+     "h": "1aa93a7ab0",
+     "an": "Fabio Alessandrelli",
+     "subj": "mbedTLS: Update to 4.1.0, PSA Crypto",
+     "files": 515
+    },
+    {
+     "h": "6328c1fee8",
+     "an": "Nintorch",
+     "subj": "sdl: Update to 3.4.16",
+     "files": 300
+    },
+    {
+     "h": "971f96a833",
+     "an": "Jakub Marcowski",
+     "subj": "harfbuzz: Update to 14.4.0",
+     "files": 193
+    },
+    {
+     "h": "b8ee63b9f5",
+     "an": "Pa\u0304vels Nadtoc\u030cajevs",
+     "subj": "[GDExtension] Remove redundant PR numbers from validation files.",
+     "files": 190
+    },
+    {
+     "h": "b3db140c6c",
+     "an": "Jorrit Rouwe",
+     "subj": "Updated to Jolt Physics 5.6.0",
+     "files": 154
+    },
+    {
+     "h": "edc166b0e4",
+     "an": "R\u00e9mi Verschelde",
+     "subj": "thorvg: Update to 1.1.3",
+     "files": 101
+    },
+    {
+     "h": "65c470bad4",
+     "an": "Bastiaan Olij",
+     "subj": "Update thirdparty OpenXR to 1.1.60",
+     "files": 47
+    },
+    {
+     "h": "5158fbdb32",
+     "an": "Jakub Marcowski",
+     "subj": "manifold: Update to 3.5.2",
+     "files": 44
+    },
+    {
+     "h": "2947b9ceef",
+     "an": "Fabio Alessandrelli",
+     "subj": "mbedTLS: Update to 4.1.1",
+     "files": 44
+    },
+    {
+     "h": "e498ad364a",
+     "an": "R\u00e9mi Verschelde",
+     "subj": "pcre2: Update to 10.49",
+     "files": 39
+    },
+    {
+     "h": "f2badfb5f2",
+     "an": "Fredia Huya-Kouadio",
+     "subj": "Update to OpenXR 1.1.63",
+     "files": 15
+    },
+    {
+     "h": "2f55d31910",
+     "an": "BlueCube3310",
+     "subj": "libpng: Update to 1.6.58",
+     "files": 15
+    }
+   ]
+  },
+  "housekeeping": {
+   "count": 22,
+   "sample": [
+    {
+     "h": "0f005e708a",
+     "an": "Thaddeus Crews",
+     "subj": "CI: Update all GitHub Actions to latest versions",
+     "files": 11
+    },
+    {
+     "h": "9c81dfa864",
+     "an": "Thaddeus Crews",
+     "subj": "CI: Replace `pre-commit` with `prek`",
+     "files": 5
+    },
+    {
+     "h": "e6f388ad1f",
+     "an": "Thaddeus Crews",
+     "subj": "CI: Bump Ubuntu versions to next LTS",
+     "files": 4
+    },
+    {
+     "h": "3000096f9a",
+     "an": "R\u00e9mi Verschelde",
+     "subj": "Update AUTHORS and DONORS list",
+     "files": 3
+    },
+    {
+     "h": "a1ca4bf058",
+     "an": "R\u00e9mi Verschelde",
+     "subj": "Update AUTHORS and DONORS list",
+     "files": 3
+    },
+    {
+     "h": "bf7b044421",
+     "an": "Thaddeus Crews",
+     "subj": "CI: Expand CODEOWNERS validation",
+     "files": 2
+    },
+    {
+     "h": "bb804e251d",
+     "an": "Thaddeus Crews",
+     "subj": "CI: Add prek hook for `clangd-tidy`",
+     "files": 2
+    },
+    {
+     "h": "953f28a797",
+     "an": "Thaddeus Crews",
+     "subj": "CI: Pass GitHub Action prek diffs via `--from-ref`",
+     "files": 2
+    },
+    {
+     "h": "40ea3f8482",
+     "an": "Thaddeus Crews",
+     "subj": "CI: Bump various CI hooks",
+     "files": 2
+    },
+    {
+     "h": "7507a6e485",
+     "an": "Thaddeus Crews",
+     "subj": "CI: Fix API validation of removed dummy methods",
+     "files": 2
+    },
+    {
+     "h": "bdaf77f5a2",
+     "an": "Thaddeus Crews",
+     "subj": "CI: Update `make_rst.py` to only write if modified",
+     "files": 1
+    },
+    {
+     "h": "36c557113e",
+     "an": "R\u00e9mi Verschelde",
+     "subj": "CI: Silence leak report originating in lavapipe",
+     "files": 1
+    }
+   ]
+  },
+  "style/format": {
+   "count": 20,
+   "sample": [
+    {
+     "h": "a3088fecf1",
+     "an": "Thaddeus Crews",
+     "subj": "Style: Apply `readability-identifier-naming` rules",
+     "files": 144
+    },
+    {
+     "h": "1c45c14d7f",
+     "an": "Thaddeus Crews",
+     "subj": "Style: Trim simple null `memdelete` conditionals",
+     "files": 70
+    },
+    {
+     "h": "a35932457b",
+     "an": "Thaddeus Crews",
+     "subj": "Style: Change `RequiredParam` prefixes from `rp_` to `p_`",
+     "files": 61
+    },
+    {
+     "h": "eb1b8e8eda",
+     "an": "HolonProduction",
+     "subj": "Style: Apply left qualifier alignment rule",
+     "files": 26
+    },
+    {
+     "h": "492a1e0f1f",
+     "an": "Thaddeus Crews",
+     "subj": "Style: Integrate `pyupgrade` into Ruff linter",
+     "files": 15
+    },
+    {
+     "h": "f72cfa1c06",
+     "an": "Thaddeus Crews",
+     "subj": "Style: Auto-inherit parent config in `clang_format_glsl.yml`",
+     "files": 7
+    },
+    {
+     "h": "47faa10b41",
+     "an": "Cyril Bissey",
+     "subj": "Fix some typos and grammar in class documentation",
+     "files": 4
+    },
+    {
+     "h": "67d78eba9e",
+     "an": "kobewi",
+     "subj": "Assorted typo fixes",
+     "files": 4
+    },
+    {
+     "h": "caa386e895",
+     "an": "Shane Gadsby",
+     "subj": "Fix `maxPacketLifeTime` typo in WebRTCMultiplayerPeer channel config",
+     "files": 3
+    },
+    {
+     "h": "30c0b81043",
+     "an": "Thaddeus Crews",
+     "subj": "Style: Strip `zlib.h` include from `compression.h`",
+     "files": 3
+    },
+    {
+     "h": "6f1d0fc429",
+     "an": "NoNormalDev",
+     "subj": "Fix typo in EditorProperty - \"seperation\"",
+     "files": 2
+    },
+    {
+     "h": "f574d5f32a",
+     "an": "Thaddeus Crews",
+     "subj": "Style: Add clang-tidy rule `readability-identifier-naming`",
+     "files": 2
+    }
+   ]
+  },
+  "mass-mechanical": {
+   "count": 5,
+   "sample": [
+    {
+     "h": "099c7c9492",
+     "an": "smix8",
+     "subj": "Move PhysicServer enums, structs and sub-objects to dedicated files",
+     "files": 198
+    },
+    {
+     "h": "b4ebc1cd68",
+     "an": "smix8",
+     "subj": "Split AudioServer files and system classes",
+     "files": 96
+    },
+    {
+     "h": "00120405f4",
+     "an": "Lukas Tenbrink",
+     "subj": "Add and apply `RETURN_IF_ERROR` to return an `Error` when it's not `OK`.",
+     "files": 57
+    },
+    {
+     "h": "43877ec8fb",
+     "an": "HolonProduction",
+     "subj": "Apply `[[gnu::warn_unused]]` to core collections",
+     "files": 45
+    },
+    {
+     "h": "ee32882344",
+     "an": "HolonProduction",
+     "subj": "Core: Apply `_WARN_UNUSED_` to `String`",
+     "files": 40
+    }
+   ]
+  },
+  "translation-sync": {
+   "count": 3,
+   "sample": [
+    {
+     "h": "ed11e2610f",
+     "an": "R\u00e9mi Verschelde",
+     "subj": "Sync translations with Weblate (first 4.7 sync)",
+     "files": 87
+    },
+    {
+     "h": "9d03a4937b",
+     "an": "R\u00e9mi Verschelde",
+     "subj": "Sync translations with Weblate",
+     "files": 58
+    },
+    {
+     "h": "c92ef757cb",
+     "an": "R\u00e9mi Verschelde",
+     "subj": "Sync translations with Weblate",
+     "files": 36
+    }
+   ]
+  }
+ },
+ "meaningful_authors": 371,
+ "areas": [
+  [
+   "doc/classes",
+   {
+    "commits": 241,
+    "authors": 104,
+    "add": 4418,
+    "dele": 3416,
+    "fixes": 39,
+    "api_commits": 241
+   }
+  ],
+  [
+   "scene/gui",
+   {
+    "commits": 182,
+    "authors": 65,
+    "add": 6853,
+    "dele": 2479,
+    "fixes": 86,
+    "api_commits": 44
+   }
+  ],
+  [
+   "modules/gdscript",
+   {
+    "commits": 121,
+    "authors": 34,
+    "add": 5684,
+    "dele": 4258,
+    "fixes": 24,
+    "api_commits": 17
+   }
+  ],
+  [
+   "editor/docks",
+   {
+    "commits": 109,
+    "authors": 33,
+    "add": 2313,
+    "dele": 1395,
+    "fixes": 49,
+    "api_commits": 13
+   }
+  ],
+  [
+   "servers/rendering/renderer_rd",
+   {
+    "commits": 107,
+    "authors": 48,
+    "add": 3060,
+    "dele": 1287,
+    "fixes": 47,
+    "api_commits": 17
+   }
+  ],
+  [
+   "editor/(root)",
+   {
+    "commits": 88,
+    "authors": 40,
+    "add": 1259,
+    "dele": 1037,
+    "fixes": 20,
+    "api_commits": 14
+   }
+  ],
+  [
+   "editor/script",
+   {
+    "commits": 84,
+    "authors": 25,
+    "add": 5732,
+    "dele": 4385,
+    "fixes": 28,
+    "api_commits": 16
+   }
+  ],
+  [
+   "platform/android",
+   {
+    "commits": 76,
+    "authors": 21,
+    "add": 4798,
+    "dele": 1848,
+    "fixes": 26,
+    "api_commits": 13
+   }
+  ],
+  [
+   "servers/rendering",
+   {
+    "commits": 76,
+    "authors": 44,
+    "add": 1943,
+    "dele": 1211,
+    "fixes": 31,
+    "api_commits": 16
+   }
+  ],
+  [
+   "editor/scene",
+   {
+    "commits": 74,
+    "authors": 36,
+    "add": 2019,
+    "dele": 3369,
+    "fixes": 32,
+    "api_commits": 10
+   }
+  ],
+  [
+   "drivers/gles3",
+   {
+    "commits": 69,
+    "authors": 37,
+    "add": 2116,
+    "dele": 638,
+    "fixes": 24,
+    "api_commits": 12
+   }
+  ],
+  [
+   "editor/inspector",
+   {
+    "commits": 69,
+    "authors": 35,
+    "add": 1092,
+    "dele": 438,
+    "fixes": 24,
+    "api_commits": 7
+   }
+  ],
+  [
+   "editor/settings",
+   {
+    "commits": 68,
+    "authors": 33,
+    "add": 614,
+    "dele": 282,
+    "fixes": 17,
+    "api_commits": 15
+   }
+  ],
+  [
+   "scene/resources",
+   {
+    "commits": 65,
+    "authors": 34,
+    "add": 2937,
+    "dele": 9573,
+    "fixes": 14,
+    "api_commits": 18
+   }
+  ],
+  [
+   "core/object",
+   {
+    "commits": 57,
+    "authors": 19,
+    "add": 1757,
+    "dele": 1629,
+    "fixes": 9,
+    "api_commits": 8
+   }
+  ],
+  [
+   "editor/gui",
+   {
+    "commits": 53,
+    "authors": 28,
+    "add": 834,
+    "dele": 511,
+    "fixes": 23,
+    "api_commits": 9
+   }
+  ],
+  [
+   "editor/export",
+   {
+    "commits": 51,
+    "authors": 26,
+    "add": 3048,
+    "dele": 1248,
+    "fixes": 16,
+    "api_commits": 11
+   }
+  ],
+  [
+   "platform/linuxbsd",
+   {
+    "commits": 50,
+    "authors": 21,
+    "add": 1978,
+    "dele": 861,
+    "fixes": 18,
+    "api_commits": 6
+   }
+  ],
+  [
+   "editor/scene/3d",
+   {
+    "commits": 50,
+    "authors": 29,
+    "add": 9496,
+    "dele": 8451,
+    "fixes": 21,
+    "api_commits": 8
+   }
+  ],
+  [
+   "modules/mono",
+   {
+    "commits": 47,
+    "authors": 18,
+    "add": 4846,
+    "dele": 2377,
+    "fixes": 9,
+    "api_commits": 7
+   }
+  ],
+  [
+   "scene/main",
+   {
+    "commits": 44,
+    "authors": 26,
+    "add": 635,
+    "dele": 147,
+    "fixes": 16,
+    "api_commits": 10
+   }
+  ],
+  [
+   "scene/3d",
+   {
+    "commits": 43,
+    "authors": 24,
+    "add": 2709,
+    "dele": 482,
+    "fixes": 10,
+    "api_commits": 21
+   }
+  ],
+  [
+   "(root)",
+   {
+    "commits": 42,
+    "authors": 22,
+    "add": 362,
+    "dele": 234,
+    "fixes": 6,
+    "api_commits": 11
+   }
+  ],
+  [
+   "platform/macos",
+   {
+    "commits": 40,
+    "authors": 15,
+    "add": 1200,
+    "dele": 627,
+    "fixes": 18,
+    "api_commits": 5
+   }
+  ],
+  [
+   "modules/openxr",
+   {
+    "commits": 39,
+    "authors": 17,
+    "add": 3858,
+    "dele": 772,
+    "fixes": 16,
+    "api_commits": 13
+   }
+  ],
+  [
+   "core/io",
+   {
+    "commits": 38,
+    "authors": 25,
+    "add": 1138,
+    "dele": 369,
+    "fixes": 13,
+    "api_commits": 5
+   }
+  ],
+  [
+   "editor/themes",
+   {
+    "commits": 38,
+    "authors": 22,
+    "add": 772,
+    "dele": 609,
+    "fixes": 17,
+    "api_commits": 9
+   }
+  ],
+  [
+   "platform/windows",
+   {
+    "commits": 36,
+    "authors": 18,
+    "add": 2756,
+    "dele": 1204,
+    "fixes": 12,
+    "api_commits": 5
+   }
+  ],
+  [
+   "core/variant",
+   {
+    "commits": 36,
+    "authors": 13,
+    "add": 885,
+    "dele": 808,
+    "fixes": 4,
+    "api_commits": 4
+   }
+  ],
+  [
+   "editor/debugger",
+   {
+    "commits": 34,
+    "authors": 21,
+    "add": 403,
+    "dele": 191,
+    "fixes": 14,
+    "api_commits": 4
+   }
+  ],
+  [
+   "editor/scene/2d",
+   {
+    "commits": 33,
+    "authors": 17,
+    "add": 508,
+    "dele": 16943,
+    "fixes": 11,
+    "api_commits": 5
+   }
+  ],
+  [
+   "scene/debugger",
+   {
+    "commits": 32,
+    "authors": 17,
+    "add": 4187,
+    "dele": 766,
+    "fixes": 15,
+    "api_commits": 3
+   }
+  ],
+  [
+   "editor/project_manager",
+   {
+    "commits": 32,
+    "authors": 17,
+    "add": 458,
+    "dele": 145,
+    "fixes": 13,
+    "api_commits": 1
+   }
+  ],
+  [
+   "editor/animation",
+   {
+    "commits": 31,
+    "authors": 18,
+    "add": 354,
+    "dele": 207,
+    "fixes": 12,
+    "api_commits": 2
+   }
+  ],
+  [
+   "editor/import",
+   {
+    "commits": 30,
+    "authors": 21,
+    "add": 797,
+    "dele": 217,
+    "fixes": 10,
+    "api_commits": 7
+   }
+  ],
+  [
+   "main/(root)",
+   {
+    "commits": 30,
+    "authors": 18,
+    "add": 347,
+    "dele": 185,
+    "fixes": 5,
+    "api_commits": 10
+   }
+  ],
+  [
+   "editor/asset_library",
+   {
+    "commits": 27,
+    "authors": 11,
+    "add": 388,
+    "dele": 143,
+    "fixes": 12,
+    "api_commits": 3
+   }
+  ],
+  [
+   "(root)/.github",
+   {
+    "commits": 27,
+    "authors": 16,
+    "add": 181,
+    "dele": 35,
+    "fixes": 4,
+    "api_commits": 6
+   }
+  ],
+  [
+   "tests/core",
+   {
+    "commits": 27,
+    "authors": 18,
+    "add": 3111,
+    "dele": 438,
+    "fixes": 9,
+    "api_commits": 4
+   }
+  ],
+  [
+   "core/string",
+   {
+    "commits": 26,
+    "authors": 13,
+    "add": 1319,
+    "dele": 272,
+    "fixes": 8,
+    "api_commits": 6
+   }
+  ],
+  [
+   "core/templates",
+   {
+    "commits": 26,
+    "authors": 9,
+    "add": 569,
+    "dele": 492,
+    "fixes": 6,
+    "api_commits": 0
+   }
+  ],
+  [
+   "platform/web",
+   {
+    "commits": 25,
+    "authors": 11,
+    "add": 1775,
+    "dele": 989,
+    "fixes": 7,
+    "api_commits": 2
+   }
+  ],
+  [
+   "editor/icons",
+   {
+    "commits": 25,
+    "authors": 15,
+    "add": 51,
+    "dele": 30,
+    "fixes": 2,
+    "api_commits": 9
+   }
+  ],
+  [
+   "editor/scene/gui",
+   {
+    "commits": 23,
+    "authors": 11,
+    "add": 712,
+    "dele": 331,
+    "fixes": 5,
+    "api_commits": 3
+   }
+  ],
+  [
+   "editor/run",
+   {
+    "commits": 22,
+    "authors": 11,
+    "add": 792,
+    "dele": 445,
+    "fixes": 5,
+    "api_commits": 1
+   }
+  ],
+  [
+   "editor/doc",
+   {
+    "commits": 22,
+    "authors": 16,
+    "add": 295,
+    "dele": 146,
+    "fixes": 4,
+    "api_commits": 9
+   }
+  ],
+  [
+   "tests/scene",
+   {
+    "commits": 22,
+    "authors": 16,
+    "add": 2363,
+    "dele": 80,
+    "fixes": 5,
+    "api_commits": 6
+   }
+  ],
+  [
+   "modules/gltf",
+   {
+    "commits": 21,
+    "authors": 15,
+    "add": 188,
+    "dele": 142,
+    "fixes": 7,
+    "api_commits": 3
+   }
+  ],
+  [
+   "scene/animation",
+   {
+    "commits": 21,
+    "authors": 13,
+    "add": 437,
+    "dele": 182,
+    "fixes": 7,
+    "api_commits": 6
+   }
+  ],
+  [
+   "modules/jolt_physics",
+   {
+    "commits": 19,
+    "authors": 10,
+    "add": 771,
+    "dele": 828,
+    "fixes": 4,
+    "api_commits": 4
+   }
+  ],
+  [
+   "editor/shader",
+   {
+    "commits": 19,
+    "authors": 11,
+    "add": 3519,
+    "dele": 5227,
+    "fixes": 2,
+    "api_commits": 2
+   }
+  ],
+  [
+   "drivers/apple_embedded",
+   {
+    "commits": 18,
+    "authors": 14,
+    "add": 1283,
+    "dele": 1025,
+    "fixes": 4,
+    "api_commits": 5
+   }
+  ],
+  [
+   "drivers/metal",
+   {
+    "commits": 18,
+    "authors": 7,
+    "add": 2320,
+    "dele": 824,
+    "fixes": 8,
+    "api_commits": 3
+   }
+  ],
+  [
+   "core/math",
+   {
+    "commits": 18,
+    "authors": 14,
+    "add": 722,
+    "dele": 400,
+    "fixes": 4,
+    "api_commits": 4
+   }
+  ],
+  [
+   "modules/gridmap",
+   {
+    "commits": 18,
+    "authors": 9,
+    "add": 468,
+    "dele": 148,
+    "fixes": 6,
+    "api_commits": 4
+   }
+  ],
+  [
+   "modules/visual_shader",
+   {
+    "commits": 17,
+    "authors": 13,
+    "add": 5747,
+    "dele": 2443,
+    "fixes": 2,
+    "api_commits": 2
+   }
+  ],
+  [
+   "modules/tilemap",
+   {
+    "commits": 17,
+    "authors": 11,
+    "add": 33971,
+    "dele": 112,
+    "fixes": 4,
+    "api_commits": 4
+   }
+  ],
+  [
+   "platform/ios",
+   {
+    "commits": 16,
+    "authors": 11,
+    "add": 379,
+    "dele": 300,
+    "fixes": 4,
+    "api_commits": 4
+   }
+  ],
+  [
+   "drivers/vulkan",
+   {
+    "commits": 16,
+    "authors": 10,
+    "add": 420,
+    "dele": 176,
+    "fixes": 9,
+    "api_commits": 0
+   }
+  ],
+  [
+   "scene/2d",
+   {
+    "commits": 16,
+    "authors": 14,
+    "add": 61,
+    "dele": 6062,
+    "fixes": 3,
+    "api_commits": 4
+   }
+  ]
+ ],
+ "layers": [
+  [
+   "Editor",
+   {
+    "commits": 701,
+    "authors": 168,
+    "churn": 82548
+   }
+  ],
+  [
+   "Scene / nodes",
+   {
+    "commits": 363,
+    "authors": 134,
+    "churn": 38549
+   }
+  ],
+  [
+   "API: class reference docs",
+   {
+    "commits": 252,
+    "authors": 109,
+    "churn": 11104
+   }
+  ],
+  [
+   "Platform ports",
+   {
+    "commits": 206,
+    "authors": 60,
+    "churn": 20490
+   }
+  ],
+  [
+   "Core",
+   {
+    "commits": 203,
+    "authors": 71,
+    "churn": 11152
+   }
+  ],
+  [
+   "Servers (engine subsystems)",
+   {
+    "commits": 199,
+    "authors": 87,
+    "churn": 11836
+   }
+  ],
+  [
+   "Drivers (GPU/OS backends)",
+   {
+    "commits": 141,
+    "authors": 68,
+    "churn": 9916
+   }
+  ],
+  [
+   "Module: scripting (gdscript)",
+   {
+    "commits": 119,
+    "authors": 33,
+    "churn": 9916
+   }
+  ],
+  [
+   "Tests",
+   {
+    "commits": 56,
+    "authors": 34,
+    "churn": 6215
+   }
+  ],
+  [
+   "Module: XR",
+   {
+    "commits": 49,
+    "authors": 20,
+    "churn": 7932
+   }
+  ],
+  [
+   "Module: scripting (mono)",
+   {
+    "commits": 47,
+    "authors": 18,
+    "churn": 7223
+   }
+  ],
+  [
+   "Build / root",
+   {
+    "commits": 42,
+    "authors": 22,
+    "churn": 596
+   }
+  ],
+  [
+   "Main loop / bootstrap",
+   {
+    "commits": 30,
+    "authors": 18,
+    "churn": 532
+   }
+  ],
+  [
+   "Misc / tooling",
+   {
+    "commits": 27,
+    "authors": 11,
+    "churn": 1234
+   }
+  ],
+  [
+   "CI",
+   {
+    "commits": 27,
+    "authors": 16,
+    "churn": 216
+   }
+  ],
+  [
+   "Module: gltf",
+   {
+    "commits": 20,
+    "authors": 14,
+    "churn": 328
+   }
+  ],
+  [
+   "Module: jolt_physics",
+   {
+    "commits": 19,
+    "authors": 10,
+    "churn": 1599
+   }
+  ],
+  [
+   "Module: gridmap",
+   {
+    "commits": 17,
+    "authors": 8,
+    "churn": 614
+   }
+  ],
+  [
+   "Module: visual_shader",
+   {
+    "commits": 16,
+    "authors": 12,
+    "churn": 8184
+   }
+  ],
+  [
+   "Module: tilemap",
+   {
+    "commits": 15,
+    "authors": 10,
+    "churn": 31526
+   }
+  ],
+  [
+   "Module: text_server_adv",
+   {
+    "commits": 12,
+    "authors": 7,
+    "churn": 104
+   }
+  ],
+  [
+   "Module: csg",
+   {
+    "commits": 12,
+    "authors": 10,
+    "churn": 587
+   }
+  ],
+  [
+   "Module: godot_physics_3d",
+   {
+    "commits": 11,
+    "authors": 9,
+    "churn": 309
+   }
+  ],
+  [
+   "API: GDExtension interface",
+   {
+    "commits": 10,
+    "authors": 8,
+    "churn": 144
+   }
+  ],
+  [
+   "Docs (other)",
+   {
+    "commits": 8,
+    "authors": 6,
+    "churn": 240
+   }
+  ],
+  [
+   "Module: text_server_fb",
+   {
+    "commits": 8,
+    "authors": 7,
+    "churn": 43
+   }
+  ],
+  [
+   "Module: navigation_3d",
+   {
+    "commits": 7,
+    "authors": 7,
+    "churn": 67
+   }
+  ],
+  [
+   "Module: lightmapper_rd",
+   {
+    "commits": 6,
+    "authors": 5,
+    "churn": 154
+   }
+  ],
+  [
+   "Module: mbedtls",
+   {
+    "commits": 6,
+    "authors": 4,
+    "churn": 318
+   }
+  ],
+  [
+   "Module: godot_physics_2d",
+   {
+    "commits": 6,
+    "authors": 5,
+    "churn": 599
+   }
+  ],
+  [
+   "Module: navigation_2d",
+   {
+    "commits": 6,
+    "authors": 6,
+    "churn": 29
+   }
+  ],
+  [
+   "Module: mp3",
+   {
+    "commits": 6,
+    "authors": 3,
+    "churn": 133
+   }
+  ],
+  [
+   "Module: interactive_music",
+   {
+    "commits": 5,
+    "authors": 5,
+    "churn": 24
+   }
+  ],
+  [
+   "Module: betsy",
+   {
+    "commits": 5,
+    "authors": 3,
+    "churn": 146
+   }
+  ],
+  [
+   "Module: multiplayer",
+   {
+    "commits": 5,
+    "authors": 5,
+    "churn": 33
+   }
+  ],
+  [
+   "Module: etcpak",
+   {
+    "commits": 4,
+    "authors": 3,
+    "churn": 47
+   }
+  ],
+  [
+   "Module: fbx",
+   {
+    "commits": 4,
+    "authors": 3,
+    "churn": 11
+   }
+  ],
+  [
+   "Module: objectdb_profiler",
+   {
+    "commits": 3,
+    "authors": 3,
+    "churn": 32
+   }
+  ],
+  [
+   "Module: texture_streaming",
+   {
+    "commits": 3,
+    "authors": 2,
+    "churn": 1679
+   }
+  ],
+  [
+   "Module: noise",
+   {
+    "commits": 3,
+    "authors": 3,
+    "churn": 9
+   }
+  ],
+  [
+   "Module: vorbis",
+   {
+    "commits": 3,
+    "authors": 3,
+    "churn": 100
+   }
+  ],
+  [
+   "Module: astcenc",
+   {
+    "commits": 3,
+    "authors": 2,
+    "churn": 84
+   }
+  ],
+  [
+   "Module: basis_universal",
+   {
+    "commits": 3,
+    "authors": 2,
+    "churn": 155
+   }
+  ],
+  [
+   "Module: cvtt",
+   {
+    "commits": 3,
+    "authors": 3,
+    "churn": 29
+   }
+  ],
+  [
+   "Module: jpg",
+   {
+    "commits": 2,
+    "authors": 1,
+    "churn": 14
+   }
+  ],
+  [
+   "Module: meshoptimizer",
+   {
+    "commits": 2,
+    "authors": 2,
+    "churn": 3
+   }
+  ],
+  [
+   "Module: dds",
+   {
+    "commits": 2,
+    "authors": 2,
+    "churn": 4
+   }
+  ],
+  [
+   "Module: camera",
+   {
+    "commits": 2,
+    "authors": 2,
+    "churn": 61
+   }
+  ],
+  [
+   "Module: raycast",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 3
+   }
+  ],
+  [
+   "Module: hdr",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 6
+   }
+  ],
+  [
+   "Module: enet",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 63
+   }
+  ],
+  [
+   "Module: websocket",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 2
+   }
+  ],
+  [
+   "Module: svg",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 2
+   }
+  ],
+  [
+   "Module: regex",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 1197
+   }
+  ],
+  [
+   "Module: bcdec",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 2
+   }
+  ],
+  [
+   "Module: scripting (jsonrpc)",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 166
+   }
+  ],
+  [
+   "Module: webrtc",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 4
+   }
+  ],
+  [
+   "Module: ktx",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 15
+   }
+  ],
+  [
+   "Module: zip",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 9
+   }
+  ],
+  [
+   "Module: theora",
+   {
+    "commits": 1,
+    "authors": 1,
+    "churn": 11
+   }
+  ]
+ ],
+ "files": [
+  [
+   "editor/editor_node.cpp",
+   {
+    "commits": 69,
+    "authors": 32,
+    "churn": 1366,
+    "fixes": 14
+   }
+  ],
+  [
+   "editor/script/script_editor_plugin.cpp",
+   {
+    "commits": 48,
+    "authors": 21,
+    "churn": 5588,
+    "fixes": 15
+   }
+  ],
+  [
+   "editor/docks/scene_tree_dock.cpp",
+   {
+    "commits": 48,
+    "authors": 19,
+    "churn": 1621,
+    "fixes": 26
+   }
+  ],
+  [
+   "modules/gdscript/gdscript_editor.cpp",
+   {
+    "commits": 33,
+    "authors": 11,
+    "churn": 1181,
+    "fixes": 7
+   }
+  ],
+  [
+   "editor/docks/filesystem_dock.cpp",
+   {
+    "commits": 33,
+    "authors": 16,
+    "churn": 1070,
+    "fixes": 14
+   }
+  ],
+  [
+   "editor/scene/canvas_item_editor_plugin.cpp",
+   {
+    "commits": 31,
+    "authors": 14,
+    "churn": 4570,
+    "fixes": 11
+   }
+  ],
+  [
+   "editor/script/script_text_editor.cpp",
+   {
+    "commits": 31,
+    "authors": 10,
+    "churn": 1212,
+    "fixes": 6
+   }
+  ],
+  [
+   "editor/inspector/editor_inspector.cpp",
+   {
+    "commits": 31,
+    "authors": 17,
+    "churn": 854,
+    "fixes": 10
+   }
+  ],
+  [
+   "editor/themes/theme_modern.cpp",
+   {
+    "commits": 28,
+    "authors": 15,
+    "churn": 869,
+    "fixes": 11
+   }
+  ],
+  [
+   "main/main.cpp",
+   {
+    "commits": 28,
+    "authors": 16,
+    "churn": 498,
+    "fixes": 4
+   }
+  ],
+  [
+   "editor/settings/editor_settings.cpp",
+   {
+    "commits": 28,
+    "authors": 16,
+    "churn": 208,
+    "fixes": 4
+   }
+  ],
+  [
+   "modules/gdscript/gdscript_analyzer.cpp",
+   {
+    "commits": 27,
+    "authors": 10,
+    "churn": 2097,
+    "fixes": 5
+   }
+  ],
+  [
+   "scene/gui/tree.cpp",
+   {
+    "commits": 26,
+    "authors": 18,
+    "churn": 555,
+    "fixes": 19
+   }
+  ],
+  [
+   "editor/asset_library/asset_library_editor_plugin.cpp",
+   {
+    "commits": 26,
+    "authors": 10,
+    "churn": 463,
+    "fixes": 11
+   }
+  ],
+  [
+   "servers/rendering/renderer_rd/forward_clustered/render_forward_clustered.cpp",
+   {
+    "commits": 25,
+    "authors": 19,
+    "churn": 334,
+    "fixes": 6
+   }
+  ],
+  [
+   "drivers/gles3/rasterizer_scene_gles3.cpp",
+   {
+    "commits": 24,
+    "authors": 15,
+    "churn": 853,
+    "fixes": 5
+   }
+  ],
+  [
+   "editor/editor_node.h",
+   {
+    "commits": 23,
+    "authors": 13,
+    "churn": 78,
+    "fixes": 4
+   }
+  ],
+  [
+   "editor/scene/3d/node_3d_editor_plugin.cpp",
+   {
+    "commits": 22,
+    "authors": 15,
+    "churn": 8164,
+    "fixes": 8
+   }
+  ],
+  [
+   "modules/gdscript/gdscript.cpp",
+   {
+    "commits": 22,
+    "authors": 10,
+    "churn": 630,
+    "fixes": 4
+   }
+  ],
+  [
+   "servers/rendering/rendering_device.cpp",
+   {
+    "commits": 22,
+    "authors": 12,
+    "churn": 537,
+    "fixes": 5
+   }
+  ],
+  [
+   "editor/script/script_editor_plugin.h",
+   {
+    "commits": 21,
+    "authors": 8,
+    "churn": 462,
+    "fixes": 4
+   }
+  ],
+  [
+   "servers/rendering/renderer_rd/forward_mobile/render_forward_mobile.cpp",
+   {
+    "commits": 21,
+    "authors": 15,
+    "churn": 253,
+    "fixes": 6
+   }
+  ],
+  [
+   "editor/themes/theme_classic.cpp",
+   {
+    "commits": 20,
+    "authors": 12,
+    "churn": 472,
+    "fixes": 5
+   }
+  ],
+  [
+   "scene/gui/rich_text_label.cpp",
+   {
+    "commits": 19,
+    "authors": 9,
+    "churn": 802,
+    "fixes": 9
+   }
+  ],
+  [
+   "editor/scene/3d/node_3d_editor_viewport.cpp",
+   {
+    "commits": 18,
+    "authors": 12,
+    "churn": 8034,
+    "fixes": 8
+   }
+  ],
+  [
+   "editor/script/find_in_files.cpp",
+   {
+    "commits": 18,
+    "authors": 6,
+    "churn": 1658,
+    "fixes": 8
+   }
+  ],
+  [
+   "editor/run/game_view_plugin.cpp",
+   {
+    "commits": 18,
+    "authors": 9,
+    "churn": 1028,
+    "fixes": 4
+   }
+  ],
+  [
+   "modules/gdscript/gdscript_parser.cpp",
+   {
+    "commits": 18,
+    "authors": 8,
+    "churn": 654,
+    "fixes": 2
+   }
+  ],
+  [
+   "editor/doc/editor_help.cpp",
+   {
+    "commits": 18,
+    "authors": 15,
+    "churn": 380,
+    "fixes": 4
+   }
+  ],
+  [
+   "drivers/gles3/shaders/scene.glsl",
+   {
+    "commits": 18,
+    "authors": 13,
+    "churn": 309,
+    "fixes": 10
+   }
+  ],
+  [
+   "editor/inspector/editor_properties.cpp",
+   {
+    "commits": 18,
+    "authors": 13,
+    "churn": 182,
+    "fixes": 4
+   }
+  ],
+  [
+   "modules/gdscript/gdscript.h",
+   {
+    "commits": 18,
+    "authors": 7,
+    "churn": 119,
+    "fixes": 2
+   }
+  ],
+  [
+   "editor/export/editor_export_platform_apple_embedded.cpp",
+   {
+    "commits": 17,
+    "authors": 10,
+    "churn": 433,
+    "fixes": 6
+   }
+  ],
+  [
+   "editor/scene/scene_tree_editor.cpp",
+   {
+    "commits": 17,
+    "authors": 9,
+    "churn": 229,
+    "fixes": 11
+   }
+  ],
+  [
+   "scene/gui/text_edit.cpp",
+   {
+    "commits": 16,
+    "authors": 11,
+    "churn": 1733,
+    "fixes": 3
+   }
+  ],
+  [
+   "core/object/script_language.h",
+   {
+    "commits": 16,
+    "authors": 4,
+    "churn": 419,
+    "fixes": 2
+   }
+  ],
+  [
+   "editor/project_manager/project_manager.cpp",
+   {
+    "commits": 16,
+    "authors": 12,
+    "churn": 162,
+    "fixes": 5
+   }
+  ],
+  [
+   "servers/rendering/rendering_server.cpp",
+   {
+    "commits": 16,
+    "authors": 13,
+    "churn": 42,
+    "fixes": 1
+   }
+  ],
+  [
+   "platform/android/export/export_plugin.cpp",
+   {
+    "commits": 15,
+    "authors": 9,
+    "churn": 871,
+    "fixes": 3
+   }
+  ],
+  [
+   "scene/gui/popup_menu.cpp",
+   {
+    "commits": 15,
+    "authors": 8,
+    "churn": 673,
+    "fixes": 9
+   }
+  ],
+  [
+   "scene/gui/control.cpp",
+   {
+    "commits": 15,
+    "authors": 7,
+    "churn": 635,
+    "fixes": 7
+   }
+  ],
+  [
+   "drivers/vulkan/rendering_device_driver_vulkan.cpp",
+   {
+    "commits": 15,
+    "authors": 10,
+    "churn": 534,
+    "fixes": 9
+   }
+  ],
+  [
+   "servers/rendering/renderer_rd/shaders/forward_clustered/scene_forward_clustered.glsl",
+   {
+    "commits": 15,
+    "authors": 12,
+    "churn": 349,
+    "fixes": 6
+   }
+  ],
+  [
+   "modules/gltf/gltf_document.cpp",
+   {
+    "commits": 15,
+    "authors": 12,
+    "churn": 301,
+    "fixes": 4
+   }
+  ],
+  [
+   "scene/main/viewport.cpp",
+   {
+    "commits": 15,
+    "authors": 9,
+    "churn": 125,
+    "fixes": 6
+   }
+  ],
+  [
+   "modules/visual_shader/editor/visual_shader_editor_plugin.cpp",
+   {
+    "commits": 14,
+    "authors": 10,
+    "churn": 2631,
+    "fixes": 1
+   }
+  ],
+  [
+   "servers/rendering/shader_language.cpp",
+   {
+    "commits": 14,
+    "authors": 9,
+    "churn": 378,
+    "fixes": 7
+   }
+  ],
+  [
+   "editor/docks/editor_dock_manager.cpp",
+   {
+    "commits": 14,
+    "authors": 5,
+    "churn": 198,
+    "fixes": 4
+   }
+  ],
+  [
+   "SConstruct",
+   {
+    "commits": 14,
+    "authors": 9,
+    "churn": 187,
+    "fixes": 1
+   }
+  ],
+  [
+   "scene/gui/text_edit.h",
+   {
+    "commits": 14,
+    "authors": 10,
+    "churn": 152,
+    "fixes": 2
+   }
+  ]
+ ],
+ "area_pairs": [
+  {
+   "a": "drivers/gles3",
+   "b": "servers/rendering",
+   "together": 36,
+   "conf_a_b": 0.57,
+   "conf_b_a": 0.24,
+   "jaccard": 0.2
+  },
+  {
+   "a": "core/object",
+   "b": "modules/gdscript",
+   "together": 20,
+   "conf_a_b": 0.37,
+   "conf_b_a": 0.18,
+   "jaccard": 0.14
+  },
+  {
+   "a": "editor/docks",
+   "b": "editor/scene",
+   "together": 15,
+   "conf_a_b": 0.15,
+   "conf_b_a": 0.1,
+   "jaccard": 0.07
+  },
+  {
+   "a": "core/object",
+   "b": "modules/mono",
+   "together": 14,
+   "conf_a_b": 0.26,
+   "conf_b_a": 0.33,
+   "jaccard": 0.17
+  },
+  {
+   "a": "scene/2d",
+   "b": "scene/3d",
+   "together": 13,
+   "conf_a_b": 0.65,
+   "conf_b_a": 0.27,
+   "jaccard": 0.23
+  },
+  {
+   "a": "editor/script",
+   "b": "modules/gdscript",
+   "together": 13,
+   "conf_a_b": 0.17,
+   "conf_b_a": 0.12,
+   "jaccard": 0.07
+  },
+  {
+   "a": "core/object",
+   "b": "editor/script",
+   "together": 12,
+   "conf_a_b": 0.22,
+   "conf_b_a": 0.16,
+   "jaccard": 0.1
+  },
+  {
+   "a": "modules/gdscript",
+   "b": "modules/mono",
+   "together": 12,
+   "conf_a_b": 0.11,
+   "conf_b_a": 0.29,
+   "jaccard": 0.08
+  },
+  {
+   "a": "editor/(root)",
+   "b": "editor/docks",
+   "together": 12,
+   "conf_a_b": 0.15,
+   "conf_b_a": 0.12,
+   "jaccard": 0.07
+  },
+  {
+   "a": "editor/inspector",
+   "b": "editor/scene",
+   "together": 12,
+   "conf_a_b": 0.19,
+   "conf_b_a": 0.08,
+   "jaccard": 0.06
+  },
+  {
+   "a": "platform/linuxbsd",
+   "b": "platform/windows",
+   "together": 11,
+   "conf_a_b": 0.23,
+   "conf_b_a": 0.32,
+   "jaccard": 0.15
+  },
+  {
+   "a": "editor/scene",
+   "b": "editor/script",
+   "together": 11,
+   "conf_a_b": 0.08,
+   "conf_b_a": 0.14,
+   "jaccard": 0.05
+  },
+  {
+   "a": "editor/themes",
+   "b": "scene/gui",
+   "together": 10,
+   "conf_a_b": 0.28,
+   "conf_b_a": 0.06,
+   "jaccard": 0.05
+  },
+  {
+   "a": "editor/script",
+   "b": "scene/gui",
+   "together": 10,
+   "conf_a_b": 0.13,
+   "conf_b_a": 0.06,
+   "jaccard": 0.04
+  },
+  {
+   "a": "platform/linuxbsd",
+   "b": "platform/macos",
+   "together": 9,
+   "conf_a_b": 0.19,
+   "conf_b_a": 0.24,
+   "jaccard": 0.12
+  },
+  {
+   "a": "core/object",
+   "b": "core/variant",
+   "together": 9,
+   "conf_a_b": 0.17,
+   "conf_b_a": 0.26,
+   "jaccard": 0.11
+  },
+  {
+   "a": "editor/(root)",
+   "b": "editor/settings",
+   "together": 9,
+   "conf_a_b": 0.11,
+   "conf_b_a": 0.14,
+   "jaccard": 0.07
+  },
+  {
+   "a": "scene/gui",
+   "b": "scene/main",
+   "together": 9,
+   "conf_a_b": 0.05,
+   "conf_b_a": 0.23,
+   "jaccard": 0.04
+  },
+  {
+   "a": "editor/(root)",
+   "b": "editor/scene",
+   "together": 9,
+   "conf_a_b": 0.11,
+   "conf_b_a": 0.06,
+   "jaccard": 0.04
+  },
+  {
+   "a": "platform/macos",
+   "b": "platform/windows",
+   "together": 8,
+   "conf_a_b": 0.21,
+   "conf_b_a": 0.24,
+   "jaccard": 0.12
+  },
+  {
+   "a": "editor/export",
+   "b": "platform/android",
+   "together": 8,
+   "conf_a_b": 0.17,
+   "conf_b_a": 0.12,
+   "jaccard": 0.07
+  },
+  {
+   "a": "editor/(root)",
+   "b": "editor/inspector",
+   "together": 8,
+   "conf_a_b": 0.1,
+   "conf_b_a": 0.12,
+   "jaccard": 0.06
+  },
+  {
+   "a": "editor/script",
+   "b": "editor/settings",
+   "together": 8,
+   "conf_a_b": 0.1,
+   "conf_b_a": 0.13,
+   "jaccard": 0.06
+  },
+  {
+   "a": "editor/(root)",
+   "b": "editor/script",
+   "together": 8,
+   "conf_a_b": 0.1,
+   "conf_b_a": 0.1,
+   "jaccard": 0.05
+  },
+  {
+   "a": "editor/scene",
+   "b": "scene/gui",
+   "together": 8,
+   "conf_a_b": 0.06,
+   "conf_b_a": 0.05,
+   "jaccard": 0.03
+  },
+  {
+   "a": "modules/godot_physics_3d",
+   "b": "modules/jolt_physics",
+   "together": 7,
+   "conf_a_b": 0.64,
+   "conf_b_a": 0.39,
+   "jaccard": 0.32
+  },
+  {
+   "a": "core/variant",
+   "b": "tests/core",
+   "together": 7,
+   "conf_a_b": 0.21,
+   "conf_b_a": 0.3,
+   "jaccard": 0.14
+  },
+  {
+   "a": "(root)",
+   "b": "(root)/.github",
+   "together": 7,
+   "conf_a_b": 0.19,
+   "conf_b_a": 0.29,
+   "jaccard": 0.13
+  },
+  {
+   "a": "editor/export",
+   "b": "platform/ios",
+   "together": 7,
+   "conf_a_b": 0.15,
+   "conf_b_a": 0.5,
+   "jaccard": 0.13
+  },
+  {
+   "a": "editor/script",
+   "b": "editor/shader",
+   "together": 7,
+   "conf_a_b": 0.09,
+   "conf_b_a": 0.5,
+   "jaccard": 0.08
+  },
+  {
+   "a": "editor/gui",
+   "b": "editor/script",
+   "together": 7,
+   "conf_a_b": 0.14,
+   "conf_b_a": 0.09,
+   "jaccard": 0.06
+  },
+  {
+   "a": "editor/docks",
+   "b": "editor/script",
+   "together": 7,
+   "conf_a_b": 0.07,
+   "conf_b_a": 0.09,
+   "jaccard": 0.04
+  },
+  {
+   "a": "editor/docks",
+   "b": "editor/inspector",
+   "together": 7,
+   "conf_a_b": 0.07,
+   "conf_b_a": 0.11,
+   "jaccard": 0.04
+  },
+  {
+   "a": "drivers/vulkan",
+   "b": "servers/rendering",
+   "together": 7,
+   "conf_a_b": 0.44,
+   "conf_b_a": 0.05,
+   "jaccard": 0.04
+  },
+  {
+   "a": "editor/scene",
+   "b": "editor/settings",
+   "together": 7,
+   "conf_a_b": 0.05,
+   "conf_b_a": 0.11,
+   "jaccard": 0.03
+  },
+  {
+   "a": "modules/godot_physics_3d",
+   "b": "servers/physics_3d",
+   "together": 6,
+   "conf_a_b": 0.55,
+   "conf_b_a": 0.75,
+   "jaccard": 0.46
+  },
+  {
+   "a": "modules/text_server_adv",
+   "b": "modules/text_server_fb",
+   "together": 6,
+   "conf_a_b": 0.5,
+   "conf_b_a": 0.75,
+   "jaccard": 0.43
+  },
+  {
+   "a": "platform/ios",
+   "b": "platform/visionos",
+   "together": 6,
+   "conf_a_b": 0.43,
+   "conf_b_a": 0.55,
+   "jaccard": 0.32
+  },
+  {
+   "a": "modules/jolt_physics",
+   "b": "servers/physics_3d",
+   "together": 6,
+   "conf_a_b": 0.33,
+   "conf_b_a": 0.75,
+   "jaccard": 0.3
+  },
+  {
+   "a": "(root)",
+   "b": "misc/dist",
+   "together": 6,
+   "conf_a_b": 0.16,
+   "conf_b_a": 0.46,
+   "jaccard": 0.14
+  }
+ ],
+ "file_pairs": [
+  {
+   "a": "editor/themes/theme_classic.cpp",
+   "b": "editor/themes/theme_modern.cpp",
+   "together": 18,
+   "conf_a_b": 0.95,
+   "conf_b_a": 0.69,
+   "jaccard": 0.67
+  },
+  {
+   "a": "servers/rendering/renderer_rd/forward_clustered/render_forward_clustered.cpp",
+   "b": "servers/rendering/renderer_rd/forward_mobile/render_forward_mobile.cpp",
+   "together": 12,
+   "conf_a_b": 0.55,
+   "conf_b_a": 0.67,
+   "jaccard": 0.43
+  },
+  {
+   "a": "core/object/script_language.h",
+   "b": "modules/gdscript/gdscript_editor.cpp",
+   "together": 12,
+   "conf_a_b": 0.8,
+   "conf_b_a": 0.4,
+   "jaccard": 0.36
+  },
+  {
+   "a": "editor/script/script_editor_plugin.cpp",
+   "b": "editor/script/script_text_editor.cpp",
+   "together": 12,
+   "conf_a_b": 0.27,
+   "conf_b_a": 0.41,
+   "jaccard": 0.2
+  },
+  {
+   "a": "core/object/script_language.h",
+   "b": "core/object/script_language_extension.h",
+   "together": 11,
+   "conf_a_b": 0.73,
+   "conf_b_a": 1.0,
+   "jaccard": 0.73
+  },
+  {
+   "a": "core/object/script_language_extension.h",
+   "b": "modules/gdscript/gdscript.h",
+   "together": 10,
+   "conf_a_b": 0.91,
+   "conf_b_a": 0.56,
+   "jaccard": 0.53
+  },
+  {
+   "a": "core/object/script_language.h",
+   "b": "modules/gdscript/gdscript.h",
+   "together": 10,
+   "conf_a_b": 0.67,
+   "conf_b_a": 0.56,
+   "jaccard": 0.43
+  },
+  {
+   "a": "core/object/script_language_extension.h",
+   "b": "modules/gdscript/gdscript_editor.cpp",
+   "together": 10,
+   "conf_a_b": 0.91,
+   "conf_b_a": 0.33,
+   "jaccard": 0.32
+  },
+  {
+   "a": "core/object/script_language_extension.h",
+   "b": "modules/mono/csharp_script.h",
+   "together": 9,
+   "conf_a_b": 0.82,
+   "conf_b_a": 0.9,
+   "jaccard": 0.75
+  },
+  {
+   "a": "core/object/script_language.h",
+   "b": "modules/mono/csharp_script.h",
+   "together": 9,
+   "conf_a_b": 0.6,
+   "conf_b_a": 0.9,
+   "jaccard": 0.56
+  },
+  {
+   "a": "modules/gdscript/gdscript.h",
+   "b": "modules/mono/csharp_script.h",
+   "together": 9,
+   "conf_a_b": 0.5,
+   "conf_b_a": 0.9,
+   "jaccard": 0.47
+  },
+  {
+   "a": "core/object/script_language.h",
+   "b": "editor/script/script_text_editor.cpp",
+   "together": 9,
+   "conf_a_b": 0.6,
+   "conf_b_a": 0.31,
+   "jaccard": 0.26
+  },
+  {
+   "a": "modules/gdscript/gdscript.h",
+   "b": "modules/gdscript/gdscript_editor.cpp",
+   "together": 9,
+   "conf_a_b": 0.5,
+   "conf_b_a": 0.3,
+   "jaccard": 0.23
+  },
+  {
+   "a": "editor/script/script_text_editor.cpp",
+   "b": "modules/gdscript/gdscript_editor.cpp",
+   "together": 9,
+   "conf_a_b": 0.31,
+   "conf_b_a": 0.3,
+   "jaccard": 0.18
+  },
+  {
+   "a": "core/object/editor_language.h",
+   "b": "modules/gdscript/editor/gdscript_editor_language.h",
+   "together": 8,
+   "conf_a_b": 1.0,
+   "conf_b_a": 1.0,
+   "jaccard": 1.0
+  },
+  {
+   "a": "core/object/editor_language.h",
+   "b": "editor/script/script_text_editor.cpp",
+   "together": 8,
+   "conf_a_b": 1.0,
+   "conf_b_a": 0.28,
+   "jaccard": 0.28
+  },
+  {
+   "a": "editor/script/script_text_editor.cpp",
+   "b": "modules/gdscript/editor/gdscript_editor_language.h",
+   "together": 8,
+   "conf_a_b": 0.28,
+   "conf_b_a": 1.0,
+   "jaccard": 0.28
+  },
+  {
+   "a": "modules/gdscript/gdscript_analyzer.cpp",
+   "b": "modules/gdscript/gdscript_parser.h",
+   "together": 8,
+   "conf_a_b": 0.33,
+   "conf_b_a": 0.62,
+   "jaccard": 0.28
+  },
+  {
+   "a": "core/object/editor_language.h",
+   "b": "modules/gdscript/gdscript_editor.cpp",
+   "together": 8,
+   "conf_a_b": 1.0,
+   "conf_b_a": 0.27,
+   "jaccard": 0.27
+  },
+  {
+   "a": "modules/gdscript/editor/gdscript_editor_language.h",
+   "b": "modules/gdscript/gdscript_editor.cpp",
+   "together": 8,
+   "conf_a_b": 1.0,
+   "conf_b_a": 0.27,
+   "jaccard": 0.27
+  },
+  {
+   "a": "modules/gdscript/gdscript_editor.cpp",
+   "b": "modules/mono/csharp_script.h",
+   "together": 8,
+   "conf_a_b": 0.27,
+   "conf_b_a": 0.8,
+   "jaccard": 0.25
+  },
+  {
+   "a": "editor/script/script_editor_plugin.h",
+   "b": "editor/script/script_text_editor.cpp",
+   "together": 8,
+   "conf_a_b": 0.42,
+   "conf_b_a": 0.28,
+   "jaccard": 0.2
+  },
+  {
+   "a": "editor/animation/animation_blend_space_1d_editor.cpp",
+   "b": "editor/animation/animation_blend_space_2d_editor.cpp",
+   "together": 7,
+   "conf_a_b": 1.0,
+   "conf_b_a": 0.88,
+   "jaccard": 0.88
+  },
+  {
+   "a": "modules/gdscript/gdscript_parser.h",
+   "b": "modules/gdscript/language_server/gdscript_extend_parser.cpp",
+   "together": 7,
+   "conf_a_b": 0.54,
+   "conf_b_a": 0.78,
+   "jaccard": 0.47
+  },
+  {
+   "a": "core/object/editor_language.h",
+   "b": "core/object/script_language.h",
+   "together": 7,
+   "conf_a_b": 0.88,
+   "conf_b_a": 0.47,
+   "jaccard": 0.44
+  },
+  {
+   "a": "core/object/script_language.h",
+   "b": "modules/gdscript/editor/gdscript_editor_language.h",
+   "together": 7,
+   "conf_a_b": 0.47,
+   "conf_b_a": 0.88,
+   "jaccard": 0.44
+  },
+  {
+   "a": "editor/scene/3d/node_3d_editor_plugin.cpp",
+   "b": "editor/scene/3d/node_3d_editor_viewport.cpp",
+   "together": 7,
+   "conf_a_b": 0.35,
+   "conf_b_a": 0.41,
+   "jaccard": 0.23
+  },
+  {
+   "a": "modules/gdscript/gdscript_editor.cpp",
+   "b": "modules/gdscript/language_server/gdscript_extend_parser.cpp",
+   "together": 7,
+   "conf_a_b": 0.23,
+   "conf_b_a": 0.78,
+   "jaccard": 0.22
+  },
+  {
+   "a": "modules/gdscript/gdscript_analyzer.cpp",
+   "b": "modules/gdscript/gdscript_parser.cpp",
+   "together": 7,
+   "conf_a_b": 0.29,
+   "conf_b_a": 0.44,
+   "jaccard": 0.21
+  },
+  {
+   "a": "editor/script/script_editor_base.cpp",
+   "b": "editor/script/script_editor_plugin.cpp",
+   "together": 7,
+   "conf_a_b": 0.88,
+   "conf_b_a": 0.16,
+   "jaccard": 0.16
+  },
+  {
+   "a": "editor/script/script_editor_plugin.cpp",
+   "b": "editor/script/script_text_editor.h",
+   "together": 7,
+   "conf_a_b": 0.16,
+   "conf_b_a": 0.7,
+   "jaccard": 0.15
+  },
+  {
+   "a": "core/templates/local_vector.h",
+   "b": "core/templates/vector.h",
+   "together": 6,
+   "conf_a_b": 0.6,
+   "conf_b_a": 0.86,
+   "jaccard": 0.55
+  },
+  {
+   "a": "drivers/metal/metal_objects_shared.h",
+   "b": "drivers/metal/rendering_device_driver_metal.cpp",
+   "together": 6,
+   "conf_a_b": 1.0,
+   "conf_b_a": 0.5,
+   "jaccard": 0.5
+  },
+  {
+   "a": "servers/rendering/renderer_rd/shaders/forward_clustered/scene_forward_clustered.glsl",
+   "b": "servers/rendering/renderer_rd/shaders/forward_mobile/scene_forward_mobile.glsl",
+   "together": 6,
+   "conf_a_b": 0.5,
+   "conf_b_a": 0.86,
+   "jaccard": 0.46
+  },
+  {
+   "a": "editor/export/editor_export_platform_apple_embedded.cpp",
+   "b": "platform/ios/export/export_plugin.cpp",
+   "together": 6,
+   "conf_a_b": 0.38,
+   "conf_b_a": 0.86,
+   "jaccard": 0.35
+  },
+  {
+   "a": "modules/gdscript/gdscript_parser.cpp",
+   "b": "modules/gdscript/language_server/gdscript_extend_parser.cpp",
+   "together": 6,
+   "conf_a_b": 0.38,
+   "conf_b_a": 0.67,
+   "jaccard": 0.32
+  },
+  {
+   "a": "editor/script/script_editor_base.cpp",
+   "b": "editor/script/script_editor_plugin.h",
+   "together": 6,
+   "conf_a_b": 0.75,
+   "conf_b_a": 0.32,
+   "jaccard": 0.29
+  },
+  {
+   "a": "servers/rendering/renderer_rd/forward_mobile/render_forward_mobile.cpp",
+   "b": "servers/rendering/renderer_rd/forward_mobile/scene_shader_forward_mobile.cpp",
+   "together": 6,
+   "conf_a_b": 0.33,
+   "conf_b_a": 0.67,
+   "jaccard": 0.29
+  },
+  {
+   "a": "servers/rendering/rendering_device.cpp",
+   "b": "servers/rendering/rendering_device_commons.h",
+   "together": 6,
+   "conf_a_b": 0.32,
+   "conf_b_a": 0.75,
+   "jaccard": 0.29
+  },
+  {
+   "a": "drivers/gles3/rasterizer_scene_gles3.cpp",
+   "b": "drivers/gles3/storage/texture_storage.cpp",
+   "together": 6,
+   "conf_a_b": 0.27,
+   "conf_b_a": 0.5,
+   "jaccard": 0.21
+  },
+  {
+   "a": "drivers/gles3/rasterizer_scene_gles3.cpp",
+   "b": "drivers/gles3/shaders/scene.glsl",
+   "together": 6,
+   "conf_a_b": 0.27,
+   "conf_b_a": 0.35,
+   "jaccard": 0.18
+  },
+  {
+   "a": "core/object/script_language_extension.h",
+   "b": "editor/script/script_text_editor.cpp",
+   "together": 6,
+   "conf_a_b": 0.55,
+   "conf_b_a": 0.21,
+   "jaccard": 0.18
+  },
+  {
+   "a": "modules/gdscript/gdscript_editor.cpp",
+   "b": "modules/gdscript/gdscript_parser.h",
+   "together": 6,
+   "conf_a_b": 0.2,
+   "conf_b_a": 0.46,
+   "jaccard": 0.16
+  },
+  {
+   "a": "editor/editor_node.cpp",
+   "b": "editor/script/script_editor_plugin.cpp",
+   "together": 6,
+   "conf_a_b": 0.09,
+   "conf_b_a": 0.14,
+   "jaccard": 0.06
+  },
+  {
+   "a": "platform/linuxbsd/export/export_plugin.cpp",
+   "b": "platform/windows/export/export_plugin.cpp",
+   "together": 5,
+   "conf_a_b": 1.0,
+   "conf_b_a": 1.0,
+   "jaccard": 1.0
+  },
+  {
+   "a": "scene/animation/animation_blend_space_1d.cpp",
+   "b": "scene/animation/animation_blend_space_2d.cpp",
+   "together": 5,
+   "conf_a_b": 0.83,
+   "conf_b_a": 0.83,
+   "jaccard": 0.71
+  },
+  {
+   "a": "drivers/metal/metal3_objects.cpp",
+   "b": "drivers/metal/metal_objects_shared.h",
+   "together": 5,
+   "conf_a_b": 0.71,
+   "conf_b_a": 0.83,
+   "jaccard": 0.62
+  },
+  {
+   "a": "editor/export/editor_export_platform_apple_embedded.h",
+   "b": "platform/ios/export/export_plugin.cpp",
+   "together": 5,
+   "conf_a_b": 0.71,
+   "conf_b_a": 0.71,
+   "jaccard": 0.56
+  },
+  {
+   "a": "servers/rendering/renderer_rd/forward_clustered/scene_shader_forward_clustered.cpp",
+   "b": "servers/rendering/renderer_rd/forward_mobile/scene_shader_forward_mobile.cpp",
+   "together": 5,
+   "conf_a_b": 1.0,
+   "conf_b_a": 0.56,
+   "jaccard": 0.56
+  },
+  {
+   "a": "modules/gdscript/language_server/gdscript_language_protocol.cpp",
+   "b": "modules/gdscript/language_server/godot_lsp.h",
+   "together": 5,
+   "conf_a_b": 0.62,
+   "conf_b_a": 0.71,
+   "jaccard": 0.5
+  }
+ ],
+ "cross_layer": [
+  [
+   [
+    "API: class reference docs",
+    "Scene / nodes"
+   ],
+   83
+  ],
+  [
+   [
+    "Editor",
+    "Scene / nodes"
+   ],
+   76
+  ],
+  [
+   [
+    "API: class reference docs",
+    "Editor"
+   ],
+   72
+  ],
+  [
+   [
+    "Drivers (GPU/OS backends)",
+    "Servers (engine subsystems)"
+   ],
+   50
+  ],
+  [
+   [
+    "Core",
+    "Editor"
+   ],
+   41
+  ],
+  [
+   [
+    "Editor",
+    "Platform ports"
+   ],
+   33
+  ],
+  [
+   [
+    "API: class reference docs",
+    "Core"
+   ],
+   31
+  ],
+  [
+   [
+    "API: class reference docs",
+    "Servers (engine subsystems)"
+   ],
+   30
+  ],
+  [
+   [
+    "Scene / nodes",
+    "Servers (engine subsystems)"
+   ],
+   26
+  ],
+  [
+   [
+    "Core",
+    "Module: scripting (gdscript)"
+   ],
+   24
+  ],
+  [
+   [
+    "Core",
+    "Scene / nodes"
+   ],
+   22
+  ],
+  [
+   [
+    "API: class reference docs",
+    "Platform ports"
+   ],
+   21
+  ],
+  [
+   [
+    "Editor",
+    "Module: scripting (gdscript)"
+   ],
+   20
+  ],
+  [
+   [
+    "Core",
+    "Tests"
+   ],
+   19
+  ],
+  [
+   [
+    "Scene / nodes",
+    "Tests"
+   ],
+   17
+  ],
+  [
+   [
+    "Core",
+    "Module: scripting (mono)"
+   ],
+   16
+  ],
+  [
+   [
+    "API: class reference docs",
+    "Drivers (GPU/OS backends)"
+   ],
+   16
+  ],
+  [
+   [
+    "Build / root",
+    "Platform ports"
+   ],
+   14
+  ],
+  [
+   [
+    "Misc / tooling",
+    "Platform ports"
+   ],
+   13
+  ],
+  [
+   [
+    "Drivers (GPU/OS backends)",
+    "Platform ports"
+   ],
+   13
+  ],
+  [
+   [
+    "API: class reference docs",
+    "Module: scripting (gdscript)"
+   ],
+   13
+  ],
+  [
+   [
+    "Module: scripting (gdscript)",
+    "Module: scripting (mono)"
+   ],
+   12
+  ],
+  [
+   [
+    "Build / root",
+    "Misc / tooling"
+   ],
+   11
+  ],
+  [
+   [
+    "Core",
+    "Servers (engine subsystems)"
+   ],
+   11
+  ],
+  [
+   [
+    "Drivers (GPU/OS backends)",
+    "Scene / nodes"
+   ],
+   11
+  ],
+  [
+   [
+    "API: class reference docs",
+    "Module: XR"
+   ],
+   11
+  ],
+  [
+   [
+    "Editor",
+    "Servers (engine subsystems)"
+   ],
+   10
+  ],
+  [
+   [
+    "Editor",
+    "Module: scripting (mono)"
+   ],
+   10
+  ],
+  [
+   [
+    "Editor",
+    "Misc / tooling"
+   ],
+   9
+  ],
+  [
+   [
+    "Core",
+    "Main loop / bootstrap"
+   ],
+   9
+  ]
+ ]
+}

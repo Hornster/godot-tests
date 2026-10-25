@@ -1,0 +1,1721 @@
+{
+ "java_kotlin": {
+  "scope": "platform/android/java (*.java, *.kt), tracked files",
+  "totals": {
+   "files": 219,
+   "loc": 53528,
+   "first_party_files": 101,
+   "first_party_loc": 22628
+  },
+  "vendored": {
+   "com.android.apksig": {
+    "files": 118,
+    "loc": 30900,
+    "dirs": [
+     "platform/android/java/editor/src/main/java"
+    ]
+   }
+  },
+  "files_by_subproject": {
+   ":app": {
+    "files": 7,
+    "loc": 921,
+    "kotlin": 6,
+    "java": 1
+   },
+   ":dataLib": {
+    "files": 1,
+    "loc": 92,
+    "java": 1
+   },
+   ":editor": {
+    "files": 24,
+    "loc": 4612,
+    "kotlin": 24
+   },
+   ":editor:macrobenchmark": {
+    "files": 1,
+    "loc": 180,
+    "kotlin": 1
+   },
+   ":lib": {
+    "files": 68,
+    "loc": 16823,
+    "java": 36,
+    "kotlin": 32
+   },
+   "vendored": {
+    "files": 118,
+    "loc": 30900,
+    "java": 118
+   }
+  },
+  "source_sets": {
+   ":lib main": 66,
+   ":editor main": 17,
+   ":app instrumented": 5,
+   ":editor android": 2,
+   ":editor horizonos": 2,
+   ":editor picoos": 2,
+   ":lib test": 2,
+   ":dataLib main": 1,
+   ":app androidTestInstrumented": 1,
+   ":app main": 1,
+   ":editor:macrobenchmark main": 1,
+   ":editor androidTest": 1
+  },
+  "gradle": {
+   "subprojects": {
+    ":assetPackInstallTime": "platform/android/java/app/assetPackInstallTime",
+    ":dataLib": "platform/android/java/app/dataLib",
+    ":fusedDepsLib": "platform/android/java/app/fusedDepsLib",
+    ":app": "platform/android/java/app",
+    ":editor": "platform/android/java/editor",
+    ":editor:macrobenchmark": "platform/android/java/editor/macrobenchmark",
+    ":lib": "platform/android/java/lib",
+    ":nativeSrcsConfigs": "platform/android/java/nativeSrcsConfigs"
+   },
+   "declared_edges": [
+    {
+     "src": ":app",
+     "dst": ":dataLib",
+     "conf": "implementation",
+     "note": ""
+    },
+    {
+     "src": ":app",
+     "dst": ":fusedDepsLib",
+     "conf": "implementation",
+     "note": ""
+    },
+    {
+     "src": ":app",
+     "dst": ":lib",
+     "conf": "implementation",
+     "note": ""
+    },
+    {
+     "src": ":app",
+     "dst": ":godot:lib",
+     "conf": "implementation",
+     "note": "alias of :lib when app is built inside an exported project"
+    },
+    {
+     "src": ":dataLib",
+     "dst": ":lib",
+     "conf": "compileOnly",
+     "note": ""
+    },
+    {
+     "src": ":dataLib",
+     "dst": ":godot:lib",
+     "conf": "compileOnly",
+     "note": "alias of :lib when app is built inside an exported project"
+    },
+    {
+     "src": ":fusedDepsLib",
+     "dst": ":dataLib",
+     "conf": "include",
+     "note": ""
+    },
+    {
+     "src": ":editor",
+     "dst": ":lib",
+     "conf": "implementation",
+     "note": ""
+    },
+    {
+     "src": ":editor:macrobenchmark",
+     "dst": ":editor",
+     "conf": "targetProjectPath",
+     "note": "macrobenchmark target"
+    }
+   ],
+   "external_deps": {
+    ":app": {
+     "androidTestImplementation androidx.test": 3,
+     "androidTestImplementation org.jetbrains": 1,
+     "implementation androidx.fragment": 1,
+     "implementation androidx.core": 1,
+     "implementation androidx.documentfile": 1
+    },
+    ":dataLib": {
+     "implementation androidx.fragment": 1,
+     "implementation androidx.core": 1
+    },
+    ":editor": {
+     "implementation androidx.fragment": 1,
+     "implementation androidx.window": 1,
+     "implementation androidx.core": 1,
+     "implementation androidx.constraintlayout": 1,
+     "implementation org.bouncycastle": 1,
+     "implementation org.khronos": 1,
+     "implementation androidx.profileinstaller": 1,
+     "androidImplementation org.godotengine": 1,
+     "androidImplementation androidx.xr": 1,
+     "horizonosImplementation org.godotengine": 1,
+     "picoosImplementation org.godotengine": 1,
+     "androidTestImplementation androidx.test": 3,
+     "androidTestImplementation org.jetbrains": 1
+    },
+    ":editor:macrobenchmark": {
+     "implementation androidx.benchmark": 1,
+     "implementation androidx.test": 4
+    },
+    ":lib": {
+     "implementation androidx.fragment": 1,
+     "implementation androidx.documentfile": 1,
+     "testImplementation junit": 1
+    }
+   }
+  },
+  "packages": {
+   "com.godot.game": {
+    "files": 2,
+    "subprojects": [
+     ":app",
+     ":dataLib"
+    ]
+   },
+   "com.godot.game.app": {
+    "files": 1,
+    "subprojects": [
+     ":app"
+    ]
+   },
+   "com.godot.game.test": {
+    "files": 2,
+    "subprojects": [
+     ":app"
+    ]
+   },
+   "com.godot.game.test.javaclasswrapper": {
+    "files": 3,
+    "subprojects": [
+     ":app"
+    ]
+   },
+   "org.godotengine.editor": {
+    "files": 18,
+    "subprojects": [
+     ":editor"
+    ]
+   },
+   "org.godotengine.editor.buildprovider": {
+    "files": 2,
+    "subprojects": [
+     ":editor"
+    ]
+   },
+   "org.godotengine.editor.embed": {
+    "files": 2,
+    "subprojects": [
+     ":editor"
+    ]
+   },
+   "org.godotengine.editor.utils": {
+    "files": 2,
+    "subprojects": [
+     ":editor"
+    ]
+   },
+   "org.godotengine.editor.v4.macrobenchmark": {
+    "files": 1,
+    "subprojects": [
+     ":editor:macrobenchmark"
+    ]
+   },
+   "org.godotengine.godot": {
+    "files": 12,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.editor.utils": {
+    "files": 2,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.error": {
+    "files": 1,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.feature": {
+    "files": 1,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.gl": {
+    "files": 3,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.input": {
+    "files": 6,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.io": {
+    "files": 2,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.io.directory": {
+    "files": 3,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.io.file": {
+    "files": 7,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.nativeapi": {
+    "files": 1,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.plugin": {
+    "files": 6,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.service": {
+    "files": 2,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.tts": {
+    "files": 2,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.utils": {
+    "files": 9,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.variant": {
+    "files": 1,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.vulkan": {
+    "files": 3,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.xr": {
+    "files": 1,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.xr.ovr": {
+    "files": 3,
+    "subprojects": [
+     ":lib"
+    ]
+   },
+   "org.godotengine.godot.xr.regular": {
+    "files": 3,
+    "subprojects": [
+     ":lib"
+    ]
+   }
+  },
+  "package_edges": {
+   "com.godot.game": {
+    "org.godotengine.godot": 4,
+    "com.godot.game.app": 1,
+    "com.godot.game.test": 1,
+    "org.godotengine.godot.plugin": 1
+   },
+   "com.godot.game.test": {
+    "org.godotengine.godot": 2,
+    "org.godotengine.godot.plugin": 6
+   },
+   "com.godot.game.test.javaclasswrapper": {
+    "org.godotengine.godot": 1
+   },
+   "org.godotengine.editor": {
+    "org.godotengine.godot": 10,
+    "org.godotengine.editor.buildprovider": 1,
+    "org.godotengine.editor.embed": 3,
+    "org.godotengine.editor.utils": 3,
+    "org.godotengine.godot.editor.utils": 6,
+    "org.godotengine.godot.error": 1,
+    "org.godotengine.godot.utils": 6,
+    "org.godotengine.godot.xr": 2
+   },
+   "org.godotengine.editor.buildprovider": {
+    "org.godotengine.godot": 2,
+    "org.godotengine.godot.variant": 1
+   },
+   "org.godotengine.editor.embed": {
+    "org.godotengine.editor": 5,
+    "org.godotengine.godot.editor.utils": 1,
+    "org.godotengine.editor.utils": 1,
+    "org.godotengine.godot.feature": 1,
+    "org.godotengine.godot.utils": 1
+   },
+   "org.godotengine.editor.utils": {
+    "org.godotengine.godot.error": 1,
+    "org.godotengine.godot.io.file": 1
+   },
+   "org.godotengine.godot": {
+    "org.godotengine.godot.variant": 2,
+    "org.godotengine.godot.input": 6,
+    "org.godotengine.godot.io": 2,
+    "org.godotengine.godot.io.directory": 2,
+    "org.godotengine.godot.io.file": 2,
+    "org.godotengine.godot.nativeapi": 2,
+    "org.godotengine.godot.plugin": 5,
+    "org.godotengine.godot.tts": 2,
+    "org.godotengine.godot.utils": 12,
+    "org.godotengine.godot.xr": 2,
+    "org.godotengine.godot.feature": 1,
+    "org.godotengine.godot.error": 3,
+    "org.godotengine.godot.gl": 3,
+    "org.godotengine.godot.xr.ovr": 3,
+    "org.godotengine.godot.xr.regular": 3,
+    "org.godotengine.godot.vulkan": 2
+   },
+   "org.godotengine.godot.editor.utils": {
+    "org.godotengine.godot": 1
+   },
+   "org.godotengine.godot.gl": {
+    "org.godotengine.godot": 1,
+    "org.godotengine.godot.plugin": 2
+   },
+   "org.godotengine.godot.input": {
+    "org.godotengine.godot": 6,
+    "org.godotengine.godot.utils": 1
+   },
+   "org.godotengine.godot.io": {
+    "org.godotengine.godot": 3
+   },
+   "org.godotengine.godot.io.directory": {
+    "org.godotengine.godot.io": 3,
+    "org.godotengine.godot.io.file": 2,
+    "org.godotengine.godot": 1
+   },
+   "org.godotengine.godot.io.file": {
+    "org.godotengine.godot.error": 3,
+    "org.godotengine.godot.io.directory": 1,
+    "org.godotengine.godot.io": 2
+   },
+   "org.godotengine.godot.nativeapi": {
+    "org.godotengine.godot": 3,
+    "org.godotengine.godot.error": 1,
+    "org.godotengine.godot.feature": 1,
+    "org.godotengine.godot.io": 1,
+    "org.godotengine.godot.utils": 5,
+    "org.godotengine.godot.variant": 1
+   },
+   "org.godotengine.godot.plugin": {
+    "org.godotengine.godot": 4,
+    "org.godotengine.godot.variant": 2
+   },
+   "org.godotengine.godot.service": {
+    "org.godotengine.godot": 5
+   },
+   "org.godotengine.godot.tts": {
+    "org.godotengine.godot": 1
+   },
+   "org.godotengine.godot.utils": {
+    "org.godotengine.godot": 3,
+    "org.godotengine.godot.error": 1,
+    "org.godotengine.godot.io.file": 2
+   },
+   "org.godotengine.godot.vulkan": {
+    "org.godotengine.godot": 1,
+    "org.godotengine.godot.plugin": 1
+   },
+   "org.godotengine.godot.xr.ovr": {
+    "org.godotengine.godot.gl": 3
+   },
+   "org.godotengine.godot.xr.regular": {
+    "org.godotengine.godot.gl": 2,
+    "org.godotengine.godot.utils": 2
+   }
+  },
+  "package_edge_count": 70,
+  "wildcard_imports": 12,
+  "external_import_roots": [
+   [
+    "android.content",
+    89
+   ],
+   [
+    "android.view",
+    82
+   ],
+   [
+    "android.os",
+    80
+   ],
+   [
+    "java.util",
+    67
+   ],
+   [
+    "android.util",
+    62
+   ],
+   [
+    "javax.microedition",
+    44
+   ],
+   [
+    "androidx.annotation",
+    35
+   ],
+   [
+    "java.io",
+    34
+   ],
+   [
+    "androidx.core",
+    25
+   ],
+   [
+    "android.app",
+    23
+   ],
+   [
+    "android.widget",
+    19
+   ],
+   [
+    "java.nio",
+    18
+   ],
+   [
+    "org.junit",
+    15
+   ],
+   [
+    "androidx.xr",
+    14
+   ],
+   [
+    "android.text",
+    14
+   ]
+  ],
+  "fan_in": [
+   [
+    "org.godotengine.godot",
+    16
+   ],
+   [
+    "org.godotengine.godot.error",
+    6
+   ],
+   [
+    "org.godotengine.godot.utils",
+    6
+   ],
+   [
+    "org.godotengine.godot.plugin",
+    5
+   ],
+   [
+    "org.godotengine.godot.variant",
+    4
+   ],
+   [
+    "org.godotengine.godot.io.file",
+    4
+   ],
+   [
+    "org.godotengine.godot.io",
+    4
+   ],
+   [
+    "org.godotengine.godot.feature",
+    3
+   ],
+   [
+    "org.godotengine.godot.gl",
+    3
+   ],
+   [
+    "org.godotengine.godot.xr",
+    2
+   ],
+   [
+    "org.godotengine.godot.editor.utils",
+    2
+   ],
+   [
+    "org.godotengine.editor.utils",
+    2
+   ]
+  ],
+  "fan_out": [
+   [
+    "org.godotengine.godot",
+    16
+   ],
+   [
+    "org.godotengine.editor",
+    8
+   ],
+   [
+    "org.godotengine.godot.nativeapi",
+    6
+   ],
+   [
+    "org.godotengine.editor.embed",
+    5
+   ],
+   [
+    "com.godot.game",
+    4
+   ],
+   [
+    "org.godotengine.godot.io.directory",
+    3
+   ],
+   [
+    "org.godotengine.godot.io.file",
+    3
+   ],
+   [
+    "org.godotengine.godot.utils",
+    3
+   ],
+   [
+    "com.godot.game.test",
+    2
+   ],
+   [
+    "org.godotengine.editor.buildprovider",
+    2
+   ],
+   [
+    "org.godotengine.editor.utils",
+    2
+   ],
+   [
+    "org.godotengine.godot.gl",
+    2
+   ]
+  ],
+  "sccs": [
+   [
+    "org.godotengine.godot",
+    "org.godotengine.godot.gl",
+    "org.godotengine.godot.input",
+    "org.godotengine.godot.io",
+    "org.godotengine.godot.io.directory",
+    "org.godotengine.godot.io.file",
+    "org.godotengine.godot.nativeapi",
+    "org.godotengine.godot.plugin",
+    "org.godotengine.godot.tts",
+    "org.godotengine.godot.utils",
+    "org.godotengine.godot.vulkan",
+    "org.godotengine.godot.xr.ovr",
+    "org.godotengine.godot.xr.regular"
+   ],
+   [
+    "org.godotengine.editor",
+    "org.godotengine.editor.embed"
+   ]
+  ],
+  "subproject_edges_from_imports": {
+   ":editor -> :lib": 33,
+   ":app -> :lib": 12,
+   ":dataLib -> :lib": 2
+  },
+  "undeclared_subproject_edges": [],
+  "layering_violations": [],
+  "file_level": {
+   "import_file_edges_cross_package": 154,
+   "heuristic_same_package_file_edges": 112,
+   "note": "same-package edges: capitalised identifier in file A matches a class/interface/object/enum declared in another file B of the same package (comments/strings stripped). Heuristic; misses Kotlin top-level functions/properties and may over-count homonyms."
+  }
+ },
+ "csharp": {
+  "scope": "modules/mono (*.cs, *.csproj), tracked files; GodotSharp*/Generated is gitignored and absent",
+  "totals": {
+   "files": 314,
+   "loc": 58095,
+   "compiled_files": 221,
+   "compiled_loc": 52123
+  },
+  "files_by_project": {
+   "(fixture: Tests/TestData, not compiled)": {
+    "files": 84,
+    "loc": 5730
+   },
+   "(script template, not compiled)": {
+    "files": 9,
+    "loc": 242
+   },
+   "Godot.SourceGenerators": {
+    "files": 24,
+    "loc": 5298
+   },
+   "Godot.SourceGenerators.Internal": {
+    "files": 5,
+    "loc": 697
+   },
+   "Godot.SourceGenerators.Sample": {
+    "files": 18,
+    "loc": 1221
+   },
+   "Godot.SourceGenerators.Tests": {
+    "files": 17,
+    "loc": 723
+   },
+   "GodotPlugins": {
+    "files": 2,
+    "loc": 378
+   },
+   "GodotSharp": {
+    "files": 93,
+    "loc": 34716
+   },
+   "GodotSharpEditor": {
+    "files": 1,
+    "loc": 21
+   },
+   "GodotTools": {
+    "files": 35,
+    "loc": 6165
+   },
+   "GodotTools.BuildLogger": {
+    "files": 1,
+    "loc": 173
+   },
+   "GodotTools.Core": {
+    "files": 3,
+    "loc": 126
+   },
+   "GodotTools.IdeMessaging": {
+    "files": 15,
+    "loc": 1382
+   },
+   "GodotTools.IdeMessaging.CLI": {
+    "files": 2,
+    "loc": 275
+   },
+   "GodotTools.OpenVisualStudio": {
+    "files": 1,
+    "loc": 289
+   },
+   "GodotTools.ProjectEditor": {
+    "files": 4,
+    "loc": 659
+   }
+  },
+  "projects": {
+   "Godot.NET.Sdk": {
+    "path": "modules/mono/editor/Godot.NET.Sdk/Godot.NET.Sdk/Godot.NET.Sdk.csproj",
+    "dir": "modules/mono/editor/Godot.NET.Sdk/Godot.NET.Sdk",
+    "tfm": [
+     "netstandard2.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [],
+    "assembly_refs": [],
+    "package_refs": [],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "Godot.SourceGenerators.Sample": {
+    "path": "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators.Sample/Godot.SourceGenerators.Sample.csproj",
+    "dir": "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators.Sample",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [
+     {
+      "dst": "GodotSharp",
+      "path": "modules/mono/glue/GodotSharp/GodotSharp/GodotSharp.csproj",
+      "analyzer": false
+     },
+     {
+      "dst": "Godot.SourceGenerators",
+      "path": "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators/Godot.SourceGenerators.csproj",
+      "analyzer": true
+     }
+    ],
+    "assembly_refs": [],
+    "package_refs": [],
+    "imports": [
+     "..\\Godot.SourceGenerators\\Godot.SourceGenerators.props"
+    ],
+    "explicit_compile_items": 0
+   },
+   "Godot.SourceGenerators.Tests": {
+    "path": "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators.Tests/Godot.SourceGenerators.Tests.csproj",
+    "dir": "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators.Tests",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [
+     {
+      "dst": "GodotSharp",
+      "path": "modules/mono/glue/GodotSharp/GodotSharp/GodotSharp.csproj",
+      "analyzer": false
+     },
+     {
+      "dst": "Godot.SourceGenerators",
+      "path": "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators/Godot.SourceGenerators.csproj",
+      "analyzer": false
+     }
+    ],
+    "assembly_refs": [],
+    "package_refs": [
+     "Microsoft.CodeAnalysis.CSharp.Analyzer.Testing.XUnit",
+     "Microsoft.CodeAnalysis.CSharp.CodeFix.Testing",
+     "Microsoft.CodeAnalysis.CSharp.CodeFix.Testing.XUnit",
+     "Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing.XUnit",
+     "Microsoft.CodeAnalysis.CSharp.Workspaces",
+     "Microsoft.NET.Test.Sdk",
+     "System.Security.Cryptography.Pkcs",
+     "coverlet.collector",
+     "xunit",
+     "xunit.runner.visualstudio"
+    ],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "Godot.SourceGenerators": {
+    "path": "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators/Godot.SourceGenerators.csproj",
+    "dir": "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators",
+    "tfm": [
+     "netstandard2.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": true,
+    "project_refs": [],
+    "assembly_refs": [],
+    "package_refs": [
+     "Microsoft.CodeAnalysis.CSharp.Workspaces"
+    ],
+    "imports": [],
+    "explicit_compile_items": 0,
+    "consumed_as_analyzer": true
+   },
+   "GodotTools.BuildLogger": {
+    "path": "modules/mono/editor/GodotTools/GodotTools.BuildLogger/GodotTools.BuildLogger.csproj",
+    "dir": "modules/mono/editor/GodotTools/GodotTools.BuildLogger",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [],
+    "assembly_refs": [],
+    "package_refs": [
+     "Microsoft.Build.Framework"
+    ],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "GodotTools.Core": {
+    "path": "modules/mono/editor/GodotTools/GodotTools.Core/GodotTools.Core.csproj",
+    "dir": "modules/mono/editor/GodotTools/GodotTools.Core",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [],
+    "assembly_refs": [],
+    "package_refs": [],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "GodotTools.IdeMessaging.CLI": {
+    "path": "modules/mono/editor/GodotTools/GodotTools.IdeMessaging.CLI/GodotTools.IdeMessaging.CLI.csproj",
+    "dir": "modules/mono/editor/GodotTools/GodotTools.IdeMessaging.CLI",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Exe",
+    "analyzer_rules": false,
+    "project_refs": [
+     {
+      "dst": "GodotTools.IdeMessaging",
+      "path": "modules/mono/editor/GodotTools/GodotTools.IdeMessaging/GodotTools.IdeMessaging.csproj",
+      "analyzer": false
+     }
+    ],
+    "assembly_refs": [],
+    "package_refs": [
+     "Newtonsoft.Json"
+    ],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "GodotTools.IdeMessaging": {
+    "path": "modules/mono/editor/GodotTools/GodotTools.IdeMessaging/GodotTools.IdeMessaging.csproj",
+    "dir": "modules/mono/editor/GodotTools/GodotTools.IdeMessaging",
+    "tfm": [
+     "netstandard2.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [],
+    "assembly_refs": [],
+    "package_refs": [
+     "Newtonsoft.Json"
+    ],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "GodotTools.OpenVisualStudio": {
+    "path": "modules/mono/editor/GodotTools/GodotTools.OpenVisualStudio/GodotTools.OpenVisualStudio.csproj",
+    "dir": "modules/mono/editor/GodotTools/GodotTools.OpenVisualStudio",
+    "tfm": [
+     "net10.0-windows"
+    ],
+    "output": "Exe",
+    "analyzer_rules": false,
+    "project_refs": [],
+    "assembly_refs": [],
+    "package_refs": [
+     "EnvDTE"
+    ],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "GodotTools.ProjectEditor": {
+    "path": "modules/mono/editor/GodotTools/GodotTools.ProjectEditor/GodotTools.ProjectEditor.csproj",
+    "dir": "modules/mono/editor/GodotTools/GodotTools.ProjectEditor",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [
+     {
+      "dst": "GodotTools.Core",
+      "path": "modules/mono/editor/GodotTools/GodotTools.Core/GodotTools.Core.csproj",
+      "analyzer": false
+     },
+     {
+      "dst": "GodotTools.Shared",
+      "path": "modules/mono/editor/GodotTools/GodotTools.Shared/GodotTools.Shared.csproj",
+      "analyzer": false
+     }
+    ],
+    "assembly_refs": [],
+    "package_refs": [
+     "Microsoft.Build",
+     "Microsoft.Build.Locator",
+     "Microsoft.NETFramework.ReferenceAssemblies",
+     "NuGet.Frameworks"
+    ],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "GodotTools.Shared": {
+    "path": "modules/mono/editor/GodotTools/GodotTools.Shared/GodotTools.Shared.csproj",
+    "dir": "modules/mono/editor/GodotTools/GodotTools.Shared",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [],
+    "assembly_refs": [],
+    "package_refs": [],
+    "imports": [
+     "GenerateGodotNupkgsVersions.targets"
+    ],
+    "explicit_compile_items": 0
+   },
+   "GodotTools": {
+    "path": "modules/mono/editor/GodotTools/GodotTools/GodotTools.csproj",
+    "dir": "modules/mono/editor/GodotTools/GodotTools",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [
+     {
+      "dst": "Godot.SourceGenerators",
+      "path": "modules/mono/editor/Godot.NET.Sdk/Godot.SourceGenerators/Godot.SourceGenerators.csproj",
+      "analyzer": true
+     },
+     {
+      "dst": "Godot.SourceGenerators.Internal",
+      "path": "modules/mono/glue/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.csproj",
+      "analyzer": true
+     },
+     {
+      "dst": "GodotTools.BuildLogger",
+      "path": "modules/mono/editor/GodotTools/GodotTools.BuildLogger/GodotTools.BuildLogger.csproj",
+      "analyzer": false
+     },
+     {
+      "dst": "GodotTools.IdeMessaging",
+      "path": "modules/mono/editor/GodotTools/GodotTools.IdeMessaging/GodotTools.IdeMessaging.csproj",
+      "analyzer": false
+     },
+     {
+      "dst": "GodotTools.ProjectEditor",
+      "path": "modules/mono/editor/GodotTools/GodotTools.ProjectEditor/GodotTools.ProjectEditor.csproj",
+      "analyzer": false
+     },
+     {
+      "dst": "GodotTools.Core",
+      "path": "modules/mono/editor/GodotTools/GodotTools.Core/GodotTools.Core.csproj",
+      "analyzer": false
+     }
+    ],
+    "assembly_refs": [
+     {
+      "name": "GodotSharp",
+      "hint": "$(GodotApiAssembliesDir)/GodotSharp.dll"
+     },
+     {
+      "name": "GodotSharpEditor",
+      "hint": "$(GodotApiAssembliesDir)/GodotSharpEditor.dll"
+     }
+    ],
+    "package_refs": [
+     "JetBrains.Annotations",
+     "JetBrains.Rider.PathLocator",
+     "Microsoft.CodeAnalysis.CSharp",
+     "Microsoft.NETFramework.ReferenceAssemblies",
+     "Microsoft.VisualStudio.SolutionPersistence",
+     "Newtonsoft.Json"
+    ],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "Godot.SourceGenerators.Internal": {
+    "path": "modules/mono/glue/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.csproj",
+    "dir": "modules/mono/glue/GodotSharp/Godot.SourceGenerators.Internal",
+    "tfm": [
+     "netstandard2.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": true,
+    "project_refs": [],
+    "assembly_refs": [],
+    "package_refs": [
+     "Microsoft.CodeAnalysis.Analyzers",
+     "Microsoft.CodeAnalysis.CSharp"
+    ],
+    "imports": [],
+    "explicit_compile_items": 0,
+    "consumed_as_analyzer": true
+   },
+   "GodotPlugins": {
+    "path": "modules/mono/glue/GodotSharp/GodotPlugins/GodotPlugins.csproj",
+    "dir": "modules/mono/glue/GodotSharp/GodotPlugins",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [
+     {
+      "dst": "GodotSharp",
+      "path": "modules/mono/glue/GodotSharp/GodotSharp/GodotSharp.csproj",
+      "analyzer": false
+     }
+    ],
+    "assembly_refs": [],
+    "package_refs": [],
+    "imports": [],
+    "explicit_compile_items": 0
+   },
+   "GodotSharp": {
+    "path": "modules/mono/glue/GodotSharp/GodotSharp/GodotSharp.csproj",
+    "dir": "modules/mono/glue/GodotSharp/GodotSharp",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [
+     {
+      "dst": "Godot.SourceGenerators.Internal",
+      "path": "modules/mono/glue/GodotSharp/Godot.SourceGenerators.Internal/Godot.SourceGenerators.Internal.csproj",
+      "analyzer": true
+     }
+    ],
+    "assembly_refs": [],
+    "package_refs": [
+     "ReflectionAnalyzers"
+    ],
+    "imports": [
+     "Generated\\GeneratedIncludes.props"
+    ],
+    "explicit_compile_items": 93
+   },
+   "GodotSharpEditor": {
+    "path": "modules/mono/glue/GodotSharp/GodotSharpEditor/GodotSharpEditor.csproj",
+    "dir": "modules/mono/glue/GodotSharp/GodotSharpEditor",
+    "tfm": [
+     "net10.0"
+    ],
+    "output": "Library",
+    "analyzer_rules": false,
+    "project_refs": [
+     {
+      "dst": "GodotSharp",
+      "path": "modules/mono/glue/GodotSharp/GodotSharp/GodotSharp.csproj",
+      "analyzer": false
+     }
+    ],
+    "assembly_refs": [],
+    "package_refs": [],
+    "imports": [
+     "Generated\\GeneratedIncludes.props"
+    ],
+    "explicit_compile_items": 1
+   }
+  },
+  "namespaces": {
+   "(global)": {
+    "files": 2,
+    "projects": [
+     "GodotSharp"
+    ]
+   },
+   "Godot": {
+    "files": 65,
+    "projects": [
+     "GodotSharp",
+     "GodotSharpEditor"
+    ]
+   },
+   "Godot.Bridge": {
+    "files": 13,
+    "projects": [
+     "GodotSharp"
+    ]
+   },
+   "Godot.Collections": {
+    "files": 3,
+    "projects": [
+     "GodotSharp"
+    ]
+   },
+   "Godot.NativeInterop": {
+    "files": 11,
+    "projects": [
+     "GodotSharp"
+    ]
+   },
+   "Godot.SourceGenerators": {
+    "files": 23,
+    "projects": [
+     "Godot.SourceGenerators"
+    ]
+   },
+   "Godot.SourceGenerators.Internal": {
+    "files": 5,
+    "projects": [
+     "Godot.SourceGenerators.Internal"
+    ]
+   },
+   "Godot.SourceGenerators.Sample": {
+    "files": 18,
+    "projects": [
+     "Godot.SourceGenerators.Sample"
+    ]
+   },
+   "Godot.SourceGenerators.Tests": {
+    "files": 17,
+    "projects": [
+     "Godot.SourceGenerators.Tests"
+    ]
+   },
+   "GodotPlugins": {
+    "files": 2,
+    "projects": [
+     "GodotPlugins"
+    ]
+   },
+   "GodotTools": {
+    "files": 6,
+    "projects": [
+     "GodotTools"
+    ]
+   },
+   "GodotTools.Build": {
+    "files": 10,
+    "projects": [
+     "GodotTools"
+    ]
+   },
+   "GodotTools.BuildLogger": {
+    "files": 1,
+    "projects": [
+     "GodotTools.BuildLogger"
+    ]
+   },
+   "GodotTools.Core": {
+    "files": 3,
+    "projects": [
+     "GodotTools.Core"
+    ]
+   },
+   "GodotTools.Export": {
+    "files": 1,
+    "projects": [
+     "GodotTools"
+    ]
+   },
+   "GodotTools.IdeMessaging": {
+    "files": 11,
+    "projects": [
+     "GodotTools.IdeMessaging"
+    ]
+   },
+   "GodotTools.IdeMessaging.CLI": {
+    "files": 2,
+    "projects": [
+     "GodotTools.IdeMessaging.CLI"
+    ]
+   },
+   "GodotTools.IdeMessaging.Requests": {
+    "files": 1,
+    "projects": [
+     "GodotTools.IdeMessaging"
+    ]
+   },
+   "GodotTools.IdeMessaging.Utils": {
+    "files": 2,
+    "projects": [
+     "GodotTools.IdeMessaging"
+    ]
+   },
+   "GodotTools.Ides": {
+    "files": 2,
+    "projects": [
+     "GodotTools"
+    ]
+   },
+   "GodotTools.Ides.MonoDevelop": {
+    "files": 2,
+    "projects": [
+     "GodotTools"
+    ]
+   },
+   "GodotTools.Ides.Rider": {
+    "files": 2,
+    "projects": [
+     "GodotTools"
+    ]
+   },
+   "GodotTools.Inspector": {
+    "files": 2,
+    "projects": [
+     "GodotTools"
+    ]
+   },
+   "GodotTools.Internals": {
+    "files": 4,
+    "projects": [
+     "GodotTools"
+    ]
+   },
+   "GodotTools.OpenVisualStudio": {
+    "files": 1,
+    "projects": [
+     "GodotTools.OpenVisualStudio"
+    ]
+   },
+   "GodotTools.ProjectEditor": {
+    "files": 4,
+    "projects": [
+     "GodotTools.ProjectEditor"
+    ]
+   },
+   "GodotTools.Utils": {
+    "files": 6,
+    "projects": [
+     "GodotTools"
+    ]
+   },
+   "System.Diagnostics.CodeAnalysis": {
+    "files": 2,
+    "projects": [
+     "Godot.SourceGenerators",
+     "GodotTools.IdeMessaging"
+    ]
+   }
+  },
+  "namespace_edges": {
+   "Godot": {
+    "Godot.NativeInterop": 16,
+    "Godot.Bridge": 2
+   },
+   "Godot.Bridge": {
+    "Godot.NativeInterop": 6
+   },
+   "Godot.Collections": {
+    "Godot.NativeInterop": 2
+   },
+   "Godot.NativeInterop": {
+    "Godot.Bridge": 1,
+    "Godot.Collections": 2,
+    "Godot.SourceGenerators.Internal": 1
+   },
+   "Godot.SourceGenerators.Sample": {
+    "Godot": 1,
+    "Godot.Collections": 2
+   },
+   "GodotPlugins": {
+    "Godot.Bridge": 1,
+    "Godot.NativeInterop": 1
+   },
+   "GodotTools": {
+    "Godot": 4,
+    "GodotTools.ProjectEditor": 2,
+    "Godot.Collections": 1,
+    "GodotTools.Internals": 4,
+    "GodotTools.Core": 1,
+    "GodotTools.Export": 1,
+    "GodotTools.Utils": 3,
+    "GodotTools.Build": 2,
+    "GodotTools.Ides": 1,
+    "GodotTools.Ides.Rider": 1,
+    "GodotTools.Inspector": 1
+   },
+   "GodotTools.Build": {
+    "Godot": 8,
+    "Godot.Collections": 1,
+    "GodotTools.Internals": 8,
+    "GodotTools.Utils": 5,
+    "GodotTools.BuildLogger": 1
+   },
+   "GodotTools.Export": {
+    "Godot": 1,
+    "GodotTools.Build": 1,
+    "GodotTools.Internals": 1,
+    "GodotTools.Utils": 3
+   },
+   "GodotTools.IdeMessaging": {
+    "GodotTools.IdeMessaging.Requests": 4,
+    "GodotTools.IdeMessaging.Utils": 3
+   },
+   "GodotTools.IdeMessaging.CLI": {
+    "GodotTools.IdeMessaging.Utils": 1,
+    "GodotTools.IdeMessaging.Requests": 1
+   },
+   "GodotTools.Ides": {
+    "Godot": 1,
+    "GodotTools.IdeMessaging": 2,
+    "GodotTools.IdeMessaging.Requests": 2,
+    "GodotTools.Internals": 2,
+    "GodotTools.IdeMessaging.Utils": 1,
+    "GodotTools.Utils": 1
+   },
+   "GodotTools.Ides.MonoDevelop": {
+    "GodotTools.Internals": 1,
+    "GodotTools.Utils": 1
+   },
+   "GodotTools.Ides.Rider": {
+    "Godot": 2,
+    "GodotTools.Utils": 1,
+    "GodotTools.Internals": 1
+   },
+   "GodotTools.Inspector": {
+    "Godot": 2,
+    "GodotTools.Internals": 1,
+    "GodotTools.Build": 1,
+    "GodotTools.Utils": 1
+   },
+   "GodotTools.Internals": {
+    "Godot": 4,
+    "Godot.NativeInterop": 4,
+    "Godot.SourceGenerators.Internal": 1,
+    "GodotTools.IdeMessaging.Requests": 1
+   },
+   "GodotTools.ProjectEditor": {
+    "GodotTools.Core": 1
+   },
+   "GodotTools.Utils": {
+    "Godot": 3,
+    "GodotTools.Core": 1,
+    "Godot.NativeInterop": 1,
+    "GodotTools.Internals": 1
+   }
+  },
+  "namespace_edge_count": 59,
+  "external_using_roots": [
+   [
+    "System",
+    732
+   ],
+   [
+    "Microsoft",
+    91
+   ],
+   [
+    "Xunit",
+    12
+   ],
+   [
+    "Newtonsoft",
+    7
+   ],
+   [
+    "JetBrains",
+    4
+   ],
+   [
+    "EnvDTE",
+    1
+   ],
+   [
+    "GodotTools",
+    1
+   ],
+   [
+    "NuGet",
+    1
+   ]
+  ],
+  "unresolved_godot_usings": {
+   "GodotTools.Shared": 1
+  },
+  "fan_in": [
+   [
+    "Godot",
+    9
+   ],
+   [
+    "GodotTools.Internals",
+    8
+   ],
+   [
+    "GodotTools.Utils",
+    7
+   ],
+   [
+    "Godot.NativeInterop",
+    6
+   ],
+   [
+    "Godot.Collections",
+    4
+   ],
+   [
+    "GodotTools.IdeMessaging.Requests",
+    4
+   ],
+   [
+    "GodotTools.IdeMessaging.Utils",
+    3
+   ],
+   [
+    "GodotTools.Core",
+    3
+   ],
+   [
+    "GodotTools.Build",
+    3
+   ],
+   [
+    "Godot.Bridge",
+    3
+   ],
+   [
+    "Godot.SourceGenerators.Internal",
+    2
+   ],
+   [
+    "GodotTools.BuildLogger",
+    1
+   ]
+  ],
+  "fan_out": [
+   [
+    "GodotTools",
+    11
+   ],
+   [
+    "GodotTools.Ides",
+    6
+   ],
+   [
+    "GodotTools.Build",
+    5
+   ],
+   [
+    "GodotTools.Export",
+    4
+   ],
+   [
+    "GodotTools.Inspector",
+    4
+   ],
+   [
+    "GodotTools.Internals",
+    4
+   ],
+   [
+    "GodotTools.Utils",
+    4
+   ],
+   [
+    "GodotTools.Ides.Rider",
+    3
+   ],
+   [
+    "Godot.NativeInterop",
+    3
+   ],
+   [
+    "Godot.SourceGenerators.Sample",
+    2
+   ],
+   [
+    "GodotTools.IdeMessaging.CLI",
+    2
+   ],
+   [
+    "GodotTools.IdeMessaging",
+    2
+   ]
+  ],
+  "sccs": [
+   [
+    "Godot.Bridge",
+    "Godot.Collections",
+    "Godot.NativeInterop"
+   ]
+  ],
+  "bcl_polyfill_namespaces": {
+   "System.Diagnostics.CodeAnalysis": [
+    "Godot.SourceGenerators",
+    "GodotTools.IdeMessaging"
+   ]
+  },
+  "cross_project_namespace_use": {
+   "Godot.SourceGenerators.Sample -> GodotSharp via Godot": 1,
+   "Godot.SourceGenerators.Sample -> GodotSharp via Godot.Collections": 2,
+   "Godot.SourceGenerators.Sample -> GodotSharpEditor via Godot": 1,
+   "GodotPlugins -> GodotSharp via Godot.Bridge": 1,
+   "GodotPlugins -> GodotSharp via Godot.NativeInterop": 1,
+   "GodotSharp -> Godot.SourceGenerators.Internal via Godot.SourceGenerators.Internal": 1,
+   "GodotTools -> Godot.SourceGenerators.Internal via Godot.SourceGenerators.Internal": 1,
+   "GodotTools -> GodotSharp via Godot": 25,
+   "GodotTools -> GodotSharp via Godot.Collections": 2,
+   "GodotTools -> GodotSharp via Godot.NativeInterop": 5,
+   "GodotTools -> GodotSharpEditor via Godot": 25,
+   "GodotTools -> GodotTools.BuildLogger via GodotTools.BuildLogger": 1,
+   "GodotTools -> GodotTools.Core via GodotTools.Core": 2,
+   "GodotTools -> GodotTools.IdeMessaging via GodotTools.IdeMessaging": 2,
+   "GodotTools -> GodotTools.IdeMessaging via GodotTools.IdeMessaging.Requests": 3,
+   "GodotTools -> GodotTools.IdeMessaging via GodotTools.IdeMessaging.Utils": 1,
+   "GodotTools -> GodotTools.ProjectEditor via GodotTools.ProjectEditor": 2,
+   "GodotTools.IdeMessaging.CLI -> GodotTools.IdeMessaging via GodotTools.IdeMessaging.Requests": 1,
+   "GodotTools.IdeMessaging.CLI -> GodotTools.IdeMessaging via GodotTools.IdeMessaging.Utils": 1,
+   "GodotTools.ProjectEditor -> GodotTools.Core via GodotTools.Core": 1
+  },
+  "cross_project_use_without_reference": {},
+  "generated_api_heuristic": {
+   "classdb_classes": 1072,
+   "generated_candidates": 1049,
+   "per_project": {
+    "Godot.SourceGenerators": {
+     "files": 24,
+     "using_generated": 3,
+     "using_generated_strict": 0
+    },
+    "Godot.SourceGenerators.Internal": {
+     "files": 5,
+     "using_generated": 0,
+     "using_generated_strict": 0
+    },
+    "Godot.SourceGenerators.Sample": {
+     "files": 18,
+     "using_generated": 4,
+     "using_generated_strict": 3
+    },
+    "Godot.SourceGenerators.Tests": {
+     "files": 17,
+     "using_generated": 0,
+     "using_generated_strict": 0
+    },
+    "GodotPlugins": {
+     "files": 2,
+     "using_generated": 2,
+     "using_generated_strict": 1
+    },
+    "GodotSharp": {
+     "files": 93,
+     "using_generated": 8,
+     "using_generated_strict": 6
+    },
+    "GodotSharpEditor": {
+     "files": 1,
+     "using_generated": 0,
+     "using_generated_strict": 0
+    },
+    "GodotTools": {
+     "files": 35,
+     "using_generated": 22,
+     "using_generated_strict": 19
+    },
+    "GodotTools.BuildLogger": {
+     "files": 1,
+     "using_generated": 0,
+     "using_generated_strict": 0
+    },
+    "GodotTools.Core": {
+     "files": 3,
+     "using_generated": 1,
+     "using_generated_strict": 0
+    },
+    "GodotTools.IdeMessaging": {
+     "files": 15,
+     "using_generated": 2,
+     "using_generated_strict": 2
+    },
+    "GodotTools.IdeMessaging.CLI": {
+     "files": 2,
+     "using_generated": 1,
+     "using_generated_strict": 1
+    },
+    "GodotTools.OpenVisualStudio": {
+     "files": 1,
+     "using_generated": 0,
+     "using_generated_strict": 0
+    },
+    "GodotTools.ProjectEditor": {
+     "files": 4,
+     "using_generated": 0,
+     "using_generated_strict": 0
+    }
+   },
+   "top_names": [
+    [
+     "ProjectSettings",
+     8
+    ],
+    [
+     "EditorInterface",
+     6
+    ],
+    [
+     "FileAccess",
+     5
+    ],
+    [
+     "HBoxContainer",
+     5
+    ],
+    [
+     "Shortcut",
+     4
+    ],
+    [
+     "Resource",
+     4
+    ],
+    [
+     "Texture",
+     3
+    ],
+    [
+     "EditorSettings",
+     3
+    ],
+    [
+     "RefCounted",
+     2
+    ],
+    [
+     "Logger",
+     2
+    ],
+    [
+     "VBoxContainer",
+     2
+    ],
+    [
+     "PopupMenu",
+     2
+    ],
+    [
+     "Texture2D",
+     2
+    ],
+    [
+     "TreeItem",
+     2
+    ],
+    [
+     "CSharpScript",
+     2
+    ],
+    [
+     "WeakRef",
+     2
+    ],
+    [
+     "TextServer",
+     2
+    ],
+    [
+     "LineEdit",
+     1
+    ],
+    [
+     "Popup",
+     1
+    ],
+    [
+     "HSeparator",
+     1
+    ]
+   ],
+   "note": "file counts as 'using generated API' if a capitalised identifier (comments/strings stripped) matches a ClassDB class name that no repo C# file declares; 'strict' drops BCL/common-word homonyms. Heuristic."
+  },
+  "implicit_namespace_edges_heuristic": {
+   "Godot.SourceGenerators.Sample -> Godot": 18,
+   "Godot.SourceGenerators.Tests -> Godot.SourceGenerators": 12,
+   "Godot.SourceGenerators -> Godot": 10,
+   "Godot.Bridge -> Godot": 10,
+   "Godot.NativeInterop -> Godot": 8,
+   "GodotTools.Build -> GodotTools": 4,
+   "Godot.SourceGenerators.Sample -> Godot.SourceGenerators": 2,
+   "GodotTools.IdeMessaging.CLI -> GodotTools.IdeMessaging": 2,
+   "GodotTools.Ides -> GodotTools": 2,
+   "Godot.Collections -> Godot": 2,
+   "Godot.SourceGenerators.Tests -> Godot": 1,
+   "GodotTools.IdeMessaging.Requests -> GodotTools.IdeMessaging": 1,
+   "GodotTools.Ides.Rider -> GodotTools": 1,
+   "Godot.SourceGenerators.Internal -> Godot.SourceGenerators": 1
+  }
+ }
+}

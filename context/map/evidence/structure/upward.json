@@ -1,0 +1,1712 @@
+{
+ "upward": [
+  {
+   "src": "drivers/apple_embedded/tts_apple_embedded.mm",
+   "line": 33,
+   "inc": "servers/display/display_server.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/apple_embedded/os_apple_embedded.mm",
+   "line": 50,
+   "inc": "main/main.h",
+   "guards": [
+    "ifdef APPLE_EMBEDDED_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/apple_embedded/os_apple_embedded.mm",
+   "line": 51,
+   "inc": "servers/audio/audio_driver.h",
+   "guards": [
+    "ifdef APPLE_EMBEDDED_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/apple_embedded/os_apple_embedded.mm",
+   "line": 52,
+   "inc": "servers/camera/camera_server.h",
+   "guards": [
+    "ifdef APPLE_EMBEDDED_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/apple_embedded/os_apple_embedded.mm",
+   "line": 53,
+   "inc": "servers/display/accessibility_server.h",
+   "guards": [
+    "ifdef APPLE_EMBEDDED_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/apple_embedded/os_apple_embedded.mm",
+   "line": 65,
+   "inc": "servers/rendering/renderer_rd/renderer_compositor_rd.h",
+   "guards": [
+    "ifdef APPLE_EMBEDDED_ENABLED",
+    "if defined(RD_ENABLED)"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/apple_embedded/os_apple_embedded.h",
+   "line": 38,
+   "inc": "servers/audio/audio_server.h",
+   "guards": [
+    "ifdef APPLE_EMBEDDED_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/apple_embedded/os_apple_embedded.h",
+   "line": 39,
+   "inc": "servers/rendering/renderer_compositor.h",
+   "guards": [
+    "ifdef APPLE_EMBEDDED_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/apple_embedded/os_apple_embedded.h",
+   "line": 42,
+   "inc": "servers/rendering/rendering_device.h",
+   "guards": [
+    "ifdef APPLE_EMBEDDED_ENABLED",
+    "if defined(RD_ENABLED)"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/apple_embedded/godot_view_renderer.mm",
+   "line": 38,
+   "inc": "main/main.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/apple_embedded/godot_view_renderer.mm",
+   "line": 39,
+   "inc": "servers/audio/audio_server.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/apple_embedded/godot_view_controller.mm",
+   "line": 40,
+   "inc": "servers/camera/camera_server.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/apple_embedded/godot_renderer.mm",
+   "line": 36,
+   "inc": "main/main.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/apple_embedded/godot_app_delegate_service_apple_embedded.mm",
+   "line": 40,
+   "inc": "main/main.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/apple_embedded/display_server_apple_embedded.mm",
+   "line": 45,
+   "inc": "servers/display/accessibility_server.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/apple_embedded/display_server_apple_embedded.mm",
+   "line": 46,
+   "inc": "servers/display/native_menu.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/apple_embedded/display_server_apple_embedded.h",
+   "line": 34,
+   "inc": "servers/display/display_server.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/apple_embedded/display_server_apple_embedded.h",
+   "line": 37,
+   "inc": "servers/rendering/renderer_rd/renderer_compositor_rd.h",
+   "guards": [
+    "if defined(RD_ENABLED)"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/apple_embedded/display_server_apple_embedded.h",
+   "line": 38,
+   "inc": "servers/rendering/rendering_device.h",
+   "guards": [
+    "if defined(RD_ENABLED)"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/alsa/audio_driver_alsa.h",
+   "line": 38,
+   "inc": "servers/audio/audio_driver.h",
+   "guards": [
+    "ifdef ALSA_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/accesskit/accessibility_server_accesskit.h",
+   "line": 36,
+   "inc": "servers/display/accessibility_server.h",
+   "guards": [
+    "ifdef ACCESSKIT_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/accesskit/accessibility_server_accesskit.cpp",
+   "line": 35,
+   "inc": "servers/text/text_server.h",
+   "guards": [
+    "ifdef ACCESSKIT_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/accesskit/accessibility_server_accesskit.cpp",
+   "line": 38,
+   "inc": "platform/android/thread_jandroid.h",
+   "guards": [
+    "ifdef ACCESSKIT_ENABLED",
+    "ifdef ANDROID_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/xaudio2/audio_driver_xaudio2.h",
+   "line": 36,
+   "inc": "servers/audio/audio_driver.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/wasapi/audio_driver_wasapi.h",
+   "line": 38,
+   "inc": "servers/audio/audio_driver.h",
+   "guards": [
+    "ifdef WASAPI_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/vulkan/rendering_shader_container_vulkan.h",
+   "line": 33,
+   "inc": "servers/rendering/rendering_shader_container.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/vulkan/rendering_device_driver_vulkan.h",
+   "line": 38,
+   "inc": "servers/rendering/rendering_device_driver.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/vulkan/rendering_device_driver_vulkan.cpp",
+   "line": 42,
+   "inc": "platform/android/java_godot_wrapper.h",
+   "guards": [
+    "if defined(SWAPPY_FRAME_PACING_ENABLED)"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/vulkan/rendering_device_driver_vulkan.cpp",
+   "line": 43,
+   "inc": "platform/android/os_android.h",
+   "guards": [
+    "if defined(SWAPPY_FRAME_PACING_ENABLED)"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/vulkan/rendering_device_driver_vulkan.cpp",
+   "line": 44,
+   "inc": "platform/android/thread_jandroid.h",
+   "guards": [
+    "if defined(SWAPPY_FRAME_PACING_ENABLED)"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/vulkan/rendering_context_driver_vulkan.h",
+   "line": 37,
+   "inc": "servers/rendering/rendering_context_driver.h",
+   "guards": [
+    "ifdef VULKAN_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/pulseaudio/audio_driver_pulseaudio.h",
+   "line": 38,
+   "inc": "servers/audio/audio_driver.h",
+   "guards": [
+    "ifdef PULSEAUDIO_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/png/resource_saver_png.cpp",
+   "line": 36,
+   "inc": "scene/resources/image_texture.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/metal/rendering_shader_container_metal.h",
+   "line": 35,
+   "inc": "servers/rendering/rendering_device_driver.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/metal/rendering_shader_container_metal.h",
+   "line": 36,
+   "inc": "servers/rendering/rendering_shader_container.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/metal/rendering_device_driver_metal.h",
+   "line": 37,
+   "inc": "servers/rendering/rendering_device_driver.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/metal/rendering_context_driver_metal.h",
+   "line": 35,
+   "inc": "servers/rendering/rendering_context_driver.h",
+   "guards": [
+    "ifdef METAL_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/metal/rendering_context_driver_metal.h",
+   "line": 36,
+   "inc": "servers/rendering/rendering_device_driver.h",
+   "guards": [
+    "ifdef METAL_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/metal/rendering_context_driver_metal.cpp",
+   "line": 46,
+   "inc": "modules/visionos_xr/visionos_xr_interface.h",
+   "guards": [
+    "if defined(VISIONOS_ENABLED) && defined(MODULE_VISIONOS_XR_ENABLED)"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/metal/rendering_context_driver_metal.cpp",
+   "line": 47,
+   "inc": "platform/visionos/render_mode_visionos.h",
+   "guards": [
+    "if defined(VISIONOS_ENABLED) && defined(MODULE_VISIONOS_XR_ENABLED)"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/metal/pixel_formats.h",
+   "line": 59,
+   "inc": "servers/rendering/rendering_device_commons.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/metal/metal_device_properties.h",
+   "line": 53,
+   "inc": "servers/rendering/rendering_device_driver.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/metal/metal_device_properties.cpp",
+   "line": 55,
+   "inc": "servers/rendering/renderer_rd/effects/metal_fx.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/metal/metal3_objects.h",
+   "line": 55,
+   "inc": "servers/rendering/rendering_device_driver.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/gles3/shader_gles3.h",
+   "line": 39,
+   "inc": "servers/rendering/rendering_server_types.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_scene_gles3.h",
+   "line": 41,
+   "inc": "servers/rendering/renderer_scene_render.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_scene_gles3.h",
+   "line": 42,
+   "inc": "servers/rendering/rendering_server_enums.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_scene_gles3.h",
+   "line": 43,
+   "inc": "servers/rendering/rendering_server_types.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_scene_gles3.cpp",
+   "line": 48,
+   "inc": "servers/camera/camera_feed.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_scene_gles3.cpp",
+   "line": 49,
+   "inc": "servers/camera/camera_server.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_scene_gles3.cpp",
+   "line": 50,
+   "inc": "servers/rendering/rendering_server_default.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_scene_gles3.cpp",
+   "line": 51,
+   "inc": "servers/rendering/rendering_server_globals.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_scene_gles3.cpp",
+   "line": 52,
+   "inc": "servers/rendering/rendering_server_types.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_gles3.h",
+   "line": 51,
+   "inc": "servers/rendering/renderer_compositor.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_gles3.cpp",
+   "line": 41,
+   "inc": "servers/display/display_server.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_gles3.cpp",
+   "line": 42,
+   "inc": "servers/rendering/rendering_server.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_gles3.cpp",
+   "line": 43,
+   "inc": "servers/rendering/rendering_server_types.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_canvas_gles3.h",
+   "line": 38,
+   "inc": "servers/rendering/renderer_canvas_render.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_canvas_gles3.h",
+   "line": 39,
+   "inc": "servers/rendering/rendering_server_enums.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_canvas_gles3.cpp",
+   "line": 45,
+   "inc": "servers/rendering/rendering_server_default.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_canvas_gles3.cpp",
+   "line": 46,
+   "inc": "servers/rendering/rendering_server_globals.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/rasterizer_canvas_gles3.cpp",
+   "line": 47,
+   "inc": "servers/rendering/rendering_server_types.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/utilities.h",
+   "line": 36,
+   "inc": "servers/rendering/storage/utilities.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/texture_storage.h",
+   "line": 42,
+   "inc": "servers/rendering/rendering_server_enums.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/texture_storage.h",
+   "line": 43,
+   "inc": "servers/rendering/rendering_server_types.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/texture_storage.h",
+   "line": 44,
+   "inc": "servers/rendering/storage/texture_storage.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/texture_storage.h",
+   "line": 45,
+   "inc": "servers/rendering/storage/utilities.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/render_scene_buffers_gles3.h",
+   "line": 36,
+   "inc": "servers/rendering/storage/render_scene_buffers.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/particles_storage.h",
+   "line": 38,
+   "inc": "servers/rendering/storage/particles_storage.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/particles_storage.h",
+   "line": 39,
+   "inc": "servers/rendering/storage/utilities.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/particles_storage.cpp",
+   "line": 40,
+   "inc": "servers/rendering/rendering_server_globals.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/mesh_storage.h",
+   "line": 39,
+   "inc": "servers/rendering/renderer_compositor.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/mesh_storage.h",
+   "line": 40,
+   "inc": "servers/rendering/rendering_server_enums.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/mesh_storage.h",
+   "line": 41,
+   "inc": "servers/rendering/rendering_server_globals.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/mesh_storage.h",
+   "line": 42,
+   "inc": "servers/rendering/storage/mesh_storage.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/mesh_storage.h",
+   "line": 43,
+   "inc": "servers/rendering/storage/utilities.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/mesh_storage.cpp",
+   "line": 38,
+   "inc": "servers/rendering/renderer_viewport.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/mesh_storage.cpp",
+   "line": 39,
+   "inc": "servers/rendering/rendering_server.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/material_storage.h",
+   "line": 42,
+   "inc": "servers/rendering/rendering_server_types.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/material_storage.h",
+   "line": 43,
+   "inc": "servers/rendering/shader_compiler.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/material_storage.h",
+   "line": 44,
+   "inc": "servers/rendering/shader_language.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/material_storage.h",
+   "line": 45,
+   "inc": "servers/rendering/storage/material_storage.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/material_storage.h",
+   "line": 46,
+   "inc": "servers/rendering/storage/utilities.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/material_storage.cpp",
+   "line": 43,
+   "inc": "servers/rendering/rendering_server_types.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/material_storage.cpp",
+   "line": 44,
+   "inc": "servers/rendering/storage/variant_converters.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/light_storage.h",
+   "line": 38,
+   "inc": "servers/rendering/storage/light_storage.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/storage/light_storage.h",
+   "line": 39,
+   "inc": "servers/rendering/storage/utilities.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/environment/gi.h",
+   "line": 35,
+   "inc": "servers/rendering/environment/renderer_gi.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/environment/fog.h",
+   "line": 35,
+   "inc": "servers/rendering/environment/renderer_fog.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/gles3/effects/feed_effects.cpp",
+   "line": 36,
+   "inc": "servers/rendering/rendering_server_enums.h",
+   "guards": [
+    "ifdef GLES3_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/egl/egl_manager.h",
+   "line": 36,
+   "inc": "servers/display/display_server_enums.h",
+   "guards": [
+    "ifdef EGL_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "drivers/d3d12/rendering_shader_container_d3d12.h",
+   "line": 33,
+   "inc": "servers/rendering/rendering_shader_container.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/d3d12/rendering_device_driver_d3d12.h",
+   "line": 39,
+   "inc": "servers/rendering/rendering_device_driver.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/d3d12/rendering_context_driver_d3d12.h",
+   "line": 34,
+   "inc": "servers/display/display_server_enums.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/d3d12/rendering_context_driver_d3d12.h",
+   "line": 35,
+   "inc": "servers/rendering/rendering_context_driver.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "drivers/coreaudio/audio_driver_coreaudio.h",
+   "line": 36,
+   "inc": "servers/audio/audio_driver.h",
+   "guards": [
+    "ifdef COREAUDIO_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "servers/rendering/shader_types.cpp",
+   "line": 34,
+   "inc": "scene/resources/shader.h",
+   "guards": [
+    "ifdef DEV_ENABLED"
+   ],
+   "cat": "DEBUG/TESTS"
+  },
+  {
+   "src": "servers/rendering/shader_preprocessor.h",
+   "line": 38,
+   "inc": "scene/resources/shader_include.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/rendering/rendering_device_binds.cpp",
+   "line": 35,
+   "inc": "modules/glslang/shader_compile.h",
+   "guards": [
+    "ifdef MODULE_GLSLANG_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "servers/rendering/rendering_device.cpp",
+   "line": 50,
+   "inc": "modules/glslang/shader_compile.h",
+   "guards": [
+    "ifdef MODULE_GLSLANG_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "servers/rendering/renderer_rd/storage_rd/material_storage.cpp",
+   "line": 46,
+   "inc": "modules/texture_streaming/texture_streaming.h",
+   "guards": [
+    "ifdef MODULE_TEXTURE_STREAMING_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "servers/rendering/renderer_rd/forward_mobile/render_forward_mobile.cpp",
+   "line": 51,
+   "inc": "modules/texture_streaming/texture_streaming.h",
+   "guards": [
+    "ifdef MODULE_TEXTURE_STREAMING_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "servers/rendering/renderer_rd/forward_clustered/render_forward_clustered.cpp",
+   "line": 48,
+   "inc": "modules/texture_streaming/texture_streaming.h",
+   "guards": [
+    "ifdef MODULE_TEXTURE_STREAMING_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "servers/navigation_3d/navigation_server_3d.h",
+   "line": 36,
+   "inc": "scene/resources/material.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/navigation_3d/navigation_server_3d.cpp",
+   "line": 38,
+   "inc": "scene/main/node.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/navigation_3d/navigation_server_3d.cpp",
+   "line": 39,
+   "inc": "scene/resources/3d/navigation_mesh_source_geometry_data_3d.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/navigation_3d/navigation_server_3d.cpp",
+   "line": 40,
+   "inc": "scene/resources/navigation_mesh.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/navigation_2d/navigation_server_2d.cpp",
+   "line": 38,
+   "inc": "scene/main/node.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/navigation_2d/navigation_server_2d.cpp",
+   "line": 39,
+   "inc": "scene/resources/2d/navigation_mesh_source_geometry_data_2d.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/navigation_2d/navigation_server_2d.cpp",
+   "line": 40,
+   "inc": "scene/resources/2d/navigation_polygon.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/movie_writer/movie_writer.cpp",
+   "line": 39,
+   "inc": "scene/main/window.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/display/native_menu.cpp",
+   "line": 34,
+   "inc": "scene/resources/texture.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/display/display_server.cpp",
+   "line": 42,
+   "inc": "scene/resources/texture.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/audio/audio_server.cpp",
+   "line": 38,
+   "inc": "scene/resources/audio/audio_stream.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/audio/audio_server.cpp",
+   "line": 39,
+   "inc": "scene/scene_string_names.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/audio/audio_driver.cpp",
+   "line": 35,
+   "inc": "scene/resources/audio/audio_stream.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/audio/audio_bus_layout.cpp",
+   "line": 33,
+   "inc": "scene/scene_string_names.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "servers/audio/effects/audio_effect_record.h",
+   "line": 34,
+   "inc": "scene/resources/audio/audio_stream_wav.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "scene/property_utils.cpp",
+   "line": 41,
+   "inc": "editor/editor_node.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/3d/occluder_instance_3d.cpp",
+   "line": 48,
+   "inc": "editor/editor_node.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/2d/skeleton_2d.cpp",
+   "line": 40,
+   "inc": "editor/editor_data.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/2d/skeleton_2d.cpp",
+   "line": 41,
+   "inc": "editor/scene/canvas_item_editor_plugin.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/2d/skeleton_2d.cpp",
+   "line": 42,
+   "inc": "editor/settings/editor_settings.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/resources/streamed_texture.cpp",
+   "line": 48,
+   "inc": "modules/texture_streaming/texture_streaming.h",
+   "guards": [
+    "ifdef MODULE_TEXTURE_STREAMING_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "scene/resources/shader.cpp",
+   "line": 45,
+   "inc": "editor/doc/editor_help.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/resources/dpi_texture.cpp",
+   "line": 40,
+   "inc": "modules/svg/image_loader_svg.h",
+   "guards": [
+    "ifdef MODULE_SVG_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "scene/resources/2d/skeleton/skeleton_modification_2d_twoboneik.cpp",
+   "line": 38,
+   "inc": "editor/settings/editor_settings.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/resources/2d/skeleton/skeleton_modification_2d.cpp",
+   "line": 38,
+   "inc": "editor/settings/editor_settings.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/gui/rich_text_label.h",
+   "line": 39,
+   "inc": "editor/themes/editor_scale.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/gui/line_edit.cpp",
+   "line": 53,
+   "inc": "editor/settings/editor_settings.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/gui/control.cpp",
+   "line": 58,
+   "inc": "editor/scene/gui/control_editor_plugin.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "scene/animation/animation_mixer.cpp",
+   "line": 54,
+   "inc": "editor/editor_undo_redo_manager.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "core/profiling/profiling.h",
+   "line": 102,
+   "inc": "main/performance.h",
+   "guards": [
+    "elif defined(GODOT_USE_PERFETTO) (after if defined(GODOT_USE_TRACY))"
+   ],
+   "cat": "platform/feature guard"
+  },
+  {
+   "src": "core/io/resource_loader.cpp",
+   "line": 50,
+   "inc": "servers/rendering/rendering_server.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "core/io/resource_format_binary.cpp",
+   "line": 41,
+   "inc": "scene/property_utils.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "core/io/resource_format_binary.cpp",
+   "line": 42,
+   "inc": "scene/resources/packed_scene.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "core/io/resource.cpp",
+   "line": 39,
+   "inc": "scene/main/node.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "core/extension/godot_instance.cpp",
+   "line": 37,
+   "inc": "main/main.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "core/extension/godot_instance.cpp",
+   "line": 38,
+   "inc": "servers/display/display_server.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "core/extension/extension_api_dump.cpp",
+   "line": 43,
+   "inc": "editor/doc/editor_help.h",
+   "guards": [
+    "ifdef TOOLS_ENABLED"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "core/error/error_macros.cpp",
+   "line": 45,
+   "inc": "scene/main/node.h",
+   "guards": [
+    "if defined(DEBUG_ENABLED) && defined(TOOLS_ENABLED)"
+   ],
+   "cat": "TOOLS_ENABLED"
+  },
+  {
+   "src": "core/debugger/remote_debugger.cpp",
+   "line": 45,
+   "inc": "servers/display/display_server.h",
+   "guards": [],
+   "cat": "UNGUARDED"
+  },
+  {
+   "src": "core/config/engine.cpp",
+   "line": 42,
+   "inc": "servers/rendering/rendering_device.h",
+   "guards": [
+    "ifdef RD_ENABLED"
+   ],
+   "cat": "platform/feature guard"
+  }
+ ],
+ "fanin": [
+  [
+   "core/object/class_db.h",
+   797,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/object/callable_mp.h",
+   464,
+   [
+    "core",
+    "editor",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/config/project_settings.h",
+   334,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/os/os.h",
+   298,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/config/engine.h",
+   254,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "editor/editor_node.h",
+   226,
+   [
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene"
+   ]
+  ],
+  [
+   "editor/settings/editor_settings.h",
+   213,
+   [
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "tests"
+   ]
+  ],
+  [
+   "servers/rendering/rendering_server.h",
+   210,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "tests/test_macros.h",
+   197,
+   [
+    "modules",
+    "tests"
+   ]
+  ],
+  [
+   "scene/main/scene_tree.h",
+   194,
+   [
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "tests"
+   ]
+  ],
+  [
+   "editor/themes/editor_scale.h",
+   177,
+   [
+    "editor",
+    "modules",
+    "platform",
+    "scene"
+   ]
+  ],
+  [
+   "editor/editor_string_names.h",
+   163,
+   [
+    "editor",
+    "modules",
+    "platform"
+   ]
+  ],
+  [
+   "core/io/file_access.h",
+   157,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/io/resource_loader.h",
+   157,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/object/ref_counted.h",
+   141,
+   [
+    "core",
+    "editor",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "scene/gui/box_container.h",
+   115,
+   [
+    "editor",
+    "modules",
+    "scene",
+    "tests"
+   ]
+  ],
+  [
+   "core/string/ustring.h",
+   114,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "editor/editor_undo_redo_manager.h",
+   104,
+   [
+    "editor",
+    "modules",
+    "scene"
+   ]
+  ],
+  [
+   "servers/display/display_server.h",
+   101,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers"
+   ]
+  ],
+  [
+   "core/variant/variant.h",
+   101,
+   [
+    "core",
+    "editor",
+    "modules",
+    "platform",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "scene/main/window.h",
+   98,
+   [
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/io/dir_access.h",
+   97,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "editor/plugins/editor_plugin.h",
+   95,
+   [
+    "editor",
+    "modules"
+   ]
+  ],
+  [
+   "core/input/input.h",
+   90,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "scene/gui/dialogs.h",
+   89,
+   [
+    "editor",
+    "modules",
+    "platform",
+    "scene"
+   ]
+  ],
+  [
+   "core/templates/local_vector.h",
+   86,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/io/resource.h",
+   86,
+   [
+    "core",
+    "editor",
+    "modules",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "scene/gui/button.h",
+   84,
+   [
+    "editor",
+    "modules",
+    "scene",
+    "tests"
+   ]
+  ],
+  [
+   "core/variant/typed_array.h",
+   82,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/os/keyboard.h",
+   78,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/typedefs.h",
+   77,
+   [
+    "core",
+    "drivers",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers"
+   ]
+  ],
+  [
+   "core/object/script_language.h",
+   74,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/io/image.h",
+   74,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/templates/hash_map.h",
+   73,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "scene/gui/label.h",
+   71,
+   [
+    "editor",
+    "modules",
+    "scene",
+    "tests"
+   ]
+  ],
+  [
+   "core/object/object.h",
+   70,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "core/error/error_macros.h",
+   69,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "modules",
+    "platform",
+    "scene",
+    "servers",
+    "tests"
+   ]
+  ],
+  [
+   "scene/gui/control.h",
+   67,
+   [
+    "editor",
+    "modules",
+    "platform",
+    "scene",
+    "tests"
+   ]
+  ],
+  [
+   "core/io/resource_saver.h",
+   66,
+   [
+    "core",
+    "drivers",
+    "editor",
+    "main",
+    "modules",
+    "scene",
+    "tests"
+   ]
+  ],
+  [
+   "scene/theme/theme_db.h",
+   65,
+   [
+    "editor",
+    "main",
+    "modules",
+    "scene",
+    "tests"
+   ]
+  ]
+ ]
+}

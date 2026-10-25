@@ -1,0 +1,6 @@
+raw '#include "editor/' lines in modules: 354
+    44  editor layer             TOOLS_ENABLED
+   256  editor layer             in modules/*/editor/
+    19  editor layer             unguarded
+     2  generated, module-local  TOOLS_ENABLED
+    33  module-local             TOOLS_ENABLED

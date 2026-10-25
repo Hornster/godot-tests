@@ -1,0 +1,1689 @@
+{
+ "jni": {
+  "jvm_files_scanned": 101,
+  "jvm_classes": 134,
+  "downcalls": {
+   "cpp_exports": 77,
+   "jvm_native_decls": 77,
+   "matched": 77,
+   "cpp_only": [],
+   "jvm_only": [],
+   "by_cpp_file": {
+    "platform/android/java_godot_lib_jni.cpp": 50,
+    "platform/android/editor/game_menu_utils_jni.cpp": 15,
+    "platform/android/plugin/godot_plugin_jni.cpp": 4,
+    "platform/android/variant/callable_jni.cpp": 4,
+    "platform/android/editor/editor_utils_jni.cpp": 2,
+    "platform/android/dialog_utils_jni.cpp": 2
+   },
+   "by_jvm_class": {
+    "org.godotengine.godot.GodotLib": 50,
+    "org.godotengine.godot.editor.utils.GameMenuUtils": 15,
+    "org.godotengine.godot.plugin.GodotPlugin": 4,
+    "org.godotengine.godot.variant.Callable": 4,
+    "org.godotengine.godot.editor.utils.EditorUtils": 2,
+    "org.godotengine.godot.utils.DialogUtils": 2
+   },
+   "edges": [
+    {
+     "cpp": "platform/android/java_godot_lib_jni.cpp",
+     "jvm": "org.godotengine.godot.GodotLib",
+     "n": 50
+    },
+    {
+     "cpp": "platform/android/editor/game_menu_utils_jni.cpp",
+     "jvm": "org.godotengine.godot.editor.utils.GameMenuUtils",
+     "n": 15
+    },
+    {
+     "cpp": "platform/android/plugin/godot_plugin_jni.cpp",
+     "jvm": "org.godotengine.godot.plugin.GodotPlugin",
+     "n": 4
+    },
+    {
+     "cpp": "platform/android/variant/callable_jni.cpp",
+     "jvm": "org.godotengine.godot.variant.Callable",
+     "n": 4
+    },
+    {
+     "cpp": "platform/android/editor/editor_utils_jni.cpp",
+     "jvm": "org.godotengine.godot.editor.utils.EditorUtils",
+     "n": 2
+    },
+    {
+     "cpp": "platform/android/dialog_utils_jni.cpp",
+     "jvm": "org.godotengine.godot.utils.DialogUtils",
+     "n": 2
+    }
+   ]
+  },
+  "upcalls": {
+   "total": 175,
+   "status": {
+    "ambiguous": 28,
+    "resolved": 100,
+    "jdk_or_android_sdk": 47
+   },
+   "by_cpp_file": {
+    "platform/android/java_godot_wrapper.cpp": 53,
+    "platform/android/java_class_wrapper.cpp": 36,
+    "platform/android/jni_utils.cpp": 22,
+    "platform/android/java_godot_io_wrapper.cpp": 19,
+    "platform/android/file_access_filesystem_jandroid.cpp": 16,
+    "platform/android/dir_access_jandroid.cpp": 13,
+    "platform/android/tts_android.cpp": 9,
+    "platform/android/java_godot_view_wrapper.cpp": 5,
+    "platform/android/net_socket_android.cpp": 2
+   },
+   "resolved_by_jvm_class": {
+    "org.godotengine.godot.nativeapi.GodotNativeBridge": 53,
+    "org.godotengine.godot.GodotIO": 16,
+    "org.godotengine.godot.io.file.FileAccessHandler": 12,
+    "org.godotengine.godot.tts.GodotTTS": 8,
+    "org.godotengine.godot.plugin.SignalInfo": 4,
+    "org.godotengine.godot.plugin.AndroidRuntimePlugin": 2,
+    "org.godotengine.godot.Dictionary": 2,
+    "org.godotengine.godot.utils.GodotNetUtils": 2,
+    "org.godotengine.godot.variant.Callable": 1
+   },
+   "resolved_by_jvm_package": {
+    "org.godotengine.godot.nativeapi": 53,
+    "org.godotengine.godot": 18,
+    "org.godotengine.godot.io.file": 12,
+    "org.godotengine.godot.tts": 8,
+    "org.godotengine.godot.plugin": 6,
+    "org.godotengine.godot.utils": 2,
+    "org.godotengine.godot.variant": 1
+   },
+   "edges": [
+    {
+     "cpp": "platform/android/java_godot_wrapper.cpp",
+     "jvm": "org.godotengine.godot.nativeapi.GodotNativeBridge",
+     "n": 53
+    },
+    {
+     "cpp": "platform/android/java_godot_io_wrapper.cpp",
+     "jvm": "org.godotengine.godot.GodotIO",
+     "n": 16
+    },
+    {
+     "cpp": "platform/android/file_access_filesystem_jandroid.cpp",
+     "jvm": "org.godotengine.godot.io.file.FileAccessHandler",
+     "n": 12
+    },
+    {
+     "cpp": "platform/android/tts_android.cpp",
+     "jvm": "org.godotengine.godot.tts.GodotTTS",
+     "n": 8
+    },
+    {
+     "cpp": "platform/android/java_class_wrapper.cpp",
+     "jvm": "org.godotengine.godot.plugin.SignalInfo",
+     "n": 3
+    },
+    {
+     "cpp": "platform/android/java_class_wrapper.cpp",
+     "jvm": "org.godotengine.godot.plugin.AndroidRuntimePlugin",
+     "n": 2
+    },
+    {
+     "cpp": "platform/android/jni_utils.cpp",
+     "jvm": "org.godotengine.godot.Dictionary",
+     "n": 2
+    },
+    {
+     "cpp": "platform/android/net_socket_android.cpp",
+     "jvm": "org.godotengine.godot.utils.GodotNetUtils",
+     "n": 2
+    },
+    {
+     "cpp": "platform/android/jni_utils.cpp",
+     "jvm": "org.godotengine.godot.variant.Callable",
+     "n": 1
+    },
+    {
+     "cpp": "platform/android/jni_utils.cpp",
+     "jvm": "org.godotengine.godot.plugin.SignalInfo",
+     "n": 1
+    }
+   ],
+   "ambiguous": [
+    "platform/android/dir_access_jandroid.cpp:313 dirOpen -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:314 dirNext -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:315 dirClose -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:316 dirIsDir -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:317 dirExists -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:318 fileExists -> 10 classes in org.godotengine.godot.io",
+    "platform/android/dir_access_jandroid.cpp:319 getDriveCount -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:320 getDrive -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:321 makeDir -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:322 getSpaceLeft -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:323 rename -> 8 classes in org.godotengine.godot.io",
+    "platform/android/dir_access_jandroid.cpp:324 remove -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/dir_access_jandroid.cpp:325 isCurrentHidden -> 4 classes in org.godotengine.godot.io.directory",
+    "platform/android/file_access_filesystem_jandroid.cpp:365 fileExists -> 10 classes in org.godotengine.godot.io",
+    "platform/android/file_access_filesystem_jandroid.cpp:366 fileLastModified -> 6 classes in org.godotengine.godot.io.file",
+    "platform/android/file_access_filesystem_jandroid.cpp:367 fileLastAccessed -> 4 classes in org.godotengine.godot.io.file",
+    "platform/android/file_access_filesystem_jandroid.cpp:369 fileSize -> 6 classes in org.godotengine.godot.io.file",
+    "platform/android/java_godot_io_wrapper.cpp:67 showKeyboard -> 2 classes in org.godotengine.godot",
+    "platform/android/java_godot_io_wrapper.cpp:68 hideKeyboard -> 2 classes in org.godotengine.godot",
+    "platform/android/java_godot_io_wrapper.cpp:69 hasHardwareKeyboard -> 3 classes in org.godotengine.godot",
+    "platform/android/java_godot_view_wrapper.cpp:45 configurePointerIcon -> 3 classes in org.godotengine.godot",
+    "platform/android/java_godot_view_wrapper.cpp:46 setPointerIcon -> 3 classes in org.godotengine.godot",
+    "platform/android/java_godot_view_wrapper.cpp:50 requestPointerCapture -> 2 classes in org.godotengine.godot",
+    "platform/android/java_godot_view_wrapper.cpp:51 releasePointerCapture -> 2 classes in org.godotengine.godot",
+    "platform/android/java_godot_view_wrapper.cpp:54 canCapturePointer -> 4 classes in org.godotengine.godot",
+    "platform/android/jni_utils.cpp:84 toString -> 6 classes in (no common package)",
+    "platform/android/jni_utils.cpp:448 getValue -> 2 classes in com.godot.game.test.javaclasswrapper",
+    "platform/android/tts_android.cpp:118 init -> 3 classes in org.godotengine.godot"
+   ],
+   "ambiguous_by_common_package": {
+    "org.godotengine.godot.io.directory": 11,
+    "org.godotengine.godot": 9,
+    "org.godotengine.godot.io": 3,
+    "org.godotengine.godot.io.file": 3,
+    "(none)": 1,
+    "com.godot.game.test.javaclasswrapper": 1
+   },
+   "unresolved": []
+  },
+  "bridge_cpp_files": [
+   "platform/android/dialog_utils_jni.cpp",
+   "platform/android/dir_access_jandroid.cpp",
+   "platform/android/editor/editor_utils_jni.cpp",
+   "platform/android/editor/game_menu_utils_jni.cpp",
+   "platform/android/file_access_filesystem_jandroid.cpp",
+   "platform/android/java_class_wrapper.cpp",
+   "platform/android/java_godot_io_wrapper.cpp",
+   "platform/android/java_godot_lib_jni.cpp",
+   "platform/android/java_godot_view_wrapper.cpp",
+   "platform/android/java_godot_wrapper.cpp",
+   "platform/android/jni_utils.cpp",
+   "platform/android/net_socket_android.cpp",
+   "platform/android/plugin/godot_plugin_jni.cpp",
+   "platform/android/tts_android.cpp",
+   "platform/android/variant/callable_jni.cpp"
+  ],
+  "bridge_cpp_components": {
+   "platform.android": 15
+  },
+  "include_reach_of_bridge_files": {
+   "platform.android": 44,
+   "core.os": 6,
+   "core.config": 4,
+   "editor": 3,
+   "core.string": 2,
+   "editor.debugger": 2,
+   "editor.run": 2,
+   "editor.settings": 2,
+   "main": 2,
+   "servers.display": 2,
+   "core.error": 2,
+   "editor.gui": 1,
+   "editor.script": 1,
+   "core.templates": 1,
+   "core.math": 1,
+   "core.variant": 1,
+   "core.input": 1,
+   "core.profiling": 1,
+   "servers.camera": 1,
+   "servers.rendering": 1,
+   "servers.xr": 1,
+   "core.object": 1
+  }
+ },
+ "csharp": {
+  "runtime_interop_table": {
+   "cpp": 226,
+   "cs": 226,
+   "matched": 226,
+   "cpp_only": [],
+   "cs_only": [],
+   "same_order": true,
+   "first_order_mismatch": null
+  },
+  "editor_icall_table": {
+   "cpp": 33,
+   "cs": 33,
+   "matched": 33,
+   "cpp_only": [],
+   "cs_only": [],
+   "same_order": true,
+   "first_order_mismatch": null
+  },
+  "godotsharp_cs_consumers": {
+   "files": 24,
+   "top_files": {
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/NativeInterop/VariantUtils.cs": 75,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/Array.cs": 46,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/Dictionary.cs": 43,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/Bridge/ScriptManagerBridge.cs": 32,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/GD.cs": 26,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/NativeInterop/Marshaling.cs": 21,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/NativeInterop/InteropStructs.cs": 19,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/NodePath.cs": 12,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/GodotObject.base.cs": 7,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/NativeInterop/InteropUtils.cs": 7,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/StringExtensions.cs": 6,
+    "modules/mono/glue/GodotSharp/GodotSharp/Core/DelegateUtils.cs": 5
+   },
+   "declared_but_unreferenced_in_cs": [
+    "godotsharp_array_filter_godot_objects_by_native",
+    "godotsharp_array_filter_godot_objects_by_non_native",
+    "godotsharp_array_is_typed",
+    "godotsharp_dictionary_get_typed_key_builtin",
+    "godotsharp_dictionary_get_typed_key_class_name",
+    "godotsharp_dictionary_get_typed_key_script",
+    "godotsharp_dictionary_get_typed_value_builtin",
+    "godotsharp_dictionary_get_typed_value_class_name",
+    "godotsharp_dictionary_get_typed_value_script",
+    "godotsharp_dictionary_is_typed_key",
+    "godotsharp_dictionary_is_typed_value",
+    "godotsharp_method_bind_call",
+    "godotsharp_method_bind_ptrcall"
+   ]
+  },
+  "managed_callbacks": {
+   "cpp_fields": 43,
+   "cs_fields": 43,
+   "same_order": true,
+   "cpp_only": [],
+   "cs_only": [],
+   "cs_impl_classes": {
+    "ScriptManagerBridge": 20,
+    "CSharpInstanceBridge": 11,
+    "DelegateUtils": 6,
+    "GCHandleBridge": 2,
+    "SignalAwaiter": 1,
+    "DebuggingUtils": 1,
+    "DisposablesTracker": 1,
+    "GD": 1
+   },
+   "cpp_call_sites_by_file": {
+    "modules/mono/csharp_script.cpp": 44,
+    "modules/mono/managed_callable.cpp": 5,
+    "modules/mono/csharp_script_resource_format.cpp": 1,
+    "modules/mono/glue/runtime_interop.cpp": 1,
+    "modules/mono/mono_gc_handle.cpp": 1,
+    "modules/mono/mono_gd/gd_mono.cpp": 1,
+    "modules/mono/mono_gd/gd_mono_cache.cpp": 1,
+    "modules/mono/signal_awaiter_utils.cpp": 1
+   },
+   "never_called_from_cpp": []
+  },
+  "bindings_generator": {
+   "file": "modules/mono/editor/bindings_generator.cpp",
+   "lines": 5306,
+   "classdb_refs": 53,
+   "writes_generated_dirs": [
+    "Generated",
+    "Generated/GodotObjects",
+    "GeneratedIncludes.props"
+   ],
+   "include_reach": {
+    "modules.mono": 5,
+    "core.io": 2,
+    "core.config": 1,
+    "core": 1,
+    "core.os": 1,
+    "main": 1
+   }
+  },
+  "include_reach_of_interop_files": {
+   "modules.mono": 13,
+   "core.config": 3,
+   "core.io": 3,
+   "core.object": 3,
+   "core": 2,
+   "core.debugger": 2,
+   "core.os": 2,
+   "editor.file_system": 2,
+   "core.string": 1,
+   "core.variant": 1,
+   "editor.debugger": 1,
+   "editor": 1,
+   "editor.export": 1,
+   "editor.run": 1,
+   "editor.script": 1,
+   "editor.settings": 1,
+   "editor.themes": 1,
+   "main": 1
+  },
+  "include_reach_of_all_mono_cpp": {
+   "modules.mono": 76,
+   "core.io": 22,
+   "core.string": 19,
+   "core.object": 15,
+   "core.config": 14,
+   "core.os": 13,
+   "core": 10,
+   "core.variant": 7,
+   "editor.file_system": 5,
+   "core.templates": 5,
+   "core.debugger": 4,
+   "editor.settings": 3,
+   "editor": 2,
+   "editor.docks": 2,
+   "main": 2,
+   "editor.doc": 2,
+   "scene.main": 2,
+   "core.error": 2,
+   "servers.text": 1,
+   "editor.plugins": 1,
+   "scene.gui": 1,
+   "scene.theme": 1,
+   "editor.debugger": 1,
+   "editor.export": 1,
+   "editor.run": 1,
+   "editor.script": 1,
+   "editor.themes": 1,
+   "core.math": 1,
+   "modules": 1
+  },
+  "csproj_graph": {
+   "Godot.NET.Sdk": [],
+   "Godot.SourceGenerators.Sample": [
+    "Godot.SourceGenerators",
+    "GodotSharp"
+   ],
+   "Godot.SourceGenerators.Tests": [
+    "Godot.SourceGenerators",
+    "GodotSharp"
+   ],
+   "Godot.SourceGenerators": [],
+   "GodotTools.BuildLogger": [],
+   "GodotTools.Core": [],
+   "GodotTools.IdeMessaging.CLI": [
+    "GodotTools.IdeMessaging"
+   ],
+   "GodotTools.IdeMessaging": [],
+   "GodotTools.OpenVisualStudio": [],
+   "GodotTools.ProjectEditor": [
+    "GodotTools.Core",
+    "GodotTools.Shared"
+   ],
+   "GodotTools.Shared": [],
+   "GodotTools": [
+    "Godot.SourceGenerators",
+    "Godot.SourceGenerators.Internal",
+    "GodotTools.BuildLogger",
+    "GodotTools.Core",
+    "GodotTools.IdeMessaging",
+    "GodotTools.ProjectEditor"
+   ],
+   "Godot.SourceGenerators.Internal": [],
+   "GodotPlugins": [
+    "GodotSharp"
+   ],
+   "GodotSharp": [
+    "Godot.SourceGenerators.Internal"
+   ],
+   "GodotSharpEditor": [
+    "GodotSharp"
+   ]
+  }
+ },
+ "web": {
+  "js_library_files": 15,
+  "js_library_objects": 30,
+  "objects": {
+   "GodotAudio": {
+    "file": "platform/web/js/libs/library_godot_audio.js",
+    "exports": 26,
+    "declared_deps": [
+     "GodotOS",
+     "GodotRuntime"
+    ]
+   },
+   "GodotAudioScript": {
+    "file": "platform/web/js/libs/library_godot_audio.js",
+    "exports": 2,
+    "declared_deps": [
+     "GodotAudio"
+    ]
+   },
+   "GodotAudioWorklet": {
+    "file": "platform/web/js/libs/library_godot_audio.js",
+    "exports": 6,
+    "declared_deps": [
+     "GodotAudio",
+     "GodotConfig"
+    ]
+   },
+   "GodotConfig": {
+    "file": "platform/web/js/libs/library_godot_os.js",
+    "exports": 3,
+    "declared_deps": [
+     "GodotRuntime"
+    ]
+   },
+   "GodotDebugger": {
+    "file": "platform/web/js/libs/library_godot_debugger.js",
+    "exports": 4,
+    "declared_deps": [
+     "GodotConfig",
+     "GodotRuntime",
+     "IDHandler"
+    ]
+   },
+   "GodotDisplay": {
+    "file": "platform/web/js/libs/library_godot_display.js",
+    "exports": 40,
+    "declared_deps": [
+     "GodotConfig",
+     "GodotDisplayCursor",
+     "GodotDisplayScreen",
+     "GodotDisplayVK",
+     "GodotEventListeners",
+     "GodotRuntime"
+    ]
+   },
+   "GodotDisplayCursor": {
+    "file": "platform/web/js/libs/library_godot_display.js",
+    "exports": 0,
+    "declared_deps": [
+     "GodotConfig",
+     "GodotOS"
+    ]
+   },
+   "GodotDisplayScreen": {
+    "file": "platform/web/js/libs/library_godot_display.js",
+    "exports": 0,
+    "declared_deps": [
+     "GL",
+     "GodotConfig",
+     "GodotOS",
+     "emscripten_webgl_get_current_context"
+    ]
+   },
+   "GodotDisplayVK": {
+    "file": "platform/web/js/libs/library_godot_display.js",
+    "exports": 0,
+    "declared_deps": [
+     "GodotConfig",
+     "GodotEventListeners",
+     "GodotInput",
+     "GodotRuntime"
+    ]
+   },
+   "GodotEditorDebugger": {
+    "file": "platform/web/js/libs/library_godot_editor_debugger.js",
+    "exports": 2,
+    "declared_deps": [
+     "GodotDebugger",
+     "GodotRuntime",
+     "IDHandler"
+    ]
+   },
+   "GodotEmscripten": {
+    "file": "platform/web/js/libs/library_godot_emscripten.js",
+    "exports": 1,
+    "declared_deps": [
+     "GodotRuntime"
+    ]
+   },
+   "GodotEval": {
+    "file": "platform/web/js/libs/library_godot_javascript_singleton.js",
+    "exports": 1,
+    "declared_deps": [
+     "GodotRuntime"
+    ]
+   },
+   "GodotEventListeners": {
+    "file": "platform/web/js/libs/library_godot_os.js",
+    "exports": 0,
+    "declared_deps": [
+     "GodotOS"
+    ]
+   },
+   "GodotFS": {
+    "file": "platform/web/js/libs/library_godot_os.js",
+    "exports": 0,
+    "declared_deps": [
+     "FS",
+     "GodotRuntime",
+     "IDBFS"
+    ]
+   },
+   "GodotFetch": {
+    "file": "platform/web/js/libs/library_godot_fetch.js",
+    "exports": 7,
+    "declared_deps": [
+     "GodotRuntime",
+     "IDHandler"
+    ]
+   },
+   "GodotIME": {
+    "file": "platform/web/js/libs/library_godot_input.js",
+    "exports": 0,
+    "declared_deps": [
+     "GodotEventListeners",
+     "GodotRuntime"
+    ]
+   },
+   "GodotInput": {
+    "file": "platform/web/js/libs/library_godot_input.js",
+    "exports": 16,
+    "declared_deps": [
+     "GodotConfig",
+     "GodotEventListeners",
+     "GodotIME",
+     "GodotInputDragDrop",
+     "GodotInputGamepads",
+     "GodotRuntime"
+    ]
+   },
+   "GodotInputDragDrop": {
+    "file": "platform/web/js/libs/library_godot_input.js",
+    "exports": 0,
+    "declared_deps": [
+     "FS",
+     "GodotFS"
+    ]
+   },
+   "GodotInputGamepads": {
+    "file": "platform/web/js/libs/library_godot_input.js",
+    "exports": 0,
+    "declared_deps": [
+     "GodotEventListeners",
+     "GodotRuntime"
+    ]
+   },
+   "GodotJSWrapper": {
+    "file": "platform/web/js/libs/library_godot_javascript_singleton.js",
+    "exports": 12,
+    "declared_deps": [
+     "GodotRuntime",
+     "IDHandler"
+    ]
+   },
+   "GodotOS": {
+    "file": "platform/web/js/libs/library_godot_os.js",
+    "exports": 11,
+    "declared_deps": [
+     "GodotConfig",
+     "GodotFS",
+     "GodotRuntime"
+    ]
+   },
+   "GodotPWA": {
+    "file": "platform/web/js/libs/library_godot_os.js",
+    "exports": 2,
+    "declared_deps": [
+     "GodotEventListeners",
+     "GodotRuntime"
+    ]
+   },
+   "GodotRTCDataChannel": {
+    "file": "modules/webrtc/library_godot_webrtc.js",
+    "exports": 13,
+    "declared_deps": [
+     "GodotRuntime",
+     "IDHandler"
+    ]
+   },
+   "GodotRTCPeerConnection": {
+    "file": "modules/webrtc/library_godot_webrtc.js",
+    "exports": 8,
+    "declared_deps": [
+     "GodotRTCDataChannel",
+     "GodotRuntime",
+     "IDHandler"
+    ]
+   },
+   "GodotRuntime": {
+    "file": "platform/web/js/libs/library_godot_runtime.js",
+    "exports": 0,
+    "declared_deps": []
+   },
+   "GodotWebGL2": {
+    "file": "platform/web/js/libs/library_godot_webgl2.js",
+    "exports": 3,
+    "declared_deps": [
+     "GL",
+     "GodotRuntime",
+     "emscripten_webgl_get_current_context"
+    ]
+   },
+   "GodotWebMidi": {
+    "file": "platform/web/js/libs/library_godot_webmidi.js",
+    "exports": 2,
+    "declared_deps": [
+     "GodotRuntime"
+    ]
+   },
+   "GodotWebSocket": {
+    "file": "modules/websocket/library_godot_websocket.js",
+    "exports": 5,
+    "declared_deps": [
+     "GodotRuntime",
+     "IDHandler"
+    ]
+   },
+   "GodotWebXR": {
+    "file": "modules/webxr/native/library_godot_webxr.js",
+    "exports": 18,
+    "declared_deps": [
+     "GL",
+     "GodotRuntime",
+     "MainLoop",
+     "emscripten_webgl_get_current_context",
+     "runtimeKeepalivePop",
+     "runtimeKeepalivePush"
+    ]
+   },
+   "IDHandler": {
+    "file": "platform/web/js/libs/library_godot_os.js",
+    "exports": 0,
+    "declared_deps": []
+   }
+  },
+  "js_exports": 182,
+  "cpp_declared": 182,
+  "cpp_called": 182,
+  "exported_and_declared": 182,
+  "exported_never_referenced_from_cpp": [],
+  "exported_not_declared": [],
+  "cpp_declarations": {
+   "godot_audio_get_sample_playback_position": [
+    "platform/web/godot_audio.h:56"
+   ],
+   "godot_audio_has_script_processor": [
+    "platform/web/godot_audio.h:41"
+   ],
+   "godot_audio_has_worklet": [
+    "platform/web/godot_audio.h:40"
+   ],
+   "godot_audio_init": [
+    "platform/web/godot_audio.h:42"
+   ],
+   "godot_audio_input_start": [
+    "platform/web/godot_audio.h:45"
+   ],
+   "godot_audio_input_stop": [
+    "platform/web/godot_audio.h:46"
+   ],
+   "godot_audio_is_available": [
+    "platform/web/godot_audio.h:39"
+   ],
+   "godot_audio_resume": [
+    "platform/web/godot_audio.h:43"
+   ],
+   "godot_audio_sample_bus_add": [
+    "platform/web/godot_audio.h:63"
+   ],
+   "godot_audio_sample_bus_move": [
+    "platform/web/godot_audio.h:64"
+   ],
+   "godot_audio_sample_bus_remove": [
+    "platform/web/godot_audio.h:62"
+   ],
+   "godot_audio_sample_bus_set_count": [
+    "platform/web/godot_audio.h:61"
+   ],
+   "godot_audio_sample_bus_set_mute": [
+    "platform/web/godot_audio.h:68"
+   ],
+   "godot_audio_sample_bus_set_send": [
+    "platform/web/godot_audio.h:65"
+   ],
+   "godot_audio_sample_bus_set_solo": [
+    "platform/web/godot_audio.h:67"
+   ],
+   "godot_audio_sample_bus_set_volume_db": [
+    "platform/web/godot_audio.h:66"
+   ],
+   "godot_audio_sample_is_active": [
+    "platform/web/godot_audio.h:55"
+   ],
+   "godot_audio_sample_register_stream": [
+    "platform/web/godot_audio.h:50"
+   ],
+   "godot_audio_sample_set_finished_callback": [
+    "platform/web/godot_audio.h:59"
+   ],
+   "godot_audio_sample_set_pause": [
+    "platform/web/godot_audio.h:54"
+   ],
+   "godot_audio_sample_set_volumes_linear": [
+    "platform/web/godot_audio.h:58"
+   ],
+   "godot_audio_sample_start": [
+    "platform/web/godot_audio.h:52"
+   ],
+   "godot_audio_sample_stop": [
+    "platform/web/godot_audio.h:53"
+   ],
+   "godot_audio_sample_stream_is_registered": [
+    "platform/web/godot_audio.h:49"
+   ],
+   "godot_audio_sample_unregister_stream": [
+    "platform/web/godot_audio.h:51"
+   ],
+   "godot_audio_sample_update_pitch_scale": [
+    "platform/web/godot_audio.h:57"
+   ],
+   "godot_audio_script_create": [
+    "platform/web/godot_audio.h:80"
+   ],
+   "godot_audio_script_start": [
+    "platform/web/godot_audio.h:81"
+   ],
+   "godot_audio_worklet_create": [
+    "platform/web/godot_audio.h:72"
+   ],
+   "godot_audio_worklet_start": [
+    "platform/web/godot_audio.h:73"
+   ],
+   "godot_audio_worklet_start_no_threads": [
+    "platform/web/godot_audio.h:74"
+   ],
+   "godot_audio_worklet_state_add": [
+    "platform/web/godot_audio.h:75"
+   ],
+   "godot_audio_worklet_state_get": [
+    "platform/web/godot_audio.h:76"
+   ],
+   "godot_audio_worklet_state_wait": [
+    "platform/web/godot_audio.h:77"
+   ],
+   "godot_js_config_canvas_id_get": [
+    "platform/web/godot_js.h:47"
+   ],
+   "godot_js_config_locale_get": [
+    "platform/web/godot_js.h:46"
+   ],
+   "godot_js_config_pid_get": [
+    "platform/web/godot_js.h:45"
+   ],
+   "godot_js_debugger_active": [
+    "platform/web/remote_debugger_peer_messageport.cpp:39"
+   ],
+   "godot_js_debugger_bind": [
+    "platform/web/remote_debugger_peer_messageport.cpp:37"
+   ],
+   "godot_js_debugger_post": [
+    "platform/web/remote_debugger_peer_messageport.cpp:38"
+   ],
+   "godot_js_debugger_unbind": [
+    "platform/web/remote_debugger_peer_messageport.cpp:40"
+   ],
+   "godot_js_display_alert": [
+    "platform/web/godot_js.h:96"
+   ],
+   "godot_js_display_canvas_focus": [
+    "platform/web/godot_js.h:102"
+   ],
+   "godot_js_display_canvas_is_focused": [
+    "platform/web/godot_js.h:103"
+   ],
+   "godot_js_display_clipboard_get": [
+    "platform/web/godot_js.h:118"
+   ],
+   "godot_js_display_clipboard_set": [
+    "platform/web/godot_js.h:117"
+   ],
+   "godot_js_display_cursor_is_hidden": [
+    "platform/web/godot_js.h:122"
+   ],
+   "godot_js_display_cursor_is_locked": [
+    "platform/web/godot_js.h:126"
+   ],
+   "godot_js_display_cursor_lock_set": [
+    "platform/web/godot_js.h:125"
+   ],
+   "godot_js_display_cursor_set_custom_shape": [
+    "platform/web/godot_js.h:123"
+   ],
+   "godot_js_display_cursor_set_shape": [
+    "platform/web/godot_js.h:121"
+   ],
+   "godot_js_display_cursor_set_visible": [
+    "platform/web/godot_js.h:124"
+   ],
+   "godot_js_display_desired_size_set": [
+    "platform/web/godot_js.h:106"
+   ],
+   "godot_js_display_fullscreen_cb": [
+    "platform/web/godot_js.h:129"
+   ],
+   "godot_js_display_fullscreen_exit": [
+    "platform/web/godot_js.h:111"
+   ],
+   "godot_js_display_fullscreen_request": [
+    "platform/web/godot_js.h:110"
+   ],
+   "godot_js_display_has_webgl": [
+    "platform/web/godot_js.h:114"
+   ],
+   "godot_js_display_is_swap_ok_cancel": [
+    "platform/web/godot_js.h:98"
+   ],
+   "godot_js_display_notification_cb": [
+    "platform/web/godot_js.h:131"
+   ],
+   "godot_js_display_pixel_ratio_get": [
+    "platform/web/godot_js.h:95"
+   ],
+   "godot_js_display_screen_dpi_get": [
+    "platform/web/godot_js.h:94"
+   ],
+   "godot_js_display_screen_size_get": [
+    "platform/web/godot_js.h:109"
+   ],
+   "godot_js_display_setup_canvas": [
+    "platform/web/godot_js.h:99"
+   ],
+   "godot_js_display_size_update": [
+    "platform/web/godot_js.h:107"
+   ],
+   "godot_js_display_touchscreen_is_available": [
+    "platform/web/godot_js.h:97"
+   ],
+   "godot_js_display_tts_available": [
+    "platform/web/godot_js.h:135"
+   ],
+   "godot_js_display_vk_available": [
+    "platform/web/godot_js.h:134"
+   ],
+   "godot_js_display_vk_cb": [
+    "platform/web/godot_js.h:136"
+   ],
+   "godot_js_display_vk_hide": [
+    "platform/web/godot_js.h:138"
+   ],
+   "godot_js_display_vk_show": [
+    "platform/web/godot_js.h:137"
+   ],
+   "godot_js_display_window_blur_cb": [
+    "platform/web/godot_js.h:130"
+   ],
+   "godot_js_display_window_icon_set": [
+    "platform/web/godot_js.h:113"
+   ],
+   "godot_js_display_window_size_get": [
+    "platform/web/godot_js.h:108"
+   ],
+   "godot_js_display_window_title_set": [
+    "platform/web/godot_js.h:112"
+   ],
+   "godot_js_editor_debugger_active": [
+    "platform/web/editor/editor_debugger_server_messageport.cpp:37"
+   ],
+   "godot_js_editor_debugger_cb": [
+    "platform/web/editor/editor_debugger_server_messageport.cpp:38"
+   ],
+   "godot_js_emscripten_get_version": [
+    "platform/web/godot_js.h:42"
+   ],
+   "godot_js_eval": [
+    "platform/web/javascript_bridge_singleton.cpp:340"
+   ],
+   "godot_js_fetch_create": [
+    "platform/web/http_client_web.h:46"
+   ],
+   "godot_js_fetch_free": [
+    "platform/web/http_client_web.h:49"
+   ],
+   "godot_js_fetch_http_status_get": [
+    "platform/web/http_client_web.h:51"
+   ],
+   "godot_js_fetch_is_chunked": [
+    "platform/web/http_client_web.h:52"
+   ],
+   "godot_js_fetch_read_chunk": [
+    "platform/web/http_client_web.h:48"
+   ],
+   "godot_js_fetch_read_headers": [
+    "platform/web/http_client_web.h:47"
+   ],
+   "godot_js_fetch_state_get": [
+    "platform/web/http_client_web.h:50"
+   ],
+   "godot_js_input_drop_files_cb": [
+    "platform/web/godot_js.h:82"
+   ],
+   "godot_js_input_gamepad_cb": [
+    "platform/web/godot_js.h:77"
+   ],
+   "godot_js_input_gamepad_sample": [
+    "platform/web/godot_js.h:78"
+   ],
+   "godot_js_input_gamepad_sample_count": [
+    "platform/web/godot_js.h:79"
+   ],
+   "godot_js_input_gamepad_sample_get": [
+    "platform/web/godot_js.h:80"
+   ],
+   "godot_js_input_key_cb": [
+    "platform/web/godot_js.h:68"
+   ],
+   "godot_js_input_mouse_button_cb": [
+    "platform/web/godot_js.h:64"
+   ],
+   "godot_js_input_mouse_move_cb": [
+    "platform/web/godot_js.h:65"
+   ],
+   "godot_js_input_mouse_wheel_cb": [
+    "platform/web/godot_js.h:66"
+   ],
+   "godot_js_input_paste_cb": [
+    "platform/web/godot_js.h:81"
+   ],
+   "godot_js_input_touch_cb": [
+    "platform/web/godot_js.h:67"
+   ],
+   "godot_js_input_vibrate_handheld": [
+    "platform/web/godot_js.h:69"
+   ],
+   "godot_js_is_ime_focused": [
+    "platform/web/godot_js.h:74"
+   ],
+   "godot_js_os_download_buffer": [
+    "platform/web/javascript_bridge_singleton.cpp:42"
+   ],
+   "godot_js_os_execute": [
+    "platform/web/godot_js.h:54"
+   ],
+   "godot_js_os_finish_async": [
+    "platform/web/godot_js.h:50"
+   ],
+   "godot_js_os_fs_is_persistent": [
+    "platform/web/godot_js.h:52"
+   ],
+   "godot_js_os_fs_sync": [
+    "platform/web/godot_js.h:53"
+   ],
+   "godot_js_os_has_feature": [
+    "platform/web/godot_js.h:59"
+   ],
+   "godot_js_os_hw_concurrency_get": [
+    "platform/web/godot_js.h:57"
+   ],
+   "godot_js_os_kill": [
+    "platform/web/godot_js.h:55"
+   ],
+   "godot_js_os_request_quit_cb": [
+    "platform/web/godot_js.h:51"
+   ],
+   "godot_js_os_shell_open": [
+    "platform/web/godot_js.h:56"
+   ],
+   "godot_js_os_thread_pool_size_get": [
+    "platform/web/godot_js.h:58"
+   ],
+   "godot_js_pwa_cb": [
+    "platform/web/godot_js.h:60"
+   ],
+   "godot_js_pwa_update": [
+    "platform/web/godot_js.h:61"
+   ],
+   "godot_js_rtc_datachannel_close": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:55"
+   ],
+   "godot_js_rtc_datachannel_connect": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:54"
+   ],
+   "godot_js_rtc_datachannel_destroy": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:53"
+   ],
+   "godot_js_rtc_datachannel_get_buffered_amount": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:50"
+   ],
+   "godot_js_rtc_datachannel_id_get": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:46"
+   ],
+   "godot_js_rtc_datachannel_is_negotiated": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:49"
+   ],
+   "godot_js_rtc_datachannel_is_ordered": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:45"
+   ],
+   "godot_js_rtc_datachannel_label_get": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:51"
+   ],
+   "godot_js_rtc_datachannel_max_packet_lifetime_get": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:47"
+   ],
+   "godot_js_rtc_datachannel_max_retransmits_get": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:48"
+   ],
+   "godot_js_rtc_datachannel_protocol_get": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:52"
+   ],
+   "godot_js_rtc_datachannel_ready_state_get": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:43"
+   ],
+   "godot_js_rtc_datachannel_send": [
+    "modules/webrtc/webrtc_data_channel_js.cpp:44"
+   ],
+   "godot_js_rtc_pc_close": [
+    "modules/webrtc/webrtc_peer_connection_js.h:46"
+   ],
+   "godot_js_rtc_pc_create": [
+    "modules/webrtc/webrtc_peer_connection_js.h:45"
+   ],
+   "godot_js_rtc_pc_datachannel_create": [
+    "modules/webrtc/webrtc_peer_connection_js.h:52"
+   ],
+   "godot_js_rtc_pc_destroy": [
+    "modules/webrtc/webrtc_peer_connection_js.h:47"
+   ],
+   "godot_js_rtc_pc_ice_candidate_add": [
+    "modules/webrtc/webrtc_peer_connection_js.h:51"
+   ],
+   "godot_js_rtc_pc_local_description_set": [
+    "modules/webrtc/webrtc_peer_connection_js.h:49"
+   ],
+   "godot_js_rtc_pc_offer_create": [
+    "modules/webrtc/webrtc_peer_connection_js.h:48"
+   ],
+   "godot_js_rtc_pc_remote_description_set": [
+    "modules/webrtc/webrtc_peer_connection_js.h:50"
+   ],
+   "godot_js_set_ime_active": [
+    "platform/web/godot_js.h:71"
+   ],
+   "godot_js_set_ime_cb": [
+    "platform/web/godot_js.h:73"
+   ],
+   "godot_js_set_ime_position": [
+    "platform/web/godot_js.h:72"
+   ],
+   "godot_js_tts_get_voices": [
+    "platform/web/godot_js.h:87"
+   ],
+   "godot_js_tts_is_paused": [
+    "platform/web/godot_js.h:86"
+   ],
+   "godot_js_tts_is_speaking": [
+    "platform/web/godot_js.h:85"
+   ],
+   "godot_js_tts_pause": [
+    "platform/web/godot_js.h:89"
+   ],
+   "godot_js_tts_resume": [
+    "platform/web/godot_js.h:90"
+   ],
+   "godot_js_tts_speak": [
+    "platform/web/godot_js.h:88"
+   ],
+   "godot_js_tts_stop": [
+    "platform/web/godot_js.h:91"
+   ],
+   "godot_js_webmidi_close_midi_inputs": [
+    "platform/web/godot_midi.h:45"
+   ],
+   "godot_js_webmidi_open_midi_inputs": [
+    "platform/web/godot_midi.h:39"
+   ],
+   "godot_js_websocket_buffered_amount": [
+    "modules/websocket/emws_peer.h:51"
+   ],
+   "godot_js_websocket_close": [
+    "modules/websocket/emws_peer.h:52"
+   ],
+   "godot_js_websocket_create": [
+    "modules/websocket/emws_peer.h:49"
+   ],
+   "godot_js_websocket_destroy": [
+    "modules/websocket/emws_peer.h:53"
+   ],
+   "godot_js_websocket_send": [
+    "modules/websocket/emws_peer.h:50"
+   ],
+   "godot_js_wrapper_create_cb": [
+    "platform/web/javascript_bridge_singleton.cpp:63"
+   ],
+   "godot_js_wrapper_create_object": [
+    "platform/web/javascript_bridge_singleton.cpp:65"
+   ],
+   "godot_js_wrapper_interface_get": [
+    "platform/web/javascript_bridge_singleton.cpp:56"
+   ],
+   "godot_js_wrapper_object_call": [
+    "platform/web/javascript_bridge_singleton.cpp:57"
+   ],
+   "godot_js_wrapper_object_get": [
+    "platform/web/javascript_bridge_singleton.cpp:58"
+   ],
+   "godot_js_wrapper_object_getvar": [
+    "platform/web/javascript_bridge_singleton.cpp:59"
+   ],
+   "godot_js_wrapper_object_is_buffer": [
+    "platform/web/javascript_bridge_singleton.cpp:66"
+   ],
+   "godot_js_wrapper_object_set": [
+    "platform/web/javascript_bridge_singleton.cpp:61"
+   ],
+   "godot_js_wrapper_object_set_cb_ret": [
+    "platform/web/javascript_bridge_singleton.cpp:64"
+   ],
+   "godot_js_wrapper_object_setvar": [
+    "platform/web/javascript_bridge_singleton.cpp:60"
+   ],
+   "godot_js_wrapper_object_transfer_buffer": [
+    "platform/web/javascript_bridge_singleton.cpp:67"
+   ],
+   "godot_js_wrapper_object_unref": [
+    "platform/web/javascript_bridge_singleton.cpp:62"
+   ],
+   "godot_webgl2_glFramebufferTextureMultisampleMultiviewOVR": [
+    "platform/web/godot_webgl2.h:46"
+   ],
+   "godot_webgl2_glFramebufferTextureMultiviewOVR": [
+    "platform/web/godot_webgl2.h:45"
+   ],
+   "godot_webgl2_glGetBufferSubData": [
+    "platform/web/godot_webgl2.h:47"
+   ],
+   "godot_webxr_commit_render_target": [
+    "modules/webxr/godot_webxr.h:74"
+   ],
+   "godot_webxr_get_bounds_geometry": [
+    "modules/webxr/godot_webxr.h:93"
+   ],
+   "godot_webxr_get_color_texture": [
+    "modules/webxr/godot_webxr.h:71"
+   ],
+   "godot_webxr_get_depth_texture": [
+    "modules/webxr/godot_webxr.h:72"
+   ],
+   "godot_webxr_get_frame_rate": [
+    "modules/webxr/godot_webxr.h:95"
+   ],
+   "godot_webxr_get_projection_for_view": [
+    "modules/webxr/godot_webxr.h:70"
+   ],
+   "godot_webxr_get_render_target_size": [
+    "modules/webxr/godot_webxr.h:68"
+   ],
+   "godot_webxr_get_supported_frame_rates": [
+    "modules/webxr/godot_webxr.h:97"
+   ],
+   "godot_webxr_get_transform_for_view": [
+    "modules/webxr/godot_webxr.h:69"
+   ],
+   "godot_webxr_get_velocity_texture": [
+    "modules/webxr/godot_webxr.h:73"
+   ],
+   "godot_webxr_get_view_count": [
+    "modules/webxr/godot_webxr.h:67"
+   ],
+   "godot_webxr_get_visibility_state": [
+    "modules/webxr/godot_webxr.h:92"
+   ],
+   "godot_webxr_initialize": [
+    "modules/webxr/godot_webxr.h:54"
+   ],
+   "godot_webxr_is_session_supported": [
+    "modules/webxr/godot_webxr.h:52"
+   ],
+   "godot_webxr_is_supported": [
+    "modules/webxr/godot_webxr.h:51"
+   ],
+   "godot_webxr_uninitialize": [
+    "modules/webxr/godot_webxr.h:65"
+   ],
+   "godot_webxr_update_input_source": [
+    "modules/webxr/godot_webxr.h:76"
+   ],
+   "godot_webxr_update_target_frame_rate": [
+    "modules/webxr/godot_webxr.h:96"
+   ]
+  },
+  "exported_declared_not_called": [],
+  "declared_not_exported": [],
+  "lib_to_cpp_components": {
+   "GodotAudio": {
+    "platform.web": 27
+   },
+   "GodotAudioScript": {
+    "platform.web": 2
+   },
+   "GodotAudioWorklet": {
+    "platform.web": 9
+   },
+   "GodotConfig": {
+    "platform.web": 3
+   },
+   "GodotDebugger": {
+    "platform.web": 5
+   },
+   "GodotDisplay": {
+    "platform.web": 48
+   },
+   "GodotEditorDebugger": {
+    "platform.web": 3
+   },
+   "GodotEmscripten": {
+    "platform.web": 1
+   },
+   "GodotEval": {
+    "platform.web": 1
+   },
+   "GodotFetch": {
+    "platform.web": 10
+   },
+   "GodotInput": {
+    "platform.web": 17
+   },
+   "GodotJSWrapper": {
+    "platform.web": 13
+   },
+   "GodotOS": {
+    "platform.web": 12,
+    "editor.docks": 3,
+    "editor": 2
+   },
+   "GodotPWA": {
+    "platform.web": 2
+   },
+   "GodotRTCDataChannel": {
+    "modules.webrtc": 13
+   },
+   "GodotRTCPeerConnection": {
+    "modules.webrtc": 9
+   },
+   "GodotWebGL2": {
+    "drivers.gles3": 3,
+    "platform.web": 2
+   },
+   "GodotWebMidi": {
+    "platform.web": 2
+   },
+   "GodotWebSocket": {
+    "modules.websocket": 6
+   },
+   "GodotWebXR": {
+    "modules.webxr": 23
+   }
+  },
+  "cpp_call_site_files": {
+   "platform/web/display_server_web.cpp": 65,
+   "platform/web/audio_driver_web.cpp": 38,
+   "modules/webxr/webxr_interface_js.cpp": 23,
+   "platform/web/javascript_bridge_singleton.cpp": 15,
+   "platform/web/os_web.cpp": 14,
+   "modules/webrtc/webrtc_data_channel_js.cpp": 13,
+   "platform/web/http_client_web.cpp": 10,
+   "modules/webrtc/webrtc_peer_connection_js.cpp": 9,
+   "modules/websocket/emws_peer.cpp": 6,
+   "platform/web/remote_debugger_peer_messageport.cpp": 5,
+   "editor/docks/filesystem_dock.cpp": 3,
+   "platform/web/editor/editor_debugger_server_messageport.cpp": 3,
+   "platform/web/web_main.cpp": 3,
+   "drivers/gles3/storage/particles_storage.cpp": 2,
+   "editor/editor_node.cpp": 2,
+   "platform/web/godot_webgl2.h": 2,
+   "platform/web/webmidi_driver.cpp": 2,
+   "drivers/gles3/storage/utilities.cpp": 1
+  },
+  "bridge_cpp_components": {
+   "drivers.gles3": 2,
+   "editor.docks": 1,
+   "editor": 1,
+   "modules.webrtc": 2,
+   "modules.websocket": 1,
+   "modules.webxr": 1,
+   "platform.web": 10
+  },
+  "include_reach_of_bridge_files": {
+   "platform.web": 24,
+   "core.os": 7,
+   "core.io": 6,
+   "core.object": 6,
+   "core.config": 5,
+   "scene.main": 4,
+   "modules.webrtc": 3,
+   "core.input": 3,
+   "editor": 3,
+   "modules.webxr": 2,
+   "drivers.gles3": 2,
+   "servers.display": 2,
+   "core.profiling": 2,
+   "drivers.unix": 2,
+   "main": 2,
+   "modules.websocket": 1,
+   "scene": 1,
+   "servers.xr": 1,
+   "core.math": 1,
+   "scene.resources": 1,
+   "servers.audio": 1,
+   "servers.rendering.dummy": 1,
+   "core.debugger": 1
+  },
+  "call_sites_outside_web_platform_and_modules": [
+   "drivers/gles3/storage/particles_storage.cpp:1243 godot_webgl2_glGetBufferSubData",
+   "drivers/gles3/storage/particles_storage.cpp:838 godot_webgl2_glGetBufferSubData",
+   "drivers/gles3/storage/utilities.cpp:136 godot_webgl2_glGetBufferSubData",
+   "editor/docks/filesystem_dock.cpp:2326 godot_js_os_download_buffer",
+   "editor/docks/filesystem_dock.cpp:2337 godot_js_os_download_buffer",
+   "editor/docks/filesystem_dock.cpp:85 godot_js_os_download_buffer",
+   "editor/editor_node.cpp:229 godot_js_os_download_buffer",
+   "editor/editor_node.cpp:3824 godot_js_os_download_buffer"
+  ],
+  "js_graph": {
+   "GodotRTCDataChannel": [
+    "GodotRuntime",
+    "IDHandler"
+   ],
+   "GodotRTCPeerConnection": [
+    "GodotRTCDataChannel",
+    "GodotRuntime",
+    "IDHandler"
+   ],
+   "GodotWebSocket": [
+    "GodotRuntime",
+    "IDHandler"
+   ],
+   "GodotWebXR": [
+    "GodotRuntime"
+   ],
+   "GodotAudio": [
+    "GodotOS",
+    "GodotRuntime"
+   ],
+   "GodotAudioWorklet": [
+    "GodotAudio",
+    "GodotConfig"
+   ],
+   "GodotAudioScript": [
+    "GodotAudio"
+   ],
+   "GodotDebugger": [
+    "GodotConfig",
+    "GodotRuntime",
+    "IDHandler"
+   ],
+   "GodotDisplayVK": [
+    "GodotConfig",
+    "GodotEventListeners",
+    "GodotInput",
+    "GodotRuntime"
+   ],
+   "GodotDisplayCursor": [
+    "GodotConfig",
+    "GodotOS"
+   ],
+   "GodotDisplayScreen": [
+    "GodotConfig",
+    "GodotOS"
+   ],
+   "GodotDisplay": [
+    "GodotConfig",
+    "GodotDisplayCursor",
+    "GodotDisplayScreen",
+    "GodotDisplayVK",
+    "GodotEventListeners",
+    "GodotRuntime"
+   ],
+   "GodotEditorDebugger": [
+    "GodotDebugger",
+    "GodotRuntime",
+    "IDHandler"
+   ],
+   "GodotEmscripten": [
+    "GodotRuntime"
+   ],
+   "GodotFetch": [
+    "GodotRuntime",
+    "IDHandler"
+   ],
+   "GodotIME": [
+    "GodotEventListeners",
+    "GodotRuntime"
+   ],
+   "GodotInputGamepads": [
+    "GodotEventListeners",
+    "GodotRuntime"
+   ],
+   "GodotInputDragDrop": [
+    "GodotFS"
+   ],
+   "GodotInput": [
+    "GodotConfig",
+    "GodotEventListeners",
+    "GodotIME",
+    "GodotInputDragDrop",
+    "GodotInputGamepads",
+    "GodotRuntime"
+   ],
+   "GodotJSWrapper": [
+    "GodotRuntime",
+    "IDHandler"
+   ],
+   "GodotEval": [
+    "GodotRuntime"
+   ],
+   "IDHandler": [],
+   "GodotConfig": [
+    "GodotRuntime"
+   ],
+   "GodotFS": [
+    "GodotRuntime"
+   ],
+   "GodotOS": [
+    "GodotConfig",
+    "GodotFS",
+    "GodotRuntime"
+   ],
+   "GodotEventListeners": [
+    "GodotOS"
+   ],
+   "GodotPWA": [
+    "GodotEventListeners",
+    "GodotRuntime"
+   ],
+   "GodotRuntime": [],
+   "GodotWebGL2": [
+    "GodotRuntime"
+   ],
+   "GodotWebMidi": [
+    "GodotRuntime"
+   ]
+  },
+  "js_external_deps": {
+   "GodotWebXR": [
+    "GL",
+    "MainLoop",
+    "emscripten_webgl_get_current_context",
+    "runtimeKeepalivePop",
+    "runtimeKeepalivePush"
+   ],
+   "GodotDisplayScreen": [
+    "GL",
+    "emscripten_webgl_get_current_context"
+   ],
+   "GodotInputDragDrop": [
+    "FS"
+   ],
+   "GodotFS": [
+    "FS",
+    "IDBFS"
+   ],
+   "GodotWebGL2": [
+    "GL",
+    "emscripten_webgl_get_current_context"
+   ]
+  },
+  "js_fanin": {
+   "GodotRuntime": 22,
+   "GodotConfig": 8,
+   "IDHandler": 7,
+   "GodotEventListeners": 6,
+   "GodotOS": 4,
+   "GodotAudio": 2,
+   "GodotFS": 2,
+   "GodotRTCDataChannel": 1,
+   "GodotInput": 1,
+   "GodotDisplayCursor": 1,
+   "GodotDisplayScreen": 1,
+   "GodotDisplayVK": 1,
+   "GodotDebugger": 1,
+   "GodotIME": 1,
+   "GodotInputDragDrop": 1,
+   "GodotInputGamepads": 1
+  },
+  "js_cycles": [],
+  "js_used_but_undeclared": {
+   "GodotAudio": [
+    "GodotConfig"
+   ],
+   "GodotAudioWorklet": [
+    "GodotRuntime"
+   ],
+   "GodotAudioScript": [
+    "GodotRuntime"
+   ],
+   "GodotDisplayVK": [
+    "GodotOS"
+   ],
+   "GodotIME": [
+    "GodotConfig",
+    "GodotOS"
+   ],
+   "GodotInputDragDrop": [
+    "GodotRuntime"
+   ]
+  },
+  "em_asm_em_js_count": 0,
+  "emscripten_keepalive": [
+   "modules/webxr/webxr_interface_js.cpp:99",
+   "modules/webxr/webxr_interface_js.cpp:109",
+   "platform/web/web_main.cpp:134"
+  ],
+  "js_to_cpp_function_pointer_calls": 59
+ },
+ "swift": {
+  "files": {
+   "drivers/apple_embedded/godot_swiftui_view_controller.swift": {
+    "lines": 55,
+    "main": [],
+    "delegate_adaptor": [],
+    "objc_exports": [],
+    "objc_types_used": [
+     "GDTAppDelegateService",
+     "GDTViewController"
+    ]
+   },
+   "misc/dist/apple_embedded_xcode/godot_apple_embedded/dummy.swift": {
+    "lines": 31,
+    "main": [],
+    "delegate_adaptor": [],
+    "objc_exports": [],
+    "objc_types_used": []
+   },
+   "platform/ios/app_ios.swift": {
+    "lines": 41,
+    "main": [
+     33
+    ],
+    "delegate_adaptor": [
+     "GDTAppDelegateIOS"
+    ],
+    "objc_exports": [],
+    "objc_types_used": [
+     "GDTAppDelegateIOS"
+    ]
+   },
+   "platform/visionos/app_visionos.swift": {
+    "lines": 324,
+    "main": [
+     302
+    ],
+    "delegate_adaptor": [
+     "GDTAppDelegateVisionOS"
+    ],
+    "objc_exports": [
+     "GDTSwiftBridge",
+     "SpatialEventObjC"
+    ],
+    "objc_types_used": [
+     "GDTAppDelegateServiceVisionOS",
+     "GDTAppDelegateVisionOS",
+     "GDTCompositorServicesRenderer",
+     "GDTImmersionStyle",
+     "GDTSwiftBridge",
+     "GDTVisibility"
+    ]
+   }
+  },
+  "chain": [
+   {
+    "swift_main": "platform/ios/app_ios.swift:33",
+    "delegate": "GDTAppDelegateIOS",
+    "impl": [
+     "platform/ios/godot_app_delegate_ios.mm:35"
+    ],
+    "interface": [
+     "platform/ios/godot_app_delegate_ios.h:35"
+    ],
+    "add_service": [
+     "platform/ios/godot_app_delegate_ios.mm:38"
+    ],
+    "services": [
+     "GDTAppDelegateService"
+    ]
+   },
+   {
+    "swift_main": "platform/visionos/app_visionos.swift:302",
+    "delegate": "GDTAppDelegateVisionOS",
+    "impl": [
+     "platform/visionos/godot_app_delegate_visionos.mm:35"
+    ],
+    "interface": [
+     "platform/visionos/godot_app_delegate_visionos.h:35"
+    ],
+    "add_service": [
+     "platform/visionos/godot_app_delegate_visionos.mm:38"
+    ],
+    "services": [
+     "GDTAppDelegateServiceVisionOS"
+    ]
+   }
+  ],
+  "service_superclasses": {
+   "GDTAppDelegateService": "NSObject",
+   "GDTAppDelegateServiceVisionOS": "GDTAppDelegateService"
+  },
+  "bridging_headers": {
+   "drivers/apple_embedded/bridging_header_apple_embedded.h": [
+    "drivers/apple_embedded/godot_app_delegate_service_apple_embedded.h",
+    "drivers/apple_embedded/godot_view_apple_embedded.h",
+    "drivers/apple_embedded/godot_view_controller.h"
+   ],
+   "platform/ios/bridging_header_ios.h": [
+    "godot_app_delegate_ios.h",
+    "drivers/apple_embedded/bridging_header_apple_embedded.h"
+   ],
+   "platform/visionos/bridging_header_visionos.h": [
+    "godot_app_delegate_service_visionos.h",
+    "godot_app_delegate_visionos.h",
+    "godot_compositor_services_renderer.h",
+    "drivers/apple_embedded/bridging_header_apple_embedded.h"
+   ]
+  },
+  "apple_embedded_main_calls": [
+   "drivers/apple_embedded/godot_app_delegate_service_apple_embedded.mm:86"
+  ],
+  "apple_embedded_main_defs": [
+   "platform/ios/main_ios.mm:44",
+   "platform/visionos/main_visionos.mm:44"
+  ],
+  "main_setup_calls": [
+   "platform/ios/main_ios.mm:62",
+   "platform/visionos/main_visionos.mm:57"
+  ],
+  "swift_types_used_from_objc": [
+   "platform/visionos/godot_app_delegate_service_visionos.mm:37",
+   "platform/visionos/godot_app_delegate_service_visionos.mm:103",
+   "platform/visionos/godot_app_delegate_service_visionos.mm:107",
+   "platform/visionos/godot_app_delegate_service_visionos.mm:111",
+   "platform/visionos/godot_app_delegate_service_visionos.mm:115",
+   "platform/visionos/godot_app_delegate_service_visionos.mm:119",
+   "platform/visionos/godot_app_delegate_service_visionos.mm:123",
+   "platform/visionos/godot_app_delegate_service_visionos.mm:127"
+  ]
+ }
+}

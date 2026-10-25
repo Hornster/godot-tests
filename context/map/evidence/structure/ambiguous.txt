@@ -1,0 +1,61 @@
+Found 4 ambiguous includes
+
+Include for platform_config.h
+Found in : 
+  included from ./core/typedefs.h
+  included from ./core/os/thread.cpp
+  included from ./core/os/thread.h
+Options for file:
+  ./drivers/apple_embedded/platform_config.h
+  ./platform/android/platform_config.h
+  ./platform/ios/platform_config.h
+  ./platform/linuxbsd/platform_config.h
+  ./platform/macos/platform_config.h
+  ./platform/visionos/platform_config.h
+  ./platform/web/platform_config.h
+  ./platform/windows/platform_config.h
+
+Include for platform_egl.h
+Found in : 
+  included from ./platform/linuxbsd/wayland/detect_prime_egl.h
+  included from ./drivers/egl/egl_manager.h
+  included from ./drivers/gles3/rasterizer_gles3.cpp
+  included from ./drivers/gles3/storage/config.cpp
+Options for file:
+  ./platform/android/platform_egl.h
+  ./platform/linuxbsd/platform_egl.h
+  ./platform/macos/platform_egl.h
+  ./platform/windows/platform_egl.h
+
+Include for platform_gl.h
+Found in : 
+  included from ./platform/macos/embedded_gl_manager.mm
+  included from ./drivers/gles3/storage/mesh_storage.h
+  included from ./drivers/gles3/storage/particles_storage.h
+  included from ./drivers/gles3/storage/render_scene_buffers_gles3.h
+  included from ./drivers/gles3/rasterizer_gles3.cpp
+  included from ./drivers/gles3/shader_gles3.h
+  included from ./platform/linuxbsd/wayland/detect_prime_egl.cpp
+  included from ./drivers/gles3/storage/light_storage.h
+  included from ./drivers/gles3/storage/texture_storage.h
+  included from ./drivers/gles3/rasterizer_util_gles3.cpp
+  included from ./drivers/gles3/storage/config.h
+  included from ./drivers/gles3/storage/utilities.h
+  included from ./platform/macos/display_server_macos_embedded.mm
+  included from ./platform/linuxbsd/x11/detect_prime_x11.cpp
+Options for file:
+  ./platform/android/platform_gl.h
+  ./platform/ios/platform_gl.h
+  ./platform/linuxbsd/platform_gl.h
+  ./platform/macos/platform_gl.h
+  ./platform/web/platform_gl.h
+  ./platform/windows/platform_gl.h
+
+Include for platform_thread.h
+Found in : 
+  included from ./core/os/thread.h
+Options for file:
+  ./platform/ios/platform_thread.h
+  ./platform/macos/platform_thread.h
+  ./platform/visionos/platform_thread.h
+

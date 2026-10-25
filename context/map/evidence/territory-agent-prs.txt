@@ -1,0 +1,74 @@
+### AUTHORED (17 PRs)
+  #112541 [BlueCube3310] Image: Properly round floating point values to integers :: core/io, tests/core, tests/scene
+  #117946 [HolonProduction] Introduce `EditorLanguage` and move `ScriptLanguage::complet :: core/object, editor/script, modules/gdscript, modules/mono
+  #118898 [stuartcarnie] Editor: Add Filter to Project Export → Options tab :: editor/export
+  #119304 [stuartcarnie] Rendering: Zero uninitialized InstanceData fields  :: servers/rendering
+  #119750 [iMacHumphries] [iOS] Add AccessKit screen reader support :: (root), (root)/.github, drivers/(root), drivers/accesskit, drivers/apple_embedded, editor/export, misc/dist, platform/ios
+  #119756 [stuartcarnie] macOS: Fix mouse warp for embedded game window :: platform/macos
+  #119819 [KoBeWi] Fix Curve point count expansion preserving points :: scene/resources
+  #120231 [rsanchezsaez] Metal: Add depth resolve to the Metal rendering driver :: drivers/metal, modules/openxr
+  #120362 [akien-mga] Vulkan: Fix build with `use_volk=no` :: drivers/vulkan
+  #120558 [dsnopek] OpenGL: Emulate multiview when it's not supported :: drivers/gles3, modules/webxr
+  #121810 [aaronfranke] LinuxBSD: Fix missing FontConfig FcConfigSetCurrent call :: platform/linuxbsd
+  #121819 [aaronfranke] Fix prek checks sometimes checking zero files or failing wit :: (root)/.github
+  #121835 [stuartcarnie] renderer: Improve SPIR-V reflection performance :: 
+  #123546 [exaltedo2] Fix ClassDB default property value race condition. :: core/object
+  #123549 [kilian-diener] Make the Perfetto `HashSet` `thread_local` to support sub th :: core/profiling
+  #123689 [StarryWorm] Add desired size tests :: tests/scene
+  #123960 [Ivorforce] Move `StringName::Table` data into zero-fill sections to sav :: core/string
+  not in master window: []
+  AREAS [('tests/scene', 2), ('core/object', 2), ('editor/export', 2), ('(root)/.github', 2), ('core/io', 1), ('tests/core', 1), ('editor/script', 1), ('modules/gdscript', 1), ('modules/mono', 1), ('servers/rendering', 1), ('(root)', 1), ('drivers/(root)', 1), ('drivers/accesskit', 1), ('drivers/apple_embedded', 1), ('misc/dist', 1)]
+  LAYERS [('Core', 5), ('Drivers (GPU/OS backends)', 4), ('Editor', 3), ('Platform ports', 3), ('Tests', 2), ('CI', 2), ('Module: XR', 2), ('Module: scripting (gdscript)', 1), ('Module: scripting (mono)', 1), ('Servers (engine subsystems)', 1), ('Build / root', 1), ('Misc / tooling', 1)]
+### ASSISTED (52 PRs)
+  #117107 [QbieShay] Add `Trail3D` class :: (root), doc/classes, editor/icons, modules/mono, scene/(root), scene/3d
+  #117913 [allenwp] Fix behavior of `window_is_hdr_output_supported` for Wayland :: drivers/apple_embedded, platform/linuxbsd, platform/macos, platform/windows, servers/display
+  #118294 [XpolioN2005] Fix Visual Profiler cursor not appearing when graph is parti :: editor/debugger
+  #118692 [allenwp] Link to tutorial and add platform notes to HDR output docs. :: doc/classes
+  #119124 [calbebop] Add unit tests for `NinePatchRect` :: tests/scene
+  #119132 [calbebop] Add unit tests for `TextureRect` :: tests/scene
+  #119244 [calbebop] Add unit tests for `ReferenceRect` :: tests/scene
+  #119261 [calbebop] Add unit tests for `TextureButton` :: tests/scene
+  #119264 [calbebop] Add unit tests for `SpinBox` :: tests/scene
+  #119506 [KosumovicDenis] Editor: Fix 'Reparent to New Node' when selecting from botto :: editor/docks
+  #119612 [wkesner] Document ImageFormatLoader LoaderFlags Constants :: doc/classes
+  #119634 [shiena] Android: Fix infinite recursion in proxy equals handler :: platform/android
+  #119651 [Ivorforce] Clarify `hash_compare` semantics on `Variant`. :: core/variant
+  #119872 [Ijtihed] Fix Polygon2D being culled against a stale AABB after editin :: scene/2d
+  #119919 [XenotriX] Fix remote scene tree expanding selected nodes on reveal :: editor/debugger
+  #120369 [Ivorforce] Fix UDP server peer connections. :: core/io
+  #120796 [brycehutchings] GDExtension: Avoid transient null virtual method store durin :: core/object
+  #120849 [DeltachangeOG] Fix ZIPPacker returning OK when zipio_write() fails to write :: core/io
+  #120853 [m96-chan] Add iPhone 17e (`iPhone18,5`) to the Apple SoC model list an :: drivers/apple_embedded, platform/ios
+  #121392 [stuartcarnie] metal: fix various issues with Metal rendering; improve pres :: (root), drivers/apple, drivers/d3d12, drivers/metal, servers/rendering
+  #121533 [Ivorforce] Optimize `Vector.append_array`, and accept `Span` :: core/templates, core/variant
+  #121874 [StarryWorm] Restrict editor minimum size to screen size :: editor/(root)
+  #121911 [amenhany] Tree: Fix CELL_MODE_RANGE auto-tooltip showing all comma-sep :: scene/gui
+  #121937 [Fluxx7] Add ClassDB binding for `TEXTURE_SLICE_2D_ARRAY` :: doc/classes, servers/rendering
+  #122178 [BoraYalcinn] Disable fog when using Unshaded debug draw mode in Compatibi :: drivers/gles3
+  #122236 [BoraYalcinn] Fix reflection probe ambient light blend factor in Compatibi :: drivers/gles3
+  #122596 [Ivorforce] Move property maps from `ClassDB` to `GDType`. Accelerate `O :: core/object, editor/docks, editor/inspector, editor/scene, modules/gdscript, modules/mono
+  #122653 [eth0net] Fix crash on quit with CanvasTexture leaks :: servers/rendering
+  #122676 [aaronfranke] Add Windows Arm64 COFF headers to `ResourceImporterOBJ` :: editor/import
+  #122786 [Kenneth-Olibrice] Fix issue where certain types could not be edited from remot :: editor/debugger, editor/inspector
+  #122829 [aaronfranke] Fix memory leak of a `ScannedDirectory` instance in `EditorF :: editor/file_system
+  #122831 [aaronfranke] Fix uninitialized `DockLayout` in `EditorDock` :: editor/docks
+  #122839 [aaronfranke] Disable GCC's `-fsanitize=bounds-strict` for HarfBuzz :: modules/text_server_adv
+  #122841 [aaronfranke] Fix divide by zero in scale check in RenderGeometryInstanceB :: servers/rendering
+  #122879 [owsu] Fix local scale application in AnimationMixer :: scene/animation
+  #123090 [luna-y-kim] Fix Auto Orthogonal mode being lost when switching editors :: editor/scene
+  #123224 [hukultan] Fix index out of bounds error in multiple search tabs :: editor/script
+  #123234 [gumaciel] [Android] Add export option for R8 code minification and obf :: platform/android
+  #123312 [XenuIsWatching] Reduce Forward Mobile singleton mutex scope to prevent shade :: servers/rendering
+  #123332 [yoyorm] Fix [MethodBind] check bound enums test case failing when ru :: tests/core
+  #123439 [stuartcarnie] Metal: Fix crash on startup :: 
+  #123602 [jojjolindquist] Fix CompressedTexture2D mipmap reporting :: scene/resources
+  #123773 [Geometror] Allow creating a VisualShader node group from a selection :: modules/visual_shader
+  #123954 [Nichgon] Fix MenuBar item can't click at top or left edge :: scene/gui
+  #123959 [Megane-0] Change default curve range for particle angles to [-1, 1] :: scene/2d, scene/3d, scene/resources
+  #124048 [calbebop] Fix "Ignore external changes" overwriting other scenes with  :: editor/(root)
+  #124058 [akien-mga] Compress embedded RD and GLES3 shader code to reduce binary  :: (root), drivers/gles3, servers/rendering, tests/python_build
+  #124484 [BaconEggsRL] Fix particle material UBO binding in GLES3 Compatibility ren :: drivers/gles3
+  #124620 [Nachi28] Fix `ENetMultiplayerPeer.create_server()` using channel coun :: (root)/.github, modules/enet
+  not in master window: [121463, 122804, 123001]
+  AREAS [('servers/rendering', 6), ('tests/scene', 5), ('doc/classes', 4), ('drivers/gles3', 4), ('(root)', 3), ('editor/debugger', 3), ('editor/docks', 3), ('modules/mono', 2), ('scene/3d', 2), ('drivers/apple_embedded', 2), ('platform/android', 2), ('core/variant', 2), ('scene/2d', 2), ('core/io', 2), ('core/object', 2)]
+  LAYERS [('Editor', 13), ('Scene / nodes', 7), ('Drivers (GPU/OS backends)', 7), ('Servers (engine subsystems)', 7), ('Tests', 7), ('Core', 6), ('API: class reference docs', 4), ('Platform ports', 4), ('Build / root', 3), ('Module: scripting (mono)', 2), ('Module: scripting (gdscript)', 1), ('Module: text_server_adv', 1)]
