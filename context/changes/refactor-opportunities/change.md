@@ -1,7 +1,7 @@
 ---
 change_id: refactor-opportunities
 title: Rank refactoring opportunities from the material resources flow analysis
-status: preparing
+status: plan_reviewed
 created: 2026-10-30
 updated: 2026-10-30
 archived_at: null

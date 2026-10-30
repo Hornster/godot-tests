@@ -1,0 +1,7 @@
+-Selected in the report three candidates are fine. Majority of candidates that do not stretch into 
+domain/architectural problem that requires replanning and rebuilding of the affected area concern extraction of duplicate code. Moreover, C8
+which is mentioned as one of the candidates has signs of drift between affected areas. If it is not rectified now, it will only
+get worse. C10 decouples modules, making the system more readable and less cyclic.
+
+Thus, I agree with the proposed order of execution.
+
