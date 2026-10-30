@@ -1,7 +1,7 @@
 ---
-change_id: post-flow-analysis
-title: Analyze data flow in the scene resources area
-status: new
+change_id: material-resources-flow-analysis
+title: Analyze the process of editing materials resources
+status: preparing
 created: 2026-10-26
 updated: 2026-10-26
 archived_at: null

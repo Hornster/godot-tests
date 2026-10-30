@@ -1,25 +1,27 @@
 <!-- BEGIN @przeprogramowani/10x-cli -->
 
-## 10xDevs AI Toolkit - Module 4, Lesson 2 (Project Map)
+## 10xDevs AI Toolkit - Module 4, Lesson 4 (Refactoring)
 
-Get up to speed in an unfamiliar or legacy repo from evidence, not from directory trees: **Wide Scan first, Deep Focus later.**
+Go from recorded problems to a refactoring decision you can defend, then make the change in small steps you can reverse.
 
 ```
-git history + dependency graph + contributors -> context/map/repo-map.md -> focused /10x-research
+/10x-new (research-only intention) -> /10x-research (options, no decision) -> ast-grep verification -> /10x-plan (decide) -> /10x-implement
 ```
 
 ### Task Router - Where to start
 
 | Skill / prompt | Use it when |
 | --- | --- |
-| `/10x-repo-map` | One-run Project Map. It ranks business capabilities by criticality × buzz, keeps its evidence in `context/map/evidence/`, and writes `context/map/repo-map.md` with risk zones, a first-day reading list and explicit unknowns. Use `--replace` to refresh; the previous run moves to `context/archive/`. |
-| `m4l2-1-territory-git-history` -> `m4l2-2-structure-dependency-cruiser` -> `m4l2-3-contributors-git` -> `m4l2-repo-map-synthesis` | The same map built step by step, one artifact at a time, so you can see what each evidence source adds. |
-| `/10x-research` | A question about one feature or area. The map covers breadth and takes no target; depth belongs to research. |
+| `m4l4-1-new-change-intention` | Opening the change with `/10x-new` and an explicit intention: explore and rank, no refactor, no decision yet. |
+| `m4l4-2-refactor-opportunities-research` | Running `/10x-research` over every recorded problem from three read-only angles: current shape, decision history (was it deliberate?), migration feasibility. Ends with ranked options and their trade-offs. |
+| `m4l4-3-ranking-ast-grep-verification` | Checking the structural claims behind the ranking with ast-grep and correcting the report so the earlier figure stays visible. |
+| `/10x-plan` -> `/10x-plan-review` -> `/10x-implement` | Defend the chosen option in the plan interview, then carry out the plan. |
 
 ### Hard rules
 
-- **Let tools collect evidence outside the context window.** Use git, the forge and graph tools to gather data, then interpret only their condensed output. Never read the repo file by file.
-- **Exclude the noise.** Leave out lockfiles, generated code, bulk formatting commits, bot commits and agent-authored commits when ranking activity.
-- **Unknowns are part of the map.** Mark what the evidence can't show as unknown instead of filling the gap with a guess.
+- **Research ranks; the plan decides.** No refactor and no final choice inside research.
+- **Guard first.** Characterization tests that pin current behaviour come before the first structural change.
+- **Every phase can be reverted on its own.** Prefer Strangler Fig, Branch by Abstraction and Mikado-style ordering over a big-bang rewrite.
+- **Keep behaviour unchanged.** A refactor phase that changes observable behaviour is a separate change.
 
 <!-- END @przeprogramowani/10x-cli -->
