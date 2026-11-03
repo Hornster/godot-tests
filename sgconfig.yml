@@ -1,0 +1,2 @@
+languageGlobs:
+  cpp: ["*.h"]
